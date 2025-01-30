@@ -1,34 +1,41 @@
 .nav {
-    background-color: lightseagreen;
-    word-spacing: 9.5cm;
-    margin: 1cm 1cm 1cm;
-    padding: 0.3cm 0.3cm 0.3cm 1cm;
-    text-align: center;
+  background-color: red;
+  word-spacing: 5.5cm;
+  margin: 0.5cm 0.5cm 0.5cm;
+  padding: 0.3cm 0.3cm 0.3cm 1cm;
+  text-align: center;
+  color: whitesmoke;
 }
 
 .home {
-    gap: 10cm;
-    text-align: left;
+  gap: 10cm;
+  text-align: left;
 }
 
 h1 {
-    text-align: left;
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    width: 500px;
-    height: 350px;
-    top: 35%;
-    left: 50%;
+  width: 500px;
+  height: 350px;
 }
 
 .h1,
 p {
-    background-color: aqua;
-    font-weight: bolder;
-    text-align: center;
-    word-spacing: 0.3cm;
+  font-weight: bolder;
+  text-align: center;
+  word-spacing: 0.3cm;
+}
+body {
+  background-color: aqua;
+}
+table {
+  position: absolute;
+  top: 899px;
+  left: 38.5%;
+  font-weight: bolder;
+  text-align: center;
 }

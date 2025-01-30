@@ -9,22 +9,15 @@
 
   <body>
     <h1>Nettech India Classes</h1>
-    <nav class="nav">
-      Home
-      <a href=".About-Us">About-Us</a>
-      <a href=".Form">Admission-Form</a>
-      <a href=".Contact">Contact</a>
-    </nav>
-    <br />
+    <nav class="nav">Home About-Us Admission-Form Contact</nav>
+    <br /><br />
     <header class="home" id="home">
-      <h1>Best Computer Programming</h1>
-      <br />
-      <h1>Classes In Mumbai</h1>
+      <h1>Best Computer Programming Classes In Mumbai</h1>
     </header>
     <br />
     <img src="./images.png" alt="Nettech" /><br />
     <section class="About-Us">
-      <h1 class="h1">About Us</h1>
+      <h1>About Us</h1>
       <p class="p">
         Nettech India is located in Thane, Mumbai And Navi-Mumbai<br />offers a
         top quality learning experice within the areas of I.T. training.<br />Our
@@ -33,12 +26,74 @@
       </p>
     </section>
     <section>
-      <ol>
-        <h3>Courses Provided By Us:-<br /><br /></h3>
+      <ol style="font-weight: bolder">
+        <h3>Courses Provided By Us:-<br /></h3>
         <li>Java Full Stack Course</li>
         <li>Python Full Stack Course</li>
         <li>Data Structure And Analysis</li>
       </ol>
+      <br />
+      <table border="1" cellspacing="5">
+        <h3 style="text-align: center">Fees For All Courses Are As Follows</h3>
+        <br />
+        <thead>
+          <tr>
+            <th>Course Name</th>
+            <th>Course Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Java Full Stack Course</td>
+            <td>₹45000</td>
+          </tr>
+
+          <tr>
+            <td>Python Full Stack Course</td>
+            <td>₹55000</td>
+          </tr>
+
+          <tr>
+            <td>Data Structure And Analysis</td>
+            <td>₹65000</td>
+          </tr>
+        </tbody>
+      </table>
+      <br /><br /><br /><br /><br /><br />
     </section>
+    <br />
+    <form>
+      <fieldset>
+        <legend style="border: 1px solid black;">Admission Form</legend>
+      <label>Name</label>
+      <input type="text" placeholder="Enter Your Name" required /><br /><br />
+      <label>Email Id</label>
+      <input
+        type="email"
+        placeholder="Enter Your Email-Id"
+        required
+      /><br /><br />
+      <label>Mobile Number</label>
+      <input
+        type="tel"
+        placeholder="Enter Your Mobile Number"
+        required
+        maxlength="10"
+      /><br /><br />
+      <label>Gender</label><br />
+      <label>Male</label>
+      <input type="radio" value="male" /><br />
+      <label>Female</label>
+      <input type="radio" value="female" /><br /><br />
+      <label>Course</label>
+      <select>
+        <option>Java Full Stack Course</option>
+        <option>Python Full Stack Course</option>
+        <option>Data Structure And Analysis</option>
+      </select>
+      <br />
+      <br />
+      <input type="button" value="Submit" />
+    </form>
   </body>
 </html>
