@@ -1,14 +1,15 @@
 .nav {
   background-color: #333333;
-  word-spacing: 7cm;
+  word-spacing: 177px;
   margin: 0.5cm 0.5cm 0.5cm;
   padding: 0.3cm 0.3cm 0.3cm 1cm;
-  text-align: center;
   color: whitesmoke;
+  text-align: center;
 }
 
 marquee {
   background-color: red;
+  color: yellow;
 }
 .home {
   gap: 10cm;
@@ -43,7 +44,7 @@ body {
 table {
   position: absolute;
   top: 1075px;
-  left: 38.5%;
+  left: 33%;
   font-weight: bolder;
   text-align: center;
 }
