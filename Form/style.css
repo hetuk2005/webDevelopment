@@ -1,9 +1,9 @@
 .nav {
-  background-color: #333333;
+  background-color: black;
   word-spacing: 177px;
   margin: 0.5cm 0.5cm 0.5cm;
   padding: 0.3cm 0.3cm 0.3cm 1cm;
-  color: whitesmoke;
+  color: white;
   text-align: center;
 }
 
@@ -43,7 +43,7 @@ body {
 
 table {
   position: absolute;
-  top: 1075px;
+  top: 1117px;
   left: 33%;
   font-weight: bolder;
   text-align: center;
