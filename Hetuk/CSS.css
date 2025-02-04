@@ -1,0 +1,20 @@
+body {
+  background-image: url(./istockphoto-1403500817-612x612.jpg),
+    url(./incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.webp),
+    url(./new-year-background-736885_1280.jpg),
+    url(./ai-generated-8612487_1280.jpg),
+    url(./360_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg),
+    url(./nature-3082832_1280.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 460px, 460px, 493px, 461.5px, 460px, 490px;
+  background-position: 0px 75px, 470px 75px, 940px 75px, 0px 389px, 470px 389px,
+    940px 389px;
+  background-color: aqua;
+  /* min-height: 800px; */
+}
+h1 {
+  text-align: center;
+  background-color: aqua;
+  font-weight: bolder;
+  border: 3px solid black;
+}
