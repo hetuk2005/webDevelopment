@@ -10,6 +10,7 @@
 marquee {
   background-color: red;
   color: yellow;
+  padding: 5px;
 }
 .home {
   gap: 10cm;
