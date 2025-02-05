@@ -19,6 +19,10 @@ marquee {
 img {
   width: 500px;
   height: 350px;
+  opacity: 0.5;
+}
+img:hover {
+  opacity: 1;
 }
 
 .h1,
@@ -40,7 +44,6 @@ th {
 body {
   background-color: aqua;
 }
-
 table {
   position: absolute;
   top: 1117px;
@@ -79,4 +82,15 @@ h5 {
   font-weight: bolder;
   margin: 0;
   padding: 0;
+}
+
+input[type="button"]:hover {
+  background-color: aqua;
+  color: solid black;
+  font-weight: bolder;
+  padding: 1px;
+}
+input[type="button"]:hover {
+  background-color: black !important;
+  color: red !important;
 }
