@@ -6,7 +6,18 @@
   color: white;
   text-align: center;
 }
-
+.space:hover {
+  opacity: 0.5;
+}
+.space1:hover {
+  opacity: 0.5;
+}
+.space2:hover {
+  opacity: 0.5;
+}
+.space3:hover {
+  opacity: 0.5;
+}
 marquee {
   background-color: red;
   color: yellow;
