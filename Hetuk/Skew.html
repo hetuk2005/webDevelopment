@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hetuk</title>
+    <style>
+      .box {
+        display: inline-block;
+        line-height: 100px;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        margin: 20px;
+        text-align: center;
+        font-weight: bolder;
+        color: red;
+        border: 3px solid red;
+        opacity: 0.5;
+      }
+      .box:hover {
+        opacity: 1;
+      }
+      .skew-x {
+        transform: skewX(25deg);
+      }
+      .skew-y {
+        transform: skewY(-25deg);
+      }
+      .skew-xy {
+        transform: skew(25deg, -25deg);
+      }
+      h1 {
+        background-color: yellow;
+        color: red;
+        font-family: cursive;
+        font-weight: bolder;
+        border: 3px solid red;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Different Boxes Using Skew</h1>
+    <div class="box">Normal Box</div>
+    <div class="box skew-x">Skew X</div>
+    <div class="box skew-y">Skew Y</div>
+    <div class="box skew-xy">Skew XY</div>
+  </body>
+</html>

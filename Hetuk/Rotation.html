@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hetuk</title>
+    <style>
+      .box {
+        display: inline-block;
+        line-height: 100px;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        margin: 20px;
+        text-align: center;
+        font-weight: bolder;
+        color: red;
+        border: 3px solid red;
+        opacity: 0.5;
+      }
+      .box:hover {
+        opacity: 1;
+      }
+      .rotate_45:hover {
+        transform: rotate(45deg);
+      }
+      .rotate_90:hover {
+        transform: rotate(90deg);
+      }
+      .rotate_negative:hover {
+        transform: rotate(-45deg);
+      }
+      h1 {
+        background-color: yellow;
+        color: red;
+        font-family: cursive;
+        font-weight: bolder;
+        border: 3px solid red;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+      }
+      body {
+        align-items: center;
+        justify-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Different Boxes Using Rotation</h1>
+    <div class="box">Normal</div>
+    <div class="box rotate_45">45° Rotation</div>
+    <div class="box rotate_90">90° Rotation</div>
+    <div class="box rotate_negative">-45° Rotation</div>
+  </body>
+</html>
