@@ -1,0 +1,30 @@
+.logo > img {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(blue, orange);
+  animation-name: image;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border: 3px solid black;
+}
+
+.logo {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(red, #0909fb);
+}
+@keyframes image {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
