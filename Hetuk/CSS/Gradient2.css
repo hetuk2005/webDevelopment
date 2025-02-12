@@ -1,16 +1,12 @@
-.logo>img {
-    width: 450px;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo>h1 {
     background: radial-gradient(blue, orange);
-    animation-name: image;
+    animation-name: text;
     animation-duration: 5s;
     animation-direction: normal;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     border: 3px solid black;
+    color: radial-gradient(orange, blue);
 }
 
 * {
@@ -21,13 +17,10 @@
 
 .logo {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: radial-gradient(red, #0909fb);
 }
 
-@keyframes image {
+@keyframes text {
     from {
         transform: rotate(0deg);
     }
@@ -36,7 +29,8 @@
     }
 }
 
-.logo {
+
+/* .logo {
     height: 100vh;
     background: radial-gradient( red, orange);
     -webkit-mask-image: url(../Avengers_Logo.svg);
@@ -47,4 +41,4 @@
     mask-size: contain;
     -webkit-mask-position: center;
     mask-position: center;
-}
+} */
