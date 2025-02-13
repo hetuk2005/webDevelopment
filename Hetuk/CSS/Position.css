@@ -1,0 +1,40 @@
+.static {
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+  border: 2px solid blue;
+  margin: 10px;
+}
+.relative {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  left: 30px;
+  background: lightcoral;
+}
+.Absolute {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background: yellow;
+  color: red;
+}
+.Fixed {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  background: lightgreen;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background: orange;
+  padding: 10px;
+}
+.container {
+  position: relative; /* Makes this the reference for absolute child */
+  width: 300px;
+  height: 200px;
+  background: lightgray;
+}
