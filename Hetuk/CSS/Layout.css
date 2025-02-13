@@ -1,0 +1,56 @@
+h1 {
+  background-color: red;
+  color: yellowgreen;
+  text-align: center;
+  font-weight: bolder;
+  border: 0.1cm solid black;
+}
+header {
+  background-color: brown;
+  color: sandybrown;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  word-spacing: 10cm;
+  margin: 0;
+  padding: 0;
+}
+section {
+  background-color: yellow;
+  color: red;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 52%;
+  width: 70%;
+  text-align: center;
+}
+article {
+  background-color: purple;
+  color: silver;
+  margin: 0;
+  padding: 0;
+  border: 0.1cm solid black;
+}
+aside {
+  background-color: gray;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 52%;
+}
+h3 {
+  color: yellow;
+  text-align: center;
+  border: 0.1cm solid black;
+  background-color: red;
+}
+div {
+  position: relative;
+}

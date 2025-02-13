@@ -1,50 +1,46 @@
-.logo>img {
-    width: 450px;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(blue, orange);
-    animation-name: image;
-    animation-duration: 5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    border: 3px solid black;
+.logo > img {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(blue, orange);
+  animation-name: image;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border: 3px solid black;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .logo {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(red, #0909fb);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(red, #0909fb);
 }
 
 @keyframes image {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .logo {
-    height: 100vh;
-    background: radial-gradient( red, orange);
-    -webkit-mask-image: url(../Avengers_Logo.svg);
-    mask-image: url(../Avengers_Logo.svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-position: center;
-    mask-position: center;
+  height: 100vh;
+  background: radial-gradient(red, orange);
+  mask-image: url(../logo.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
 }

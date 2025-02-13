@@ -1,34 +1,40 @@
-.logo>h1 {
-    background: radial-gradient(blue, orange);
-    animation-name: text;
-    animation-duration: 5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    border: 3px solid black;
-    color: radial-gradient(orange, blue);
+.logo > h1 {
+  /* text-align: center; */
+  background: radial-gradient(circle, #1565c0, #f7797d);
+  /* animation-name: text;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+  /* border: 3px solid black; */
+  position: relative;
+  top: 40%;
+  left: 40%;
+  font-size: 50px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .logo {
-    height: 100vh;
-    background: radial-gradient(red, #0909fb);
+  height: 100vh;
+  background: radial-gradient(#ff7eb3, #65d6ce, #b92b27);
+  border: 3px solid black;
 }
 
 @keyframes text {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
 
 /* .logo {
     height: 100vh;
