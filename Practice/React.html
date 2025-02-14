@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetuk</title>
+    <link rel="stylesheet" href="./React.css">
+</head>
+
+<body>
+    <h1>React</h1>
+    <br>
+    <div class="hello">
+        <img src="../Hetuk/logo.svg" alt="React Logo">
+        <br>
+        <div class="left">
+            <h3>React Introduction:-</h3>
+            <p>ReactJS is a component-based JavaScript library used to build dynamic and interactive user interfaces. It simplifies the creation of single-page applications (SPAs) with a focus on performance and maintainability.</p>
+            <ul>
+                <li>It is developed and maintained by Facebook.</li>
+                <li>Uses a virtual DOM for faster updates.</li>
+                <li>Supports a declarative approach to designing UI components.</li>
+                <li>Ensures better application control with one-way data binding.</li>
+            </ul><br>
+            <h3>How Does React Work?</h3>
+            <p>React operates by creating an in-memory virtual DOM rather than directly manipulating the browser’s DOM. It performs necessary manipulations within this virtual representation before applying changes to the actual browser DOM.</p>
+            <h5>Steps For How Does The Process Works:-</h5>
+            <ol>
+                <li>Actual DOM and Virtual DOM</li>
+                <br>
+                <ul>
+                    <li>Initially, there is an Actual DOM(Real DOM) containing a div with two child elements: h1 and h2.</li>
+                    <li>React maintains a previous Virtual DOM to track the UI state before any updates.</li>
+                </ul>
+                <br>
+                <li>Detecting Changes</li>
+                <ul>
+                    <li>When a change occurs (e.g., adding a new h3 element), React generates a New Virtual DOM.</li>
+                    <li>React compares the previous Virtual DOM with the New Virtual DOM using a process called reconciliation.</li>
+                </ul>
+                <br>
+                <li>Efficient DOM Update</li>
+                <ul>
+                    <li>React identifies the differences (in this case, the new h3 element).</li>
+                    <li>Instead of updating the entire DOM, React updates only the changed part in the New Actual DOM, making the update process more efficient.</li>
+                </ul>
+            </ol>
+            <h3>History Of React</h3>
+            <ul>
+                <li>React was developed by Facebook in 2011 to improve the performance of their applications and was officially released as an open-source library in 2013.</li>
+                <li>It was designed to create dynamic, fast, and responsive user interfaces for web applications by focusing on the view layer.</li>
+                <li>React introduced concepts like components (reusable UI pieces) and the virtual DOM (a lightweight copy of the real DOM) for optimizing UI updates.</li>
+                <li>React is now a widely used framework for building modern web and mobile apps, supported by a strong community and major companies.</li>
+            </ul>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>
