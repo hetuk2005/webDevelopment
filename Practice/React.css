@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&display=swap');
 body {
     background: linear-gradient(to bottom right, orange, white, green);
 }
@@ -31,6 +32,7 @@ h3,
 h5,
 p {
     text-align: center;
+    font-family: 'Playfair Display';
 }
 
 @keyframes image {
@@ -50,6 +52,7 @@ h5 {
 .marq {
     background-color: white;
     color: red;
+    font-family: Playfair Display;
     padding: 5px;
     font-size: xx-large;
     border: 1px solid red;
@@ -63,6 +66,7 @@ nav {
     word-spacing: 13cm;
     border: 1px solid red;
     padding: 5px;
+    font-family: Playfair Display;
 }
 
 h1 {
@@ -72,11 +76,13 @@ h1 {
 ol {
     list-style-position: inside;
     text-align: center;
+    font-family: Playfair Display;
 }
 
 ul {
     list-style: inside;
     text-align: left;
+    font-family: Playfair Display;
 }
 
 .left {
