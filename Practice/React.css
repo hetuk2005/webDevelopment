@@ -14,7 +14,7 @@ body {
     height: 100vh;
 }
 
-img {
+.img {
     width: 500px;
     height: 500px;
     position: sticky;
@@ -62,11 +62,33 @@ nav {
     background-color: aquamarine;
     color: black;
     font-size: 30px;
-    text-align: center;
-    word-spacing: 13cm;
-    border: 1px solid red;
+    word-spacing: 5cm;
     padding: 5px;
     font-family: Playfair Display;
+    text-align: center;
+}
+
+.space,
+.space1,
+.space2,
+.space3 {
+    opacity: 1;
+}
+
+.space:hover {
+    opacity: 0.5;
+}
+
+.space1:hover {
+    opacity: 0.5;
+}
+
+.space2:hover {
+    opacity: 0.5;
+}
+
+.space3:hover {
+    opacity: 0.5;
 }
 
 h1 {
@@ -90,4 +112,31 @@ ul {
     top: -57%;
     right: 27%;
     font-size: 30px;
+}
+
+.child1 {
+    position: absolute;
+    right: 85%;
+    display: flex;
+    align-items: center;
+    word-spacing: 3px;
+}
+
+.parent {
+    position: relative;
+    height: 10vh;
+    background-color: aquamarine;
+    border: 1px solid red;
+}
+
+.child2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+img {
+    height: 100px;
+    align-items: left;
+    justify-content: left;
 }
