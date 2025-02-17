@@ -1,0 +1,23 @@
+.parent {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+}
+.child {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  margin: 5px;
+  border: 5px solid black;
+  color: whitesmoke;
+  font-size: 50px;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
