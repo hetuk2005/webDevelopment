@@ -104,7 +104,7 @@ ol {
 ul {
     list-style: inside;
     text-align: left;
-    font-family: Playfair Display;
+    font-family: Playfaisr Display;
 }
 
 .left {
@@ -139,4 +139,30 @@ img {
     height: 100px;
     align-items: left;
     justify-content: left;
+}
+
+.parent1 {
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    left: 87%;
+}
+
+.footer1 {
+    position: absolute;
+    top: 50px;
+    right: 99%;
+}
+
+footer {
+    position: absolute;
+    font-size: xx-large;
+}
+
+.footer2 {
+    position: absolute;
+    left: 40%;
+    top: 130px;
 }
