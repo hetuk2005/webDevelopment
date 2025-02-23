@@ -14,7 +14,7 @@
     height: 900px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 span {
@@ -47,7 +47,7 @@ button:hover {
 
 .child1 {
     gap: 12px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 div {
@@ -79,10 +79,9 @@ div {
 .child2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-be;
-    align-items: center;
+    align-content: space-evenly;
     gap: 12px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .image3 {
@@ -92,19 +91,19 @@ div {
 }
 
 .image4 {
-    height: 240px;
+    height: 215px;
     width: 240px;
     object-fit: cover;
 }
 
 .image5 {
-    height: 240px;
+    height: 215px;
     width: 240px;
     object-fit: cover;
 }
 
 .image6 {
     height: 215px;
-    width: 490px;
+    width: 500px;
     object-fit: cover;
 }
