@@ -5,8 +5,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_34624246_254407bbd8.jpg);
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
 .parent {
-    padding: 10px;
+    padding: 3px;
     margin: 10px;
     font-family: "Playfair Display";
     display: grid;
@@ -79,7 +88,8 @@ div {
 .child2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     gap: 12px;
     /* border: 2px solid blue; */
 }
@@ -97,7 +107,7 @@ div {
 }
 
 .image5 {
-    height: 215px;
+    height: 225px;
     width: 240px;
     object-fit: cover;
 }

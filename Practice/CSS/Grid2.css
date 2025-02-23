@@ -32,6 +32,11 @@ select {
     font-family: Playfair Display;
 }
 
+option,
+select:hover {
+    opacity: 0.5;
+}
+
 div,
 span {
     display: flex;
@@ -84,7 +89,7 @@ button:hover {
     background-color: brown;
 }
 
-img {
+.image7 {
     width: 150px;
     height: 50px;
 }
