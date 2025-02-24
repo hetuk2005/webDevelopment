@@ -89,7 +89,7 @@ select:hover {
     font-weight: bolder;
 }
 
-button:hover {
+.C1:hover {
     background-color: brown;
 }
 
@@ -136,7 +136,7 @@ h1,
     font-family: "Playfair Display";
 }
 
-button:hover {
+.C2:hover {
     transform: scale(1.1);
     animation-timing-function: linear;
     background-color: lightpink;
