@@ -46,7 +46,7 @@ select:hover {
 .A1,
 .A {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 li {
@@ -60,7 +60,7 @@ li:hover {
 
 .A1 {
     color: red;
-    background-color: lightsalmon;
+    background-color: #ffd5d2;
     border-radius: 10px;
     font-size: 13px;
     padding: 3px 6px;
@@ -118,7 +118,7 @@ li:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* border: 1px solid red; */
-    background-image: url(https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_34624246_254407bbd8.jpg);
+    background-image: url(../Images/image8.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -19,6 +19,8 @@
 .child1 {
     padding: 10px;
     margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 option,
@@ -30,6 +32,9 @@ select {
     text-align: center;
     cursor: pointer;
     font-family: Playfair Display;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
 }
 
 option,
@@ -58,7 +63,8 @@ span {
 
 .span-grid {
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
+    justify-items: end;
+    grid-template-rows: repeat(3, 1fr);
     gap: 3px;
 }
 
@@ -69,10 +75,17 @@ span {
     width: 700px;
     align-items: center;
     justify-content: center;
-    /* gap: 3.5cm; */
-    text-align: justify;
-    text-justify: inter-word;
+    gap: 17cm;
     display: flex;
+}
+
+li {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+li:hover {
+    color: red;
 }
 
 button {
