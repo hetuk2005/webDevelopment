@@ -1,0 +1,29 @@
+.a {
+  height: 300px;
+  width: 300px;
+  padding: 5px;
+  background-color: yellow;
+  display: inline;
+  border-radius: 5px solid red;
+}
+.b {
+  height: 300px;
+  width: 300px;
+  padding: 5px;
+  background-color: yellow;
+  display: inline-block;
+  border-radius: 5px solid red;
+}
+.c {
+  height: 300px;
+  width: 300px;
+  padding: 5px;
+  background-color: yellow;
+  display: block;
+  border-radius: 5px solid red;
+}
+img {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
