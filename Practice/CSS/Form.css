@@ -28,13 +28,21 @@ body {
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom right, rgb(252, 2, 43), blue);
   width: 100%;
   height: fit-content;
+  box-shadow: 10px 10px 15px 10px rgb(102, 0, 169);
+}
+.child:hover {
+  background: radial-gradient(rosybrown, orangered);
+  box-shadow: 10px 10px 15px 1000px rosybrown;
 }
 h1 {
   text-align: center;
   font-size: 40px;
+}
+h1:hover {
+  color: blue;
 }
 form {
   margin: 40px;
@@ -42,9 +50,13 @@ form {
 label {
   font-size: 25px;
 }
-input[type="text"],
-input[type="email"],
-input[type="number"] {
+label:hover {
+  color: blue;
+  font-weight: bolder;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover {
   width: 300px;
   height: 25px;
   border-radius: 4px;
@@ -52,8 +64,16 @@ input[type="number"] {
 }
 button {
   border-radius: 5px;
-  width: 200px;
+  width: 150px;
   height: 25px;
-  background-color: orangered;
-  color: whitesmoke;
+  background-color: gold;
+  border: 1px solid black;
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+}
+button:hover {
+  background-color: red;
+  color: yellow;
+  transform: scale(1.1);
 }
