@@ -1,99 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IT+Moderna:wght@100..400&family=Prata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IT+Moderna:wght@100..400&family=Prata&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    font-family: playwrite it moderna;
-    font-size: 30px;
-    font-weight: bolder;
-    /* font-style: italic; */
-    text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: playwrite it moderna;
+  font-size: 30px;
+  font-weight: bolder;
+  /* font-style: italic; */
+  text-transform: uppercase;
 }
 
 .logo,
-.list>ul,
+.list > ul,
 .dropdown,
 .sign-in {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.logo>img {
-    height: 100px;
-    width: 100px;
+.logo > img {
+  height: 100px;
+  width: 100px;
 }
 
-.logo>.text:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-    transform: skew(-15deg);
+.logo > .text:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  transform: skew(-15deg);
 }
 
-.logo>img:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-    transform: skew(-15deg);
+.logo > img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  transform: skew(-15deg);
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border: 1px solid red;
-    height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid red;
+  height: 100px;
 }
 
-.sign-in>img {
-    height: 70px;
-    width: 70px;
-    border-radius: 450px;
-    border: 3px solid red;
+.sign-in > img {
+  height: 70px;
+  width: 70px;
+  border-radius: 450px;
+  border: 3px solid red;
+  transform: rotate(90deg);
 }
 
-.sign-in>img:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-    transform: rotate(70deg);
-    /* filter: drop-shadow(15px 15px 0px red); */
+.sign-in > img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  /* filter: drop-shadow(15px 15px 0px red); */
 }
 
-.list>ul {
-    display: flex;
-    width: 51%;
-    gap: 45px !important;
+.list > ul {
+  display: flex;
+  width: 51%;
+  gap: 45px !important;
 }
 
-.list>ul>li {
-    border-radius: 10px;
-    border: 2px solid red;
+.list > ul > li {
+  border-radius: 10px;
+  border: 2px solid red;
 }
 
-.list>ul>li:hover {
-    background-color: black;
-    color: red;
-    transform: scale(1.1);
-    transition: 0.3s;
-    transform: skew(-15deg);
+.list > ul > li:hover {
+  background-color: black;
+  color: red;
+  transform: scale(1.1);
+  transition: 0.3s;
+  transform: skew(-15deg);
 }
 
 .text {
-    text-align: center;
+  text-align: center;
 }
 
-.dropdown>select {
-    text-align: center;
-    opacity: 0.5;
-    border-radius: 10px;
-    border: 1px solid red;
+.dropdown > select {
+  text-align: center;
+  opacity: 0.5;
+  border-radius: 10px;
+  border: 1px solid red;
 }
 
-.dropdown>select:hover {
-    opacity: 1;
-    transform: scale(1.1);
-    transition: 0.3s;
-    transform: skew(-15deg);
-    background-color: black;
-    color: red;
+.dropdown > select:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 0.3s;
+  transform: skew(-15deg);
+  background-color: black;
+  color: red;
 }
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: red;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+} */
