@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* display: inline-block; */
+}
+
+.parent {
+    height: 200vh;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* padding: 10px; */
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.child1 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    gap: 20px;
+}
+
+.P {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.B {
+    border-radius: 15px;
+    font-size: larger;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+}
+
+.profile>.A {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.profile>.A>.profile_img>img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.profile>.A>.side_text {
+    visibility: visible;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.profile>.text {
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+
+.profile>.text>.P1>.B1 {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.card>.container {
+    text-align: center;
+    padding: 10px 20px;
+}

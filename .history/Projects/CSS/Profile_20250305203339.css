@@ -155,25 +155,12 @@ nav {
     color: black;
 }
 
-.card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border: 1px solid black; */
-    /* padding: 10px;
-    border-radius: 20px;
-    margin: 10px; */
-}
-
-.card>.container>p {
+.card>.container {
     text-align: center;
     padding: 10px 20px;
-    border: 1px solid black;
 }
 
-.card>.container>img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    border: 1px solid black;
-}
+.card>.ui_logo,
+.card>.web_logo,
+.card>.design_logo,
+.card>.development_logo {}
