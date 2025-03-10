@@ -1,0 +1,9 @@
+.container {
+  column-count: 5;
+  column-gap: 45px;
+  column-rule-color: red;
+  column-rule-width: 5px;
+  column-rule-style: dotted;
+  /* height: 1vh; */
+  /* column-fill: auto; */
+}

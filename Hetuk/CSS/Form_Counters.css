@@ -1,0 +1,8 @@
+body {
+  counter-reset: value;
+  position: relative;
+}
+h2::before {
+  counter-increment: value;
+  content: "Points " counter(value) ": ";
+}
