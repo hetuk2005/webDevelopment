@@ -64,17 +64,30 @@ img {
   opacity: 1;
 }
 .logo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: auto;
   /* border: 1px solid #fff; */
   position: relative;
   top: 15%;
+  animation-name: image;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes image {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .logo > img {
-  height: 200px;
-  width: 200px;
-  border-radius: 35%;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
   position: absolute;
 }
 .active {
