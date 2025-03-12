@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #01021e;
+}
+
+body {
+  height: 100vh;
+  border: solid #01021e;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(11, 65px);
+  margin-top: 27%;
+  position: relative;
+  height: 40%;
+  align-items: center;
+  justify-self: center;
+  border: 5px solid #494b4b;
+  gap: 10px;
+  border-radius: 30px;
+}
+.left,
+.right {
+  height: 50px;
+  width: 50px;
+  fill: whitesmoke;
+}
+.btn,
+.left,
+.right {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Roboto;
+  border-radius: 50px;
+  border: 3px solid gray;
+  background-color: transparent;
+  color: whitesmoke;
+  height: 66px;
+  width: 66px;
+  opacity: 0.5;
+}
+
+.logo > img {
+  height: 700px;
+  width: 1000px;
+  object-fit: contain;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 18%;
+  left: 16%;
+}
+
+.logo {
+  border: 3px solid white;
+}
+
+.active {
+  background-color: whitesmoke;
+  height: 66px;
+  width: 66px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Roboto;
+  border-radius: 50px;
+  border: 3px solid gray;
+}
+
+.btn:hover,
+.left:hover,
+.right:hover,
+.active:hover {
+  color: #000;
+  background-color: whitesmoke;
+  opacity: 1;
+  transform: scale(1.1);
+  border: 3px solid yellow;
+}
