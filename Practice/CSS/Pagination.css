@@ -9,7 +9,7 @@
 
 body {
   height: 100vh;
-  border: solid #01021e;
+  background-color: #01021e;
 }
 
 .container {
@@ -23,6 +23,7 @@ body {
   border: 5px solid #494b4b;
   gap: 10px;
   border-radius: 30px;
+  padding: 15px;
 }
 .left,
 .right {
@@ -54,9 +55,12 @@ body {
   bottom: 18%;
   left: 16%;
 }
+.logo > img:hover {
+  transform: scale(1.1);
+}
 
 .logo {
-  border: 3px solid white;
+  border: 3px solid #01021e;
 }
 
 .active {

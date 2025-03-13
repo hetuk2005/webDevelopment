@@ -1,0 +1,12 @@
+.text {
+  font-size: 70px;
+  text-align: center;
+  background: radial-gradient(circle, #e95703, #063bfb);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 15px;
+  border: 10px solid transparent;
+  border-image: linear-gradient(blue, red) 30 stretch;
+}
+.img {
+}
