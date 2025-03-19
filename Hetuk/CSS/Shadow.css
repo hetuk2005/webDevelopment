@@ -1,9 +1,10 @@
 img {
   height: 500px;
   width: 500px;
-  box-shadow: 5px 5px 10px 5px red;
-  /* filter: drop-shadow(15px 15px 15px red); */
+  /* box-shadow: 5px 5px 10px 5px red; */
+  filter: drop-shadow(15px 25px 25px red);
   object-fit: cover;
+  /* background-color: aqua; */
 }
 body {
   position: absolute;
