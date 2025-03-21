@@ -70,6 +70,7 @@ nav {
   border-radius: 50%;
   border: 2px solid red;
   opacity: 0.5;
+  object-fit: cover;
 }
 .profile > .A > .profile_img > img:hover {
   transform: scale(1.1);
@@ -87,7 +88,7 @@ nav {
   border-radius: 25px;
   position: absolute;
   left: 53%;
-  bottom: 79.5%;
+  bottom: 78.5%;
   background-color: whitesmoke;
   transform: rotate(-10deg);
   opacity: 0.5;
@@ -252,7 +253,7 @@ nav {
     align-content: center;
   }
   .profile > .A > .side_text {
-    bottom: 48%;
+    bottom: 46.5%;
     left: 59.5%;
   }
 
