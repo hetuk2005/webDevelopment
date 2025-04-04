@@ -15,9 +15,13 @@ nav {
   justify-content: center;
   align-items: center;
 }
-img {
-  height: 70px;
-  width: 70px;
+.img3,
+.img4,
+.img5 {
+  height: 55px;
+  width: 55px;
+  padding-top: 10px;
+  object-fit: contain;
 }
 .book_text,
 .call_text,
@@ -25,6 +29,8 @@ img {
   display: flex;
   width: 250px;
   border: 1px solid red;
+  justify-content: center;
+  padding-bottom: 15px;
 }
 .grid {
   display: grid;
@@ -32,22 +38,22 @@ img {
   padding-left: 10px;
 }
 .img1 {
-  height: 100px;
-  width: 350px;
+  height: 70px;
+  width: 250px;
 }
 .img2 {
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
 }
 .image_text {
   display: flex;
   gap: 20px;
+  padding-right: 50px;
 }
 .images {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
+  gap: 25px;
+  padding-right: 150px;
 }
 .text1 {
   font-weight: bolder;
