@@ -13,7 +13,7 @@ nav {
     padding-top: 15px;
     gap: 20px;
     /* height: 50vh; */
-    /* border: 1px solid black; */
+    border: 1px solid black;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -32,7 +32,7 @@ nav {
 .mail_text {
     display: flex;
     width: 270px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     justify-content: center;
     padding-bottom: 15px;
 }
@@ -84,31 +84,31 @@ nav {
     display: flex;
     padding-left: 5px;
     justify-content: center;
-    gap: 8px;
 }
 
 .India>.img6 {
     height: 50px;
-    /* width: 50px; */
+    width: 50px;
     padding-top: 10px;
     object-fit: contain;
 }
 
 .India>.img7 {
     height: 40px;
-    /* width: 40px; */
-    padding-top: 23px;
+    width: 40px;
+    padding-top: 20px;
     object-fit: contain;
 }
 
 .child2 {
     display: flex;
-    padding-top: 10px;
-    /* border: 1px solid black; */
+    padding-top: 20px;
+    gap: 20px;
+    border: 1px solid black;
     justify-content: space-evenly;
     align-items: center;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     background-color: rgb(125, 163, 244);
 }
 
@@ -119,69 +119,12 @@ nav {
     justify-content: center;
     font-weight: bold;
     align-items: center;
-    font-size: larger;
-    padding-right: 60px;
 }
 
 .child2>input {
-    height: 45px;
-    background-color: rgb(125, 163, 244);
+    height: 50px;
     width: 200px;
     padding-left: 10px;
-    font-weight: bold;
-    border: 2px solid black;
-}
-
-.child2>input::placeholder {
-    color: white;
-    text-align: center;
     font-size: large;
-    font-weight: bolder;
-    opacity: 0.8;
-}
-
-.home_img {
-    background-image: url(../Images/Main\ Image.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 80px 0;
-    position: relative;
-    color: white
-}
-
-.home_img>.home_child {
-    display: flex;
-    gap: 20px;
-}
-
-.home_img>.home_child>.home_content,
-span {
-    font-size: 20px;
     font-weight: bold;
-}
-
-.home_img>h3 {
-    font-size: 37px;
-    font-weight: bolder;
-    margin-bottom: 15px;
-}
-
-.home_img>.home_description {
-    font-size: 19px;
-    margin-bottom: 25px;
-    font-weight: bold;
-}
-
-.home_img>.home_child>span {
-    color: red
-}
-
-.home_img>.enquire_now {
-    background-color: #1da1f2;
-    font-weight: bold;
-    color: white;
-    font-size: 17px;
-    width: 170px;
-    height: 40px;
 }

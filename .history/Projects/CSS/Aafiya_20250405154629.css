@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+}
+
+.child1 {
+    display: flex;
+    padding-top: 15px;
+    gap: 20px;
+    /* height: 50vh; */
+    border: 1px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img3,
+.img4,
+.img5 {
+    height: 60px;
+    width: 60px;
+    padding-top: 10px;
+    object-fit: contain;
+}
+
+.book_text,
+.call_text,
+.mail_text {
+    display: flex;
+    width: 270px;
+    border: 1px solid red;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.grid {
+    display: grid;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.img1 {
+    height: 70px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.img2 {
+    height: 70px;
+    width: 80px;
+    object-fit: contain;
+}
+
+.image_text {
+    display: flex;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.images {
+    display: flex;
+    gap: 25px;
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1 {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.text {
+    font-weight: bold;
+    color: gray;
+    font-size: large;
+}
+
+.India {
+    display: flex;
+    padding-left: 5px;
+    justify-content: center;
+}
+
+.India>.img6 {
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+    object-fit: contain;
+}
+
+.India>.img7 {
+    height: 40px;
+    width: 40px;
+    padding-top: 20px;
+    object-fit: contain;
+}

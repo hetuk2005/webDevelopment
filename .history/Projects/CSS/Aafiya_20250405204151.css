@@ -145,7 +145,7 @@ nav {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 80px 0;
+    padding: 80px 50px;
     position: relative;
     color: white
 }
@@ -168,20 +168,11 @@ span {
 }
 
 .home_img>.home_description {
-    font-size: 19px;
+    font-size: 20px;
     margin-bottom: 25px;
     font-weight: bold;
 }
 
-.home_img>.home_child>span {
+.home_img>span {
     color: red
-}
-
-.home_img>.enquire_now {
-    background-color: #1da1f2;
-    font-weight: bold;
-    color: white;
-    font-size: 17px;
-    width: 170px;
-    height: 40px;
 }

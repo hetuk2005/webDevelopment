@@ -145,7 +145,7 @@ nav {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 80px 0;
+    padding: 80px 50px;
     position: relative;
     color: white
 }
@@ -168,7 +168,7 @@ span {
 }
 
 .home_img>.home_description {
-    font-size: 19px;
+    font-size: 20px;
     margin-bottom: 25px;
     font-weight: bold;
 }
@@ -183,5 +183,5 @@ span {
     color: white;
     font-size: 17px;
     width: 170px;
-    height: 40px;
+    height: 50px;
 }
