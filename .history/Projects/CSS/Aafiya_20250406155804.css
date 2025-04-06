@@ -207,8 +207,9 @@ span {
     display: flex;
     width: 100%;
     gap: 50px;
-    margin-bottom: 10px;
     border-bottom: 2px dashed blue;
+    justify-content: center;
+    align-items: center;
 }
 
 .treatment_overview>.treatment_text {
@@ -238,12 +239,6 @@ span {
     padding-left: 70px;
 }
 
-.eligibility_for_treatment>.eligibility_text {
-    border-bottom: 2px dashed blue;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-}
-
 .eligibility_for_treatment>.eligibility_text>ul {
     list-style-type: circle;
     padding-left: 23px;
@@ -253,54 +248,4 @@ span {
     color: blue;
     font-size: 30px;
     font-weight: bold;
-}
-
-.eligibility_for_treatment>.eligibility_form>h3 {
-    font-size: 35px;
-    color: blue;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.eligibility_form {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    border-radius: 7px;
-    padding: 20px;
-}
-
-.eligibility_for_treatment>.eligibility_form>p {
-    font-size: 25px;
-}
-
-.eligibility_for_treatment>.eligibility_form>form>input {
-    height: 40px;
-    width: 300px;
-    border: 2px solid black;
-    border-radius: 7px;
-}
-
-.eligibility_for_treatment>.eligibility_form>form>input::placeholder {
-    color: gray;
-    padding-left: 15px;
-}
-
-.eligibility_for_treatment>.eligibility_form>form>.textarea {
-    height: 100px;
-    width: 300px;
-    border: 2px solid black;
-    border-radius: 7px;
-}
-
-
-/*.eligibility_for_treatment>.eligibility_form>form>.textarea::placeholder {
-    padding-bottom: 70px;
-}*/
-
-.eligibility_for_treatment>.eligibility_form>form>button {
-    background: linear-gradient(to right, #00aaff, #66ccff);
-    color: white;
-    width: 81%;
-    border-radius: 7px;
-    border: none;
-    height: 45px;
 }

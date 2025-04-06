@@ -207,7 +207,6 @@ span {
     display: flex;
     width: 100%;
     gap: 50px;
-    margin-bottom: 10px;
     border-bottom: 2px dashed blue;
 }
 
@@ -238,12 +237,6 @@ span {
     padding-left: 70px;
 }
 
-.eligibility_for_treatment>.eligibility_text {
-    border-bottom: 2px dashed blue;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-}
-
 .eligibility_for_treatment>.eligibility_text>ul {
     list-style-type: circle;
     padding-left: 23px;
@@ -259,7 +252,6 @@ span {
     font-size: 35px;
     color: blue;
     font-weight: bold;
-    font-style: italic;
 }
 
 .eligibility_form {
