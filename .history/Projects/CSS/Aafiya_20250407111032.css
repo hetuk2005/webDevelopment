@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    border: 2px solid red;
+}
+
 nav {
     width: 100%;
 }

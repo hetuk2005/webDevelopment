@@ -210,16 +210,17 @@ span {
     margin-bottom: 10px;
     border-bottom: 2px dashed blue;
     margin-left: 70px;
+    margin-right: 100px;
 }
 
 .treatment_overview>.treatment_text {
-    padding-top: 67px;
-    padding-bottom: 50px;
+    padding-top: 130px;
 }
 
 .treatment_overview>.treatment_text>p {
     font-size: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 17px;
+    font-weight: normal;
 }
 
 .treatment_overview>.treatment_text>h3 {
@@ -228,12 +229,11 @@ span {
 }
 
 .treatment_overview>.treatment_img>img {
-    height: 480px;
-    width: 700px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    height: 580px;
+    width: 800px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     object-fit: contain;
-    margin-right: 70px;
 }
 
 .eligibility_for_treatment {
@@ -246,6 +246,8 @@ span {
 
 .eligibility_for_treatment>.eligibility_text {
     border-bottom: 2px dashed blue;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .eligibility_for_treatment>.eligibility_text>h3 {
@@ -323,7 +325,7 @@ span {
 .preparation_of_treatment {
     border-bottom: 2px dashed blue;
     margin-bottom: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     gap: 50px;
     padding-top: 50px;
     margin-left: 70px;

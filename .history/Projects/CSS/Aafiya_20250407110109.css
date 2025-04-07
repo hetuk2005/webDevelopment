@@ -1,0 +1,323 @@
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    .child1 {
+        display: flex;
+        padding-top: 15px;
+        gap: 20px;
+        /* height: 50vh; */
+        /* border: 1px solid black; */
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .img3,
+    .img4,
+    .img5 {
+        height: 60px;
+        width: 60px;
+        padding-top: 10px;
+        object-fit: contain;
+    }
+    
+    .book_text,
+    .call_text,
+    .mail_text {
+        display: flex;
+        width: 270px;
+        /* border: 1px solid red; */
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+    
+    .grid {
+        display: grid;
+        text-align: left;
+        padding-left: 10px;
+    }
+    
+    .img1 {
+        height: 70px;
+        width: 300px;
+        object-fit: contain;
+    }
+    
+    .img2 {
+        height: 80px;
+        width: 70px;
+        object-fit: contain;
+    }
+    
+    .image_text {
+        display: flex;
+        gap: 20px;
+        padding-right: 50px;
+    }
+    
+    .images {
+        display: flex;
+        gap: 25px;
+        padding-left: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text1 {
+        font-weight: bolder;
+        font-size: large;
+    }
+    
+    .text {
+        font-weight: bold;
+        color: gray;
+        font-size: large;
+    }
+    
+    .India {
+        display: flex;
+        padding-left: 5px;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .India>.img6 {
+        height: 50px;
+        /* width: 50px; */
+        padding-top: 10px;
+        object-fit: contain;
+    }
+    
+    .India>.img7 {
+        height: 40px;
+        /* width: 40px; */
+        padding-top: 23px;
+        object-fit: contain;
+    }
+    
+    .child2 {
+        display: flex;
+        padding-top: 10px;
+        /* border: 1px solid black; */
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        padding-bottom: 10px;
+        background-color: rgb(125, 163, 244);
+    }
+    
+    .child2>ul {
+        list-style-type: none;
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        font-weight: bold;
+        align-items: center;
+        font-size: larger;
+        padding-right: 60px;
+    }
+    
+    .child2>input {
+        height: 45px;
+        background-color: rgb(125, 163, 244);
+        width: 200px;
+        padding-left: 10px;
+        font-weight: bold;
+        border: 2px solid black;
+    }
+    
+    .child2>input::placeholder {
+        color: white;
+        text-align: center;
+        font-size: large;
+        font-weight: bolder;
+        opacity: 0.8;
+    }
+    
+    .home_img {
+        background-image: url(../Images/Main\ Image.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 80px 0;
+        padding-left: 70px;
+        position: relative;
+        color: white
+    }
+    
+    .home_img>.home_child {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .home_img>.home_child>.home_content,
+    span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .home_img>h3 {
+        font-size: 37px;
+        font-weight: bolder;
+        margin-bottom: 15px;
+    }
+    
+    .home_img>.home_description {
+        font-size: 19px;
+        margin-bottom: 25px;
+        font-weight: bold;
+    }
+    
+    .home_img>.home_child>span {
+        color: red
+    }
+    
+    .home_img>.enquire_now {
+        background-color: #1da1f2;
+        font-weight: bold;
+        color: white;
+        font-size: 17px;
+        width: 170px;
+        height: 40px;
+    }
+    
+    .nav2>ul {
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
+        padding-left: 60px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid gray;
+        font-size: larger;
+        font-weight: 300;
+    }
+    
+    .nav2>ul>.list:hover {
+        text-decoration: underline;
+    }
+    
+    .treatment_overview {
+        display: flex;
+        width: 100%;
+        gap: 50px;
+        margin-bottom: 10px;
+        border-bottom: 2px dashed blue;
+        margin-left: 70px;
+    }
+    
+    .treatment_overview>.treatment_text {
+        padding-top: 130px;
+        /* } */
+        .treatment_overview>.treatment_text>p {
+            font-size: 25px;
+            padding-bottom: 25px;
+            font-weight: normal;
+        }
+        .treatment_overview>.treatment_text>h3 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .treatment_overview>.treatment_img>img {
+            height: 480px;
+            width: 700px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            object-fit: contain;
+            margin-right: 70px;
+        }
+        .eligibility_for_treatment {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            padding-top: 50px;
+            margin-left: 70px;
+        }
+        .eligibility_for_treatment>.eligibility_text {
+            border-bottom: 2px dashed blue;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+        .eligibility_for_treatment>.eligibility_text>h3 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .eligibility_for_treatment>.eligibility_text>ul {
+            list-style-type: circle;
+            padding-left: 23px;
+        }
+        .eligibility_for_treatment>.eligibility_text>ul>li::marker {
+            color: blue;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .eligibility_for_treatment>.eligibility_form>h3 {
+            font-size: 35px;
+            color: blue;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .eligibility_form {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            border-radius: 7px;
+            padding: 20px;
+        }
+        .eligibility_for_treatment>.eligibility_form>p {
+            font-size: 20px;
+        }
+        .eligibility_for_treatment>.eligibility_form>form>input {
+            height: 40px;
+            width: 300px;
+            gap: 20px;
+            border: 2px solid black;
+            border-radius: 7px;
+        }
+        .eligibility_for_treatment>.eligibility_form>form>input::placeholder {
+            color: gray;
+            padding-left: 15px;
+        }
+        .eligibility_for_treatment>.eligibility_form>form>.textarea {
+            height: 100px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 7px;
+        }
+        /*.eligibility_for_treatment>.eligibility_form>form>.textarea::placeholder {
+    padding-bottom: 70px;
+}*/
+        .eligibility_for_treatment>.eligibility_form>form>button {
+            background: linear-gradient(to right, #00aaff, #66ccff);
+            color: white;
+            width: 100%;
+            border-radius: 7px;
+            border: none;
+            height: 45px;
+        }
+        .preparation_of_treatment>h3 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .preparation_of_treatment {
+            border-bottom: 2px dashed blue;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            gap: 50px;
+            padding-top: 50px;
+            margin-left: 70px;
+            width: 50%;
+        }
+        .preparation_of_treatment>ul {
+            list-style-type: circle;
+            padding-left: 23px;
+        }
+        .preparation_of_treatment>ul>li::marker {
+            color: blue;
+            font-size: 30px;
+            font-weight: bold;
+        }

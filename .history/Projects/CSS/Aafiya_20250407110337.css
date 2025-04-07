@@ -213,8 +213,7 @@ span {
 }
 
 .treatment_overview>.treatment_text {
-    padding-top: 67px;
-    padding-bottom: 50px;
+    padding-top: 110px;
 }
 
 .treatment_overview>.treatment_text>p {
@@ -246,6 +245,8 @@ span {
 
 .eligibility_for_treatment>.eligibility_text {
     border-bottom: 2px dashed blue;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .eligibility_for_treatment>.eligibility_text>h3 {
@@ -323,7 +324,7 @@ span {
 .preparation_of_treatment {
     border-bottom: 2px dashed blue;
     margin-bottom: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     gap: 50px;
     padding-top: 50px;
     margin-left: 70px;

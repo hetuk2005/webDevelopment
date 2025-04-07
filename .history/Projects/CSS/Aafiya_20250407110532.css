@@ -246,6 +246,8 @@ span {
 
 .eligibility_for_treatment>.eligibility_text {
     border-bottom: 2px dashed blue;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .eligibility_for_treatment>.eligibility_text>h3 {
