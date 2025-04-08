@@ -497,9 +497,9 @@ span {
 .patient_stories {
     border-bottom: 2px dashed blue;
     margin-bottom: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     gap: 50px;
-    padding-top: 50px;
+    padding-top: 70px;
     margin-left: 70px;
     width: 50%;
 }
@@ -507,11 +507,12 @@ span {
 .patient_stories>h3 {
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .patient_stories>.stories_img {
     border: 1px solid gray;
-    width: 400px;
+    width: 450px;
     padding-left: 30px;
     padding-top: 20px;
     padding-right: 20px;
@@ -519,15 +520,16 @@ span {
 
 .patient_stories>.stories_img>.text1 {
     display: flex;
-    font-size: medium;
+    font-size: 15px;
     font-weight: bold;
     gap: 50px;
 }
 
 .patient_stories>.stories_img>.text1>.stories_text>.quotes {
-    height: 60px;
-    width: 60px;
-    margin-left: 240px;
+    height: 70px;
+    width: 70px;
+    margin-right: 100px;
+    margin-left: 200px;
     object-fit: contain;
 }
 

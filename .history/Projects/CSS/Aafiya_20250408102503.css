@@ -509,30 +509,10 @@ span {
     font-weight: bold;
 }
 
-.patient_stories>.stories_img {
-    border: 1px solid gray;
-    width: 400px;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-right: 20px;
-}
-
-.patient_stories>.stories_img>.text1 {
-    display: flex;
-    font-size: medium;
-    font-weight: bold;
-    gap: 50px;
-}
-
-.patient_stories>.stories_img>.text1>.stories_text>.quotes {
-    height: 60px;
-    width: 60px;
-    margin-left: 240px;
-    object-fit: contain;
-}
-
-.patient_stories>.patients {
-    height: 100px;
-    width: 100px;
+.patient_stories>.stories_img>.quotes {
+    height: 70px;
+    width: 70px;
+    margin-left: 200px;
+    margin-bottom: 20px;
     object-fit: contain;
 }

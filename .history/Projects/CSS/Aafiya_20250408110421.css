@@ -525,9 +525,9 @@ span {
 }
 
 .patient_stories>.stories_img>.text1>.stories_text>.quotes {
-    height: 60px;
-    width: 60px;
-    margin-left: 240px;
+    height: 65px;
+    width: 65px;
+    margin-left: 230px;
     object-fit: contain;
 }
 

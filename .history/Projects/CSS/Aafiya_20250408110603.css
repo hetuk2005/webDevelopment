@@ -515,6 +515,7 @@ span {
     padding-left: 30px;
     padding-top: 20px;
     padding-right: 20px;
+    margin-bottom: 50px;
 }
 
 .patient_stories>.stories_img>.text1 {
@@ -534,5 +535,6 @@ span {
 .patient_stories>.patients {
     height: 100px;
     width: 100px;
+    margin-bottom: 50px;
     object-fit: contain;
 }

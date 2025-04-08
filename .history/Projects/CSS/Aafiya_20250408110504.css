@@ -534,5 +534,6 @@ span {
 .patient_stories>.patients {
     height: 100px;
     width: 100px;
+    margin-bottom: 50px;
     object-fit: contain;
 }
