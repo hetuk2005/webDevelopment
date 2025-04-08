@@ -499,13 +499,13 @@ h4 {
     font-size: 30px;
     font-weight: 500;
     padding-left: 70px;
-    padding-top: 20px;
 }
 
 .patient_stories {
+    border-bottom: 2px dashed blue;
     margin-bottom: 10px;
     padding-bottom: 30px;
-    gap: 17px;
+    gap: 20px;
     padding-top: 30px;
     margin-left: 70px;
     width: 100%;
@@ -586,7 +586,7 @@ h4 {
 .P {
     display: flex;
     gap: 10px;
-    padding-top: 33.5px;
+    padding: 10px 0;
 }
 
 .P>img {

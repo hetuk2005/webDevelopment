@@ -495,21 +495,14 @@ nav {
     color: gray;
 }
 
-h4 {
-    font-size: 30px;
-    font-weight: 500;
-    padding-left: 70px;
-    padding-top: 20px;
-}
-
 .patient_stories {
+    border-bottom: 2px dashed blue;
     margin-bottom: 10px;
     padding-bottom: 30px;
-    gap: 17px;
-    padding-top: 30px;
+    gap: 50px;
+    padding-top: 50px;
     margin-left: 70px;
-    width: 100%;
-    display: flex;
+    width: 50%;
 }
 
 .patient_stories>h3 {
@@ -529,7 +522,6 @@ h4 {
     display: flex;
     font-size: 13px;
     font-weight: 500;
-    margin-bottom: 13px;
 }
 
 .patient_stories>.stories_img>.text1>.quotes {
@@ -575,31 +567,9 @@ h4 {
     display: flex;
     font-size: 13px;
     font-weight: 500;
-    margin-bottom: 7px;
 }
 
 .patient_stories>.S>.A>.quotes {
     height: 40px;
-    padding-left: 110px;
-}
-
-.P {
-    display: flex;
-    gap: 10px;
-    padding-top: 33.5px;
-}
-
-.P>img {
-    width: 50px;
-    height: 50px;
-}
-
-.P>.F>h5 {
-    font-size: large;
-    font-weight: normal;
-}
-
-.P>.F>p {
-    font-size: 13px;
-    color: gray;
+    padding-left: 150px;
 }

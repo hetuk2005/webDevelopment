@@ -586,7 +586,7 @@ h4 {
 .P {
     display: flex;
     gap: 10px;
-    padding-top: 33.5px;
+    padding: 13px 0;
 }
 
 .P>img {
