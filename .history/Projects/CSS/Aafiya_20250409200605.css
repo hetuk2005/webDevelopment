@@ -891,6 +891,7 @@ h4 {
 .footer2>.child_footer>.flex>img {
     height: 50px;
     width: 50px;
+    margin-bottom: 15px;
 }
 
 .footer2>.child_footer>p {

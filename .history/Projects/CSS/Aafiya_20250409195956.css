@@ -868,7 +868,6 @@ h4 {
 .footer2>.child_footer {
     background-color: white;
     border-radius: 7px;
-    height: 180px;
 }
 
 .footer2>.child_footer>.flex {
@@ -879,22 +878,11 @@ h4 {
 }
 
 .footer2>.child_footer>.flex>.flex1>h3 {
-    font-size: small;
-    font-weight: 500;
-}
-
-.footer2>.child_footer>.flex>.flex1>h2 {
-    font-size: 17px;
+    font-size: smaller;
     font-weight: 500;
 }
 
 .footer2>.child_footer>.flex>img {
     height: 50px;
     width: 50px;
-}
-
-.footer2>.child_footer>p {
-    font-size: medium;
-    font-weight: 500;
-    color: grey;
 }

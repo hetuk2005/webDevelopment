@@ -868,33 +868,4 @@ h4 {
 .footer2>.child_footer {
     background-color: white;
     border-radius: 7px;
-    height: 180px;
-}
-
-.footer2>.child_footer>.flex {
-    display: flex;
-    padding-top: 50px;
-    padding-left: 50px;
-    gap: 30px;
-}
-
-.footer2>.child_footer>.flex>.flex1>h3 {
-    font-size: small;
-    font-weight: 500;
-}
-
-.footer2>.child_footer>.flex>.flex1>h2 {
-    font-size: 17px;
-    font-weight: 500;
-}
-
-.footer2>.child_footer>.flex>img {
-    height: 50px;
-    width: 50px;
-}
-
-.footer2>.child_footer>p {
-    font-size: medium;
-    font-weight: 500;
-    color: grey;
 }

@@ -837,64 +837,27 @@ h4 {
 .footer2 {
     background-image: url(../Images/dubai.jpg);
     display: flex;
-    gap: 30px;
 }
 
-.footer2>.list>h5 {
+.footer2>h5 {
     padding-top: 50px;
-    padding-left: 40px;
     font-size: larger;
+    text-align: center;
     font-weight: 500;
     color: white;
-    margin-bottom: 20px;
 }
 
-.footer2>.list>ul>li {
+.footer2>ul>li {
+    text-align: center;
     list-style-type: none;
-    padding-left: 60px;
-    font-size: smaller;
-    margin-bottom: 4px;
+    font-size: small;
     font-weight: 300;
     counter-reset: value;
     color: white;
 }
 
-.footer2>.list>ul>li::before {
+.footer2>ul>li::before {
     counter-increment: value;
     content: "-  ";
     font-weight: bold;
-}
-
-.footer2>.child_footer {
-    background-color: white;
-    border-radius: 7px;
-    height: 180px;
-}
-
-.footer2>.child_footer>.flex {
-    display: flex;
-    padding-top: 50px;
-    padding-left: 50px;
-    gap: 30px;
-}
-
-.footer2>.child_footer>.flex>.flex1>h3 {
-    font-size: small;
-    font-weight: 500;
-}
-
-.footer2>.child_footer>.flex>.flex1>h2 {
-    font-size: 17px;
-    font-weight: 500;
-}
-
-.footer2>.child_footer>.flex>img {
-    height: 50px;
-    width: 50px;
-}
-
-.footer2>.child_footer>p {
-    font-size: medium;
-    font-weight: 500;
-    color: grey;
 }
