@@ -518,7 +518,7 @@ h4 {
 }
 
 .patient_stories > .stories_img {
-  border: 1px solid gray;
+  border: 1px solid grey;
   width: 400px;
   padding-left: 20px;
   padding-top: 20px;
@@ -564,7 +564,7 @@ h4 {
 }
 
 .patient_stories > .S {
-  border: 1px solid gray;
+  border: 1px solid grey;
   width: 400px;
   padding-left: 20px;
   padding-top: 20px;
@@ -788,6 +788,50 @@ h4 {
   color: red;
 }
 
-.footer {
+.footer1 {
   background-image: url(../Images/Footer\ Image.png);
+  background-position: center;
+  background-color: rgb(70, 162, 201);
+  background-size: fill;
+  height: 300px;
+  text-align: center;
+  color: white;
+}
+
+.footer1 > h5 {
+  padding-top: 50px;
+  font-size: larger;
+}
+
+.footer1 > h2 {
+  font-size: 43px;
+  font-weight: 500;
+}
+
+.footer1 > .flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.footer1 > .flex > h1 {
+  border-left: 1px solid white;
+  padding-left: 13px;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.footer1 > .flex > button {
+  width: 200px;
+  background-color: blue;
+  color: white;
+  font-size: medium;
+  border: 2px transparent;
+  text-align: center;
+}
+
+.footer2 {
+  background-image: url(../Images/dubai.jpg);
 }
