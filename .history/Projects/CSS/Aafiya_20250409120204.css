@@ -698,9 +698,3 @@ h4 {
     font-weight: 600;
     margin-top: 10px;
 }
-
-.top_doctors>.parent>.card>.doctors {
-    font-size: 14px;
-    margin-top: 10px;
-    color: gray;
-}
