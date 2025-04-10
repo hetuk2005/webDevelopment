@@ -858,7 +858,7 @@ h4 {
 
 .footer2>.parent_list>.list>ul>li {
     list-style-type: none;
-    padding-left: 50px;
+    padding-left: 60px;
     font-size: 14.5px;
     margin-bottom: 4px;
     font-weight: 500;
@@ -924,14 +924,14 @@ h4 {
     font-weight: 500;
     color: white;
     margin-bottom: 20px;
-    margin-left: 33.5px;
+    padding-left: 22px;
 }
 
 .footer2>.parent_list>.bottom_list>ul>li {
     list-style-type: none;
     font-size: 14.5px;
     margin-bottom: 4px;
-    margin-left: 40px;
+    margin-left: 87px;
     font-weight: 500;
     counter-reset: value;
     color: white;

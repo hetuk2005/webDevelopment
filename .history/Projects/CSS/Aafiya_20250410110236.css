@@ -836,41 +836,34 @@ h4 {
 
 .footer2 {
     background-image: url(../Images/dubai.jpg);
-    position: relative;
-    margin-bottom: 10px;
-}
-
-.footer2>.parent_list {
     display: flex;
-    padding-top: 50px;
-    padding-left: 50px;
     gap: 50px;
+    position: relative;
 }
 
-.footer2>.parent_list>.list>h5 {
+.footer2>.list>h5 {
     padding-top: 50px;
     padding-left: 40px;
-    font-size: 21px;
+    font-size: x-large;
     font-weight: 500;
     color: white;
     margin-bottom: 20px;
 }
 
-.footer2>.parent_list>.list>ul>li {
+.footer2>.list>ul>li {
     list-style-type: none;
-    padding-left: 50px;
+    padding-left: 60px;
     font-size: 14.5px;
     margin-bottom: 4px;
-    font-weight: 500;
+    font-weight: 300;
     counter-reset: value;
     color: white;
 }
 
-.footer2>.parent_list>.list>ul>li::before {
+.footer2>.list>ul>li::before {
     counter-increment: value;
     content: "-  ";
     font-weight: bold;
-    color: rgb(67, 67, 255);
 }
 
 .footer2>.child_footer {
@@ -880,8 +873,8 @@ h4 {
     width: 345px;
     z-index: 1;
     position: absolute;
-    left: 1117px;
-    bottom: 245px;
+    left: 1090px;
+    bottom: 220px;
 }
 
 .footer2>.child_footer>.flex {
@@ -915,31 +908,6 @@ h4 {
     padding-top: 20px;
 }
 
-.footer2>.parent_list>.bottom_list {
-    margin-top: 124.5px;
-}
-
-.footer2>.parent_list>.bottom_list>h5 {
-    font-size: 21px;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 20px;
-    margin-left: 33.5px;
-}
-
-.footer2>.parent_list>.bottom_list>ul>li {
-    list-style-type: none;
-    font-size: 14.5px;
-    margin-bottom: 4px;
-    margin-left: 40px;
-    font-weight: 500;
-    counter-reset: value;
-    color: white;
-}
-
-.footer2>.parent_list>.bottom_list>ul>li::before {
-    counter-increment: value;
-    content: "-  ";
-    font-weight: bold;
-    color: rgb(67, 67, 255);
+.footer2>.list {
+    margin-top: 50px;
 }
