@@ -843,9 +843,7 @@ h4 {
 .footer2>.parent_list {
     display: flex;
     padding-top: 50px;
-    margin-left: 50px;
-    margin-right: 47px;
-    padding-bottom: 30px;
+    padding-left: 50px;
     gap: 50px;
     border-bottom: 2px solid grey;
 }

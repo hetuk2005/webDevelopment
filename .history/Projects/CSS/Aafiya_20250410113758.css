@@ -844,8 +844,6 @@ h4 {
     display: flex;
     padding-top: 50px;
     margin-left: 50px;
-    margin-right: 47px;
-    padding-bottom: 30px;
     gap: 50px;
     border-bottom: 2px solid grey;
 }
