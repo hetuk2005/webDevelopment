@@ -765,9 +765,7 @@ h4 {
 
 .footer2>.parent_list {
     display: flex;
-    gap: 27px;
-    padding: 50px 0;
-    margin: 0 35px;
+    gap: 35px;
     border-bottom: 2px solid grey;
 }
 
@@ -783,7 +781,7 @@ h4 {
     list-style-type: none;
     padding: 0 50px;
     font-size: 14.5px;
-    margin: 7px 0;
+    margin: 4px 0;
     font-weight: 500;
     counter-reset: value;
     color: white;
@@ -803,8 +801,8 @@ h4 {
     width: 345px;
     z-index: 1;
     position: absolute;
-    left: 1075px;
-    bottom: 590px;
+    left: 1110px;
+    bottom: 537px;
 }
 
 .footer2>.child_footer>.flex {
@@ -838,20 +836,20 @@ h4 {
 }
 
 .footer2>.parent_list>.bottom_list {
-    margin: 41.5px 100px;
+    margin: 180px 0;
 }
 
 .footer2>.parent_list>.bottom_list>h5 {
-    font-size: 20px;
+    font-size: 17.5px;
     font-weight: 500;
     color: white;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .footer2>.parent_list>.bottom_list>ul>li {
     list-style-type: none;
-    font-size: 17px;
-    margin: 7px 7px;
+    font-size: 15px;
+    margin: 4px 7px;
     font-weight: 500;
     counter-reset: value;
     color: white;
@@ -862,31 +860,4 @@ h4 {
     content: "-  ";
     font-weight: bold;
     color: rgb(67, 67, 255);
-}
-
-.footer2>.about {
-    display: flex;
-    gap: 20px;
-    padding: 30px 20px;
-}
-
-.footer2>.about>img {
-    height: 200px;
-    width: 400px;
-    object-fit: contain;
-    margin: 0 45px;
-}
-
-.footer2>.about>.text>h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    padding: 0 20px;
-}
-
-.footer2>.about>.text>p {
-    font-size: 15px;
-    font-weight: 500;
-    color: white;
-    padding: 20px 20px;
 }

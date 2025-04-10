@@ -538,7 +538,9 @@ h4 {
 
 .container {
     display: flex;
-    margin: 10px 460px;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 0 150px;
     gap: 10px;
 }
 
@@ -634,7 +636,8 @@ h4 {
 }
 
 .top_doctors>.container {
-    margin: 30px 665px;
+    padding: 50px 400px;
+    margin-top: 50px;
 }
 
 .hospitals>.center>.blue {
@@ -699,7 +702,8 @@ h4 {
 }
 
 .hospitals>.container {
-    margin: 30px 700px;
+    padding: 30px 370px;
+    margin: 50px 0;
 }
 
 .hospitals>p {
@@ -724,7 +728,7 @@ h4 {
 }
 
 .footer1>h5 {
-    padding: 30px 0;
+    padding: 50px 0;
     font-size: larger;
 }
 
@@ -738,7 +742,7 @@ h4 {
     justify-content: center;
     padding: 25px 0;
     gap: 30px;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 .footer1>.flex>h1 {
@@ -760,30 +764,30 @@ h4 {
 .footer2 {
     background-image: url(../Images/dubai.jpg);
     position: relative;
-    margin: 10px o;
+    margin-bottom: 10px;
 }
 
 .footer2>.parent_list {
     display: flex;
-    gap: 27px;
     padding: 50px 0;
-    margin: 0 35px;
+    margin: 0 50px;
+    gap: 43px;
     border-bottom: 2px solid grey;
 }
 
 .footer2>.parent_list>.list>h5 {
-    padding: 0 40px;
+    padding-top: 50px 40px;
     font-size: 21px;
     font-weight: 500;
     color: white;
-    margin: 29px 0;
+    margin: 20px 0;
 }
 
 .footer2>.parent_list>.list>ul>li {
     list-style-type: none;
     padding: 0 50px;
     font-size: 14.5px;
-    margin: 7px 0;
+    margin: 4px 0;
     font-weight: 500;
     counter-reset: value;
     color: white;
@@ -803,8 +807,8 @@ h4 {
     width: 345px;
     z-index: 1;
     position: absolute;
-    left: 1075px;
-    bottom: 590px;
+    left: 1030px;
+    bottom: 275.5px;
 }
 
 .footer2>.child_footer>.flex {
@@ -834,24 +838,24 @@ h4 {
     font-size: medium;
     font-weight: 500;
     color: grey;
-    padding: 0 20px;
+    padding: 20px 20px;
 }
 
 .footer2>.parent_list>.bottom_list {
-    margin: 41.5px 100px;
+    margin: 124.5px 0;
 }
 
 .footer2>.parent_list>.bottom_list>h5 {
-    font-size: 20px;
+    font-size: 17.5px;
     font-weight: 500;
     color: white;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .footer2>.parent_list>.bottom_list>ul>li {
     list-style-type: none;
-    font-size: 17px;
-    margin: 7px 7px;
+    font-size: 15px;
+    margin: 4px 7px;
     font-weight: 500;
     counter-reset: value;
     color: white;
@@ -862,31 +866,4 @@ h4 {
     content: "-  ";
     font-weight: bold;
     color: rgb(67, 67, 255);
-}
-
-.footer2>.about {
-    display: flex;
-    gap: 20px;
-    padding: 30px 20px;
-}
-
-.footer2>.about>img {
-    height: 200px;
-    width: 400px;
-    object-fit: contain;
-    margin: 0 45px;
-}
-
-.footer2>.about>.text>h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    padding: 0 20px;
-}
-
-.footer2>.about>.text>p {
-    font-size: 15px;
-    font-weight: 500;
-    color: white;
-    padding: 20px 20px;
 }

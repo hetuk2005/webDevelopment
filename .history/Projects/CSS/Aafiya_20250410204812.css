@@ -809,7 +809,7 @@ h4 {
 
 .footer2>.child_footer>.flex {
     display: flex;
-    padding: 25px 0;
+    padding: 35px 0;
 }
 
 .footer2>.child_footer>.flex>.flex1>h3 {
