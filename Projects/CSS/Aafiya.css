@@ -109,12 +109,11 @@
 
 .home_img {
   background-image: url(../Images/Main\ Image.jpg);
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   padding: 40px 57px;
   position: relative;
   color: white;
+  height: auto;
 }
 
 .home_img > .home_child {
@@ -126,11 +125,6 @@
   font-size: 20px;
 }
 
-.home_img > .home_child > span {
-  font-size: 20px;
-  font-weight: bold;
-}
-
 .home_img > h3 {
   font-size: 37px;
   font-weight: normal;
@@ -139,11 +133,12 @@
 
 .home_img > .home_description {
   font-size: 19px;
-  margin: 25px 0;
+  margin: 10px 0;
 }
 
-.home_img > .home_child > span {
+.red {
   color: red;
+  font-size: 25px;
 }
 
 .home_img > .enquire_now {
@@ -152,6 +147,7 @@
   font-size: 17px;
   width: 170px;
   height: 40px;
+  margin: 20px 0;
   border: transparent;
 }
 
@@ -171,43 +167,40 @@
 
 .treatment_overview {
   display: flex;
-  width: 100%;
+  width: 85%;
+  margin: 59px 100px;
   height: 455px;
   gap: 100px;
   border-bottom: 2px dashed blue;
-  margin: 30px 50px;
 }
 
 .treatment_overview > .treatment_text {
-  padding: 59px 50px;
+  margin: 57px 0;
 }
 
 .treatment_overview > .treatment_text > p {
-  font-size: 17px;
+  font-size: 20px;
   padding: 11px 0;
 }
 
 .treatment_overview > .treatment_text > h3 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .treatment_overview > .treatment_img > img {
   height: 410px;
   width: 530px;
-  margin: 30px 0;
   object-fit: contain;
 }
 
 .eligibility_for_treatment {
   display: flex;
-  width: 100%;
-  gap: 30px;
-  margin: 0 70px;
 }
 
 .eligibility_for_treatment > .eligibility_text {
   border-bottom: 2px dashed blue;
+  margin: 50px 40px;
 }
 
 .eligibility_for_treatment > .eligibility_text > h3 {
@@ -237,17 +230,25 @@
 .eligibility_form {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
-  padding: 20px;
+  margin: 50px 30px;
+  padding: 15px 30px;
+}
+
+.eligibility_form > form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
 }
 
 .eligibility_for_treatment > .eligibility_form > p {
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 15px 0;
 }
 
 .eligibility_for_treatment > .eligibility_form > form > input {
   height: 40px;
   width: 300px;
-  gap: 20px;
   border: 2px solid black;
   border-radius: 7px;
 }
@@ -267,7 +268,7 @@
 .eligibility_for_treatment > .eligibility_form > form > button {
   background: linear-gradient(to right, #00aaff, #66ccff);
   color: white;
-  width: 83.5%;
+  width: 100%;
   border-radius: 7px;
   border: none;
   height: 45px;
