@@ -961,14 +961,14 @@ h4 {
     font-weight: 500;
     display: flex;
     color: white;
-    gap: 370px;
+    gap: 30px;
     align-items: center;
     font-size: 15px;
 }
 
 .footer_blue>.right {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .footer_blue>.text2 {

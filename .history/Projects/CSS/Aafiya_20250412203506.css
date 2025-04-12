@@ -961,7 +961,7 @@ h4 {
     font-weight: 500;
     display: flex;
     color: white;
-    gap: 370px;
+    gap: 30px;
     align-items: center;
     font-size: 15px;
 }
@@ -969,6 +969,7 @@ h4 {
 .footer_blue>.right {
     display: flex;
     gap: 30px;
+    padding: 0 100px;
 }
 
 .footer_blue>.text2 {
