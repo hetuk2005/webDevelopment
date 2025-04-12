@@ -825,8 +825,8 @@ h4 {
     width: 345px;
     z-index: 1;
     position: absolute;
-    left: 1075px;
-    bottom: 645px;
+    left: 1085px;
+    bottom: 590px;
 }
 
 .footer2>.child_footer>.flex {
@@ -861,7 +861,6 @@ h4 {
 
 .footer2>.parent_list>.bottom_list {
     margin: 41.5px 100px;
-    padding: 29px 0;
 }
 
 .footer2>.parent_list>.bottom_list>h5 {
@@ -873,7 +872,7 @@ h4 {
 
 .footer2>.parent_list>.bottom_list>ul>li {
     list-style-type: none;
-    font-size: 15px;
+    font-size: 17px;
     margin: 7px 7px;
     font-weight: 500;
     counter-reset: value;

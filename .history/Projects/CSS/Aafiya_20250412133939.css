@@ -198,21 +198,17 @@
     object-fit: contain;
 }
 
-.text_grid {
-    display: grid;
-}
-
 .eligibility_for_treatment {
     display: flex;
-    margin: 0 50px;
+    margin: 50px 50px;
     gap: 70px;
 }
 
 .eligibility_for_treatment>.eligibility_text {
     border-bottom: 2px dashed blue;
-    padding: 30px 0;
-    width: 60%;
-    height: 89%;
+    margin: 10px 0 !important;
+    width: 67%;
+    height: 100%;
 }
 
 .eligibility_for_treatment>.eligibility_text>h3 {
@@ -242,8 +238,8 @@
 .eligibility_form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 7px;
+    margin: 0 30px;
     padding: 10px 30px;
-    margin: 25px 0;
 }
 
 .eligibility_form>form {
@@ -293,9 +289,9 @@
 
 .preparation_of_treatment {
     border-bottom: 2px dashed blue;
-    margin: 0 50px;
-    padding: 30px 0;
-    width: 59%;
+    gap: 50px;
+    padding: 50px 0;
+    margin: 0 70px;
 }
 
 .preparation_of_treatment>ul {
@@ -311,10 +307,9 @@
 
 .about_treatment {
     border-bottom: 2px dashed blue;
-    margin: 10px 50px;
+    margin: 10px 70px;
     padding: 30px 0;
     gap: 50px;
-    width: 60%;
 }
 
 .about_treatment>ul {
@@ -335,10 +330,9 @@
 
 .post_treatment {
     border-bottom: 2px dashed blue;
-    margin: 10px 50px;
+    margin: 10px 70px;
     padding: 30px 0;
     gap: 50px;
-    width: 60%;
 }
 
 .post_treatment>ul {
@@ -359,10 +353,9 @@
 
 .treatment_recovery {
     border-bottom: 2px dashed blue;
-    margin: 10px 50px;
+    margin: 10px 70px;
     padding: 30px 0;
     gap: 50px;
-    width: 60%;
 }
 
 .treatment_recovery>ul {
@@ -389,15 +382,13 @@
 .treatment_faqs {
     border-bottom: 2px dashed blue;
     padding: 45px 0;
-    width: 60%;
-    margin: 10px 50px;
+    margin: 11px 70px;
     gap: 50px;
 }
 
 .treatment_faqs>p {
     border-top: 1px solid gray;
     padding: 15px 0;
-    width: 100%;
     counter-reset: value;
 }
 
@@ -419,10 +410,9 @@
 }
 
 .treatment_faqs>.bottom {
-    border-bottom: 2px solid gray;
+    border-bottom: 1px solid gray;
     display: block;
-    padding: 7px 0;
-    width: 100%;
+    padding: 15px 0;
     counter-reset: value;
 }
 
@@ -434,8 +424,8 @@
 }
 
 .treatment_faqs>.answer {
-    border-top: 2px solid skyblue;
-    border-bottom: 2px solid skyblue;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
     padding: 10px 50px;
     counter-reset: value;
 }
@@ -447,7 +437,7 @@
 }
 
 .treatment_faqs>.answer>.left {
-    border-left: 2px solid rgb(48, 48, 197);
+    border-left: 1px solid blue;
     display: block;
     font-size: small;
     padding: 0 5px;
@@ -529,11 +519,6 @@ h4 {
     margin: 7px 0;
 }
 
-.padding {
-    padding: 20px 0;
-    font-size: small;
-}
-
 .patient_stories>.S>.A>.quotes {
     height: 40px;
     padding: 0 50px;
@@ -542,7 +527,7 @@ h4 {
 .P {
     display: flex;
     gap: 10px;
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 .P>img {
@@ -598,9 +583,9 @@ h4 {
 
 .top_doctors>.center {
     display: flex;
-    padding: 0 570px;
+    padding: 0 530px;
     gap: 7px;
-    margin: 20px 0;
+    margin-bottom: 30px;
 }
 
 .top_doctors>.center>h1 {
@@ -615,7 +600,7 @@ h4 {
 .top_doctors>.parent {
     display: flex;
     gap: 35px;
-    padding: 0 210px;
+    padding: 0 175px;
 }
 
 .top_doctors>.parent>.card {
@@ -658,7 +643,7 @@ h4 {
 }
 
 .top_doctors>.container {
-    margin: 30px 710px;
+    margin: 30px 665px;
 }
 
 .hospitals>.center>.blue {
@@ -667,9 +652,9 @@ h4 {
 
 .hospitals>.center {
     display: flex;
-    padding: 0 600px;
+    padding: 0 530px;
     gap: 7px;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .hospitals>.center>h1 {
@@ -684,12 +669,13 @@ h4 {
     font-size: 25px;
     font-weight: bold;
     font-style: italic;
+    margin: 5px 0;
 }
 
 .hospitals>.card_parent {
     display: flex;
     gap: 10px;
-    margin: 40px 0;
+    margin: 50px 0;
     align-items: center;
     justify-content: center;
 }
@@ -722,14 +708,14 @@ h4 {
 }
 
 .hospitals>.container {
-    margin: 30px 730px;
+    margin: 30px 680px;
 }
 
 .hospitals>p {
     text-align: center;
     font-size: medium;
     font-weight: 500;
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 .hospitals>p>u {
@@ -746,7 +732,7 @@ h4 {
 }
 
 .footer1>h5 {
-    padding: 45px 0;
+    padding: 30px 0;
     font-size: larger;
 }
 
@@ -759,8 +745,8 @@ h4 {
     display: flex;
     justify-content: center;
     padding: 25px 0;
-    gap: 20px;
-    margin: 5px 0;
+    gap: 30px;
+    margin: 30px 0;
 }
 
 .footer1>.flex>h1 {
@@ -798,7 +784,7 @@ h4 {
     font-size: 21px;
     font-weight: 500;
     color: white;
-    margin: 27px 0;
+    margin: 29px 0;
 }
 
 .footer2>.parent_list>.list>ul>li {
@@ -826,7 +812,7 @@ h4 {
     z-index: 1;
     position: absolute;
     left: 1075px;
-    bottom: 645px;
+    bottom: 590px;
 }
 
 .footer2>.child_footer>.flex {
@@ -861,7 +847,6 @@ h4 {
 
 .footer2>.parent_list>.bottom_list {
     margin: 41.5px 100px;
-    padding: 29px 0;
 }
 
 .footer2>.parent_list>.bottom_list>h5 {
@@ -873,7 +858,7 @@ h4 {
 
 .footer2>.parent_list>.bottom_list>ul>li {
     list-style-type: none;
-    font-size: 15px;
+    font-size: 17px;
     margin: 7px 7px;
     font-weight: 500;
     counter-reset: value;
