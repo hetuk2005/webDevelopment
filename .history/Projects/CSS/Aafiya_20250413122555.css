@@ -978,5 +978,7 @@ h4 {
 @media(max-width: 425px) {
     .image_text>.book_text>.grid,
     .image_text>.call_text>.grid,
-    .image_text>.mail_text>.grid {}
+    .image_text>.mail_text>.grid {
+        visibility: hidden;
+    }
 }
