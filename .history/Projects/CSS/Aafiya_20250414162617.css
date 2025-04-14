@@ -1042,13 +1042,12 @@ h4 {
     }
     .treatment_overview>.treatment_text {
         margin: 5px 35px;
+        text-align: center;
     }
     .treatment_overview>.treatment_text>h3 {
         font-size: 30px;
-        text-align: center;
     }
     .treatment_overview>.treatment_text>.text {
-        font-size: 11px;
-        padding: 5px 0;
+        font-size: small;
     }
 }
