@@ -997,7 +997,6 @@ h4 {
         display: grid;
         width: 100%;
         gap: 0;
-        margin: 0 20px;
     }
     .child1>.images {
         display: flex;

@@ -996,8 +996,8 @@ h4 {
     .child1 {
         display: grid;
         width: 100%;
-        gap: 0;
         margin: 0 20px;
+        gap: 0;
     }
     .child1>.images {
         display: flex;
@@ -1014,10 +1014,8 @@ h4 {
         width: 100px;
     }
     .image_text>.book_text,
-    .image_text>.call_text,
-    .image_text>.mail_text {
-        margin: 10px 37px;
-    }
+    .image_text>.book_text,
+    .image_text>.book_text {}
     .home_img {
         background-position: center;
         padding: 0 10px;

@@ -990,33 +990,8 @@ h4 {
     .img6 {
         display: none;
     }
-    .child2 {
-        display: none;
-    }
-    .child1 {
-        display: grid;
-        width: 100%;
-        gap: 0;
-        margin: 0 20px;
-    }
-    .child1>.images {
-        display: flex;
-        gap: 10px;
-        width: 50%;
-    }
-    .img1 {
-        height: auto;
-    }
-    .img2 {
-        margin: 15px 0;
-    }
-    .image_text {
-        width: 100px;
-    }
-    .image_text>.book_text,
-    .image_text>.call_text,
-    .image_text>.mail_text {
-        margin: 10px 37px;
+    .images {
+        flex-direction: column-reverse;
     }
     .home_img {
         background-position: center;
@@ -1314,7 +1289,6 @@ h4 {
     }
     .follow_us>.text {
         padding: 0 5px;
-        padding-bottom: 15px;
     }
     .footer_blue {
         flex-direction: column;

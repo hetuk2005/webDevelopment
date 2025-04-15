@@ -993,30 +993,12 @@ h4 {
     .child2 {
         display: none;
     }
-    .child1 {
-        display: grid;
-        width: 100%;
-        gap: 0;
-        margin: 0 20px;
-    }
-    .child1>.images {
-        display: flex;
-        gap: 10px;
-        width: 50%;
+    .images {
+        flex-direction: column-reverse;
     }
     .img1 {
         height: auto;
-    }
-    .img2 {
-        margin: 15px 0;
-    }
-    .image_text {
-        width: 100px;
-    }
-    .image_text>.book_text,
-    .image_text>.call_text,
-    .image_text>.mail_text {
-        margin: 10px 37px;
+        width: 100%;
     }
     .home_img {
         background-position: center;
