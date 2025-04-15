@@ -1016,12 +1016,12 @@ h4 {
     }
     .image_text {
         gap: 0;
-        width: 90px;
+        width: 100px;
     }
     .image_text>.book_text,
     .image_text>.call_text,
     .image_text>.mail_text {
-        margin: 10px 40px;
+        margin: 10px 37px;
     }
     .home_img {
         background-position: center;
@@ -1048,6 +1048,9 @@ h4 {
         width: 100px;
         height: 35px;
         font-size: 10px;
+    }
+    .nav2 {
+        width: 100%;
     }
     .nav2>ul {
         gap: 15px;

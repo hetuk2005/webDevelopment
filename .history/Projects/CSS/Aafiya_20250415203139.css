@@ -986,6 +986,9 @@ h4 {
 }
 
 @media(max-width: 460px) {
+    * {
+        width: 100%;
+    }
     .image_text>.book_text>.grid,
     .image_text>.call_text>.grid,
     .image_text>.mail_text>.grid {
@@ -1016,12 +1019,12 @@ h4 {
     }
     .image_text {
         gap: 0;
-        width: 90px;
+        width: 100px;
     }
     .image_text>.book_text,
     .image_text>.call_text,
     .image_text>.mail_text {
-        margin: 10px 40px;
+        margin: 10px 37px;
     }
     .home_img {
         background-position: center;

@@ -1016,7 +1016,7 @@ h4 {
     }
     .image_text {
         gap: 0;
-        width: 90px;
+        width: 100px;
     }
     .image_text>.book_text,
     .image_text>.call_text,

@@ -222,10 +222,6 @@
     border-bottom: 2px dashed blue;
 }
 
-.dot_line {
-    visibility: hidden;
-}
-
 .eligibility_for_treatment>.eligibility_text>h3 {
     font-size: 30px;
     font-weight: 500;
@@ -1016,12 +1012,12 @@ h4 {
     }
     .image_text {
         gap: 0;
-        width: 90px;
+        width: 100px;
     }
     .image_text>.book_text,
     .image_text>.call_text,
     .image_text>.mail_text {
-        margin: 10px 40px;
+        margin: 10px 37px;
     }
     .home_img {
         background-position: center;
@@ -1104,7 +1100,6 @@ h4 {
         width: 100%;
     }
     .dot_line {
-        visibility: visible;
         margin: 0 35px;
         border: none;
         border-bottom: 2px dashed blue;

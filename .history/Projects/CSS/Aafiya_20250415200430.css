@@ -216,14 +216,10 @@
 }
 
 .eligibility_for_treatment>.eligibility_text {
+    border-bottom: 2px dashed blue;
     padding: 30px 0;
     width: 60%;
     height: 80%;
-    border-bottom: 2px dashed blue;
-}
-
-.dot_line {
-    visibility: hidden;
 }
 
 .eligibility_for_treatment>.eligibility_text>h3 {
@@ -1016,12 +1012,12 @@ h4 {
     }
     .image_text {
         gap: 0;
-        width: 90px;
+        width: 100px;
     }
     .image_text>.book_text,
     .image_text>.call_text,
     .image_text>.mail_text {
-        margin: 10px 40px;
+        margin: 10px 37px;
     }
     .home_img {
         background-position: center;
@@ -1059,9 +1055,8 @@ h4 {
         flex-direction: column-reverse;
         height: auto;
         gap: 0;
-        margin: 0 25px;
         width: 85%;
-        padding: 15px 0;
+        padding: 35px 0;
     }
     .treatment_overview>.treatment_img>img {
         height: 300px;
@@ -1083,6 +1078,7 @@ h4 {
     }
     .eligibility_for_treatment {
         flex-direction: column;
+        border-bottom: 2px dashed blue;
         margin: 0 0;
         width: 100%;
         height: auto;
@@ -1102,12 +1098,6 @@ h4 {
     .eligibility_for_treatment>.eligibility_text>p {
         font-size: 15px;
         width: 100%;
-    }
-    .dot_line {
-        visibility: visible;
-        margin: 0 35px;
-        border: none;
-        border-bottom: 2px dashed blue;
     }
     .eligibility_form {
         width: 85%;
