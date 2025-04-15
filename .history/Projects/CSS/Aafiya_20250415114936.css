@@ -718,6 +718,7 @@ h4 {
 }
 
 .hospitals>.card_parent>.card>h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     margin: 13px 0;
 }
@@ -1203,20 +1204,9 @@ h4 {
     }
     .hospitals>.card_parent {
         flex-direction: column;
-        gap: 20px;
+        gap: 0;
         margin: 30px 0;
         justify-content: center;
         align-items: center;
-    }
-    .hospitals>.card_parent>.card>h3,
-    .hospitals>.card_parent>.card>h5 {
-        font-size: 23px;
-        text-align: center;
-        margin: 7px 0;
-        font-weight: bold;
-    }
-    .hospitals>p {
-        margin: 30px 0;
-        font-size: large;
     }
 }
