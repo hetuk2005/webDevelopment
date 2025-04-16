@@ -1583,6 +1583,7 @@ h4 {
     .top_doctors>.parent>.card>.place,
     .top_doctors>.parent>.card>.doctors {
         font-size: 19px;
+        text-align: center;
         margin: 10px 0;
     }
 }

@@ -1409,15 +1409,7 @@ h4 {
     .treatment_overview {
         height: auto;
         width: 100%;
-        margin: 25px 30px;
-        gap: 0;
-        border-bottom: none
-    }
-    .dot_line {
-        visibility: visible;
-        margin: 0 30px;
-        border: none;
-        border-bottom: 2px dashed blue;
+        margin: 25px 20px;
     }
     .treatment_overview>.treatment_text {
         margin: 0;
@@ -1429,160 +1421,15 @@ h4 {
         font-weight: bold;
     }
     .treatment_overview>.treatment_text>.text {
-        padding-top: 10px;
+        font-size: 13px;
+        padding: 5px 10px;
         font-weight: normal;
         width: 100%;
     }
     .treatment_overview>.treatment_img>img {
         height: auto;
-        width: 370px;
+        width: 430px;
         margin: 0 45px;
-        padding: 110px 0;
-    }
-    .eligibility_for_treatment {
-        gap: 0;
-        margin: 0 30px;
-    }
-    .eligibility_for_treatment>.eligibility_text {
-        border-bottom: none;
-    }
-    .eligibility_for_treatment>.eligibility_text>h3 {
-        font-size: 21px;
-        font-weight: bolder;
-    }
-    .eligibility_for_treatment>.eligibility_text>p,
-    .eligibility_for_treatment>.eligibility_text>ul {
-        font-size: 13px;
-        width: 100%;
-    }
-    .eligibility_form {
-        margin: 25px;
-    }
-    .preparation_of_treatment {
-        padding: 25px 0;
-        width: 85%;
-    }
-    .preparation_of_treatment>h3 {
-        font-size: 27px;
-        text-align: center;
-        font-weight: bold;
-    }
-    .preparation_of_treatment>ul,
-    .preparation_of_treatment>p {
-        font-weight: normal;
-        width: 100%;
-    }
-    .about_treatment {
-        padding: 25px 0;
-        width: 85%;
-    }
-    .about_treatment>h3 {
-        font-size: 27px;
-        text-align: center;
-        font-weight: bold;
-    }
-    .about_treatment>ul,
-    .about_treatment>p {
-        font-weight: normal;
-        width: 100%;
-    }
-    .post_treatment {
-        padding: 25px 0;
-        width: 85%;
-    }
-    .post_treatment>h3 {
-        font-size: 27px;
-        text-align: center;
-        font-weight: bold;
-    }
-    .post_treatment>ul,
-    .post_treatment>p {
-        font-weight: normal;
-        width: 100%;
-    }
-    .treatment_recovery {
-        padding: 25px 0;
-        width: 85%;
-    }
-    .treatment_recovery>h3 {
-        font-size: 27px;
-        text-align: center;
-        font-weight: bold;
-    }
-    .treatment_recovery>ul,
-    .treatment_recovery>p {
-        font-weight: normal;
-        width: 100%;
-    }
-    .treatment_faqs {
-        padding: 25px 0;
-        width: 85%;
-    }
-    .treatment_faqs>h3 {
-        font-size: 27px;
-        text-align: center;
-        font-weight: bold;
-    }
-    h4 {
-        font-size: 27px;
-        text-align: center;
-        font-weight: bold;
-    }
-    .patient_stories {
-        width: 97%;
-        gap: 10px;
-        padding: 0;
-        margin: 10px 15px;
-    }
-    .patient_stories>.stories_img,
-    .patient_stories>.S {
-        padding: 0 10px;
-    }
-    br {
-        display: none;
-    }
-    .padding {
-        padding: 30px 0;
-    }
-    .P {
-        padding: 15px 0;
-    }
-    .container {
-        display: none;
-    }
-    .top_doctors {
-        margin: 50px 0;
-        padding: 30px 0;
-    }
-    .top_doctors>h3 {
-        font-size: 27px;
-        margin: 0;
-    }
-    .top_doctors>.center {
-        margin: 20px 0;
-        padding: 0 200px;
-    }
-    .top_doctors>.parent {
-        flex-direction: column;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-    }
-    .top_doctors>.parent>.card {
-        width: 55%;
-        margin: 0 20px;
-    }
-    .top_doctors>.parent>.card>.pink_box {
-        width: 96%;
-        margin: 7px 9px;
-    }
-    .top_doctors>.parent>.card>h5 {
-        margin: 10px 0;
-        font-size: 21px;
-    }
-    .top_doctors>.parent>.card>.place,
-    .top_doctors>.parent>.card>.doctors {
-        font-size: 19px;
-        margin: 10px 0;
+        padding: 150px 0;
     }
 }

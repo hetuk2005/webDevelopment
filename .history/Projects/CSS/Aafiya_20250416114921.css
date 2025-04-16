@@ -1578,11 +1578,5 @@ h4 {
     }
     .top_doctors>.parent>.card>h5 {
         margin: 10px 0;
-        font-size: 21px;
-    }
-    .top_doctors>.parent>.card>.place,
-    .top_doctors>.parent>.card>.doctors {
-        font-size: 19px;
-        margin: 10px 0;
     }
 }
