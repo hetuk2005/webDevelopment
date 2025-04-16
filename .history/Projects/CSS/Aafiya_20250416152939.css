@@ -1422,10 +1422,13 @@ h4 {
     }
     .treatment_overview {
         height: auto;
-        flex-direction: column-reverse;
         margin: 25px 30px;
         gap: 0;
         border-bottom: none;
+        ;
+    }
+    .treatment_overview>.treatment_text>br {
+        display: none;
     }
     .dot_line {
         visibility: visible;
@@ -1443,16 +1446,15 @@ h4 {
         font-weight: bold;
     }
     .treatment_overview>.treatment_text>.text {
-        padding: 0;
-        padding-top: 11px;
+        padding-top: 10px;
         font-weight: normal;
         width: 100%;
     }
     .treatment_overview>.treatment_img>img {
         height: auto;
-        width: 85%;
+        width: 370px;
         margin: 0 45px;
-        padding: 0;
+        padding: 60px 0;
     }
     .eligibility_for_treatment {
         gap: 0;
@@ -1583,7 +1585,6 @@ h4 {
         padding: 0;
         justify-content: center;
         align-items: center;
-        gap: 0;
     }
     .top_doctors>.parent>.card {
         width: 55%;

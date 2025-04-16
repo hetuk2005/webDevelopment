@@ -1422,10 +1422,10 @@ h4 {
     }
     .treatment_overview {
         height: auto;
-        flex-direction: column-reverse;
+        width: 100%;
         margin: 25px 30px;
         gap: 0;
-        border-bottom: none;
+        border-bottom: none
     }
     .dot_line {
         visibility: visible;
@@ -1443,16 +1443,15 @@ h4 {
         font-weight: bold;
     }
     .treatment_overview>.treatment_text>.text {
-        padding: 0;
-        padding-top: 11px;
+        padding-top: 10px;
         font-weight: normal;
         width: 100%;
     }
     .treatment_overview>.treatment_img>img {
         height: auto;
-        width: 85%;
+        width: 370px;
         margin: 0 45px;
-        padding: 0;
+        padding: 60px 0;
     }
     .eligibility_for_treatment {
         gap: 0;
@@ -1553,7 +1552,7 @@ h4 {
     .patient_stories>.S {
         padding: 0 10px;
     }
-    .patient_stories>.S>.padding>br {
+    br {
         display: none;
     }
     .padding {
@@ -1583,7 +1582,6 @@ h4 {
         padding: 0;
         justify-content: center;
         align-items: center;
-        gap: 0;
     }
     .top_doctors>.parent>.card {
         width: 55%;
@@ -1646,40 +1644,6 @@ h4 {
     }
     .footer2>.parent_list>.bottom_list {
         margin: 0;
-        padding: 0 30px;
-    }
-    .footer2>.about {
-        flex-direction: column;
-        gap: 15px;
-        padding: 0 0;
-    }
-    .footer2>.about>img {
-        width: auto;
-    }
-    .footer2>.about>.text>h3 {
-        text-align: center;
-        font-size: 25px;
-        padding: 0;
-    }
-    .footer2>.about>.text>p {
-        padding: 20px 25px;
-        font-size: 18px;
-    }
-    .follow_us {
-        padding-left: 20px;
-    }
-    .footer_blue {
-        flex-direction: column;
-        gap: 0;
-        height: auto;
-        font-size: 17px;
-    }
-    .footer_blue>.text2 {
-        padding: 0;
-        padding-top: 20px;
-        text-align: center;
-    }
-    .footer_blue>.right {
-        padding: 10px 0;
+        padding: 3px 30px;
     }
 }

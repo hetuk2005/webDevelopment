@@ -1443,8 +1443,7 @@ h4 {
         font-weight: bold;
     }
     .treatment_overview>.treatment_text>.text {
-        padding: 0;
-        padding-top: 11px;
+        padding-left: 20px;
         font-weight: normal;
         width: 100%;
     }
@@ -1583,7 +1582,6 @@ h4 {
         padding: 0;
         justify-content: center;
         align-items: center;
-        gap: 0;
     }
     .top_doctors>.parent>.card {
         width: 55%;
