@@ -1194,8 +1194,9 @@ h4 {
     }
     .patient_stories {
         flex-direction: column;
-        padding: 0;
-        margin: 10px;
+        margin: 0 13px;
+        padding: 17px 0;
+        width: 100%;
     }
     .patient_stories>.stories_img,
     .patient_stories>.S {
