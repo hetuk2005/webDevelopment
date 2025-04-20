@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(./utils/Background\ Image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    height: 110px;
+    width: 100%;
+    font-size: 33px;
+    font-weight: bolder;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    padding: 10px 70px;
+}
+
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.child1>ul {
+    color: white;
+    display: flex;
+    gap: 31px;
+    list-style-type: none;
+}
+
+.child1>ul>.after {
+    counter-reset: value;
+}
+
+.child1>ul>.after::after {
+    counter-increment: value;
+    content: "▼  ";
+    gap: 7px;
+    font-size: 10px;
+}
+
+.child2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 50px;
+}
+
+.child2>img {
+    background-color: white;
+    height: 30px;
+}

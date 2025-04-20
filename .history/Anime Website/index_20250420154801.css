@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(./utils/Background\ Image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    height: 110px;
+    width: 100%;
+    font-size: 33px;
+    font-weight: bolder;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    padding: 10px 70px;
+}
+
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.child1>ul {
+    color: white;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.after {
+    font-size: 10px;
+    padding: 0 5px;
+}
+
+.child1>ul>li:hover {
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+.child2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 50px;
+}
+
+.child2>img {
+    background-color: white;
+    height: 27px;
+}
+
+.recent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    margin: 0 45px;
+    background-color: whitesmoke;
+}
+
+.recent>.image1 {
+    height: 500px;
+    width: 1000px;
+    background-image: url(./utils/Solo\ Leveling.png);
+    background-size: cover;
+    background-position: center;
+}

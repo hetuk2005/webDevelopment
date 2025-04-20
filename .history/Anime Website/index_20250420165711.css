@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body {
+    background-image: url(./utils/Background\ Image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    height: 110px;
+    width: 100%;
+    font-size: 33px;
+    font-weight: bolder;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    padding: 10px 70px;
+}
+
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: relative;
+}
+
+.child1>ul {
+    color: white;
+    display: flex;
+    gap: 23px;
+    list-style-type: none;
+}
+
+.after {
+    position: absolute;
+    font-size: 7px;
+    padding: 5px 6px;
+}
+
+.child1>ul>li:hover {
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+.child2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 50px;
+}
+
+.child2>img {
+    background-color: white;
+    height: 27px;
+}
+
+.recent {
+    display: flex;
+    padding: 35px 40px;
+    margin: 0 45px;
+    background-color: whitesmoke;
+    color: whitesmoke;
+}
+
+.item {
+    position: relative;
+    width: 1500px;
+    height: 500px;
+    z-index: 1;
+}
+
+.item:hover {
+    transform: scale3d(1.15, 1.15, 1.15);
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    font-size: 23px;
+    font-weight: bolder;
+    text-align: center;
+    z-index: 1;
+}
+
+.text:hover {
+    transition: ease-in-out 0.3s;
+    filter: brightness(60%) contrast(90%) saturate(110%);
+}
+
+.image1 {
+    filter: brightness(60%) contrast(90%) saturate(110%);
+    height: 100%;
+    width: 100%;
+    background-image: url(./utils/Solo\ Leveling.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image2 {
+    filter: brightness(60%) contrast(90%) saturate(110%);
+    height: 100%;
+    width: 100%;
+    background-image: url(./utils/Jujutsu\ Kaisen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.image3 {
+    filter: brightness(60%) contrast(90%) saturate(110%);
+    height: 100%;
+    width: 100%;
+    background-image: url(./utils/Demon\ Slayer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.image4 {
+    filter: brightness(60%) contrast(90%) saturate(110%);
+    height: 100%;
+    width: 100%;
+    background-image: url(./utils/Naruto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.image5 {
+    filter: brightness(60%) contrast(90%) saturate(110%);
+    height: 100%;
+    width: 100%;
+    background-image: url(./utils/Death\ Note.jpg);
+    background-size: cover;
+    background-position: center;
+}
