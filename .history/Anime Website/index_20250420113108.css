@@ -12,10 +12,10 @@ body {
     background-repeat: no-repeat;
 }
 
-.title {
+.header {
+    color: white;
     height: 110px;
     width: 100%;
     font-size: xx-large;
     font-weight: bolder;
-    color: white;
 }
