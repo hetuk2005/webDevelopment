@@ -148,32 +148,16 @@ body {
     background-position: center;
 }
 
-.anime {
+.anime1 {
     display: flex;
-    gap: 30px;
-    padding: 10px 39px;
+    gap: 20px;
+    padding: 35px 40px;
 }
 
 .latest_img {
-    width: 500px;
-    height: 300px;
+    width: 200px;
+    height: auto;
     float: left;
-    object-fit: contain;
-}
-
-.description>p {
-    padding: 15px 0;
-    font-size: large;
-    font-weight: bold;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.time {
-    font-weight: 700;
-    display: flex;
-    gap: 15px;
-    opacity: 0.5;
 }
 
 .date {
@@ -181,25 +165,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 7px;
-    text-align: center;
-    font-size: 15px;
 }
 
 .clock {
-    height: 17px;
-    width: 17px;
-}
-
-.source {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    text-align: center;
-    font-size: 15px;
-}
-
-.profile {
-    height: 17px;
-    width: 17px;
+    height: 20px;
+    width: 20px;
 }

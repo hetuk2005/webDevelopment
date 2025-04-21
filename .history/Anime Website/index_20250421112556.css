@@ -151,11 +151,11 @@ body {
 .anime {
     display: flex;
     gap: 30px;
-    padding: 10px 39px;
+    padding: 7px 39px;
 }
 
 .latest_img {
-    width: 500px;
+    width: 470px;
     height: 300px;
     float: left;
     object-fit: contain;
@@ -202,4 +202,11 @@ body {
 .profile {
     height: 17px;
     width: 17px;
+}
+
+.latest_img1 {
+    width: 450px;
+    height: 300px;
+    float: left;
+    object-fit: contain;
 }

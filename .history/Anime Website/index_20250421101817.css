@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -29,14 +30,14 @@ body {
     align-items: center;
     background-color: black;
     position: relative;
-    border-top: 1px solid rgb(56, 56, 56);
+    border-top: 1px solid gray;
 }
 
 .child1>ul {
     font-size: 15px;
     color: white;
     display: flex;
-    gap: 21px;
+    gap: 20px;
     list-style-type: none;
     justify-content: center;
     align-items: center;
@@ -63,17 +64,14 @@ body {
 
 .child2>img {
     background-color: white;
-    height: 25px;
-}
-
-.parent {
-    background-color: whitesmoke;
-    margin: 0 45px;
+    height: 27px;
 }
 
 .recent {
     display: flex;
     padding: 35px 40px;
+    margin: 0 45px;
+    background-color: whitesmoke;
     color: whitesmoke;
 }
 
@@ -146,60 +144,4 @@ body {
     background-image: url(./utils/Death\ Note.jpg);
     background-size: cover;
     background-position: center;
-}
-
-.anime {
-    display: flex;
-    gap: 30px;
-    padding: 10px 39px;
-}
-
-.latest_img {
-    width: 500px;
-    height: 300px;
-    float: left;
-    object-fit: contain;
-}
-
-.description>p {
-    padding: 15px 0;
-    font-size: large;
-    font-weight: bold;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.time {
-    font-weight: 700;
-    display: flex;
-    gap: 15px;
-    opacity: 0.5;
-}
-
-.date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    text-align: center;
-    font-size: 15px;
-}
-
-.clock {
-    height: 17px;
-    width: 17px;
-}
-
-.source {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    text-align: center;
-    font-size: 15px;
-}
-
-.profile {
-    height: 17px;
-    width: 17px;
 }

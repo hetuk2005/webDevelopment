@@ -203,3 +203,10 @@ body {
     height: 17px;
     width: 17px;
 }
+
+.latest_img1 {
+    width: 450px;
+    height: 300px;
+    float: left;
+    object-fit: contain;
+}

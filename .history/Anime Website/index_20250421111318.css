@@ -148,21 +148,20 @@ body {
     background-position: center;
 }
 
-.anime {
+.anime1 {
     display: flex;
     gap: 30px;
-    padding: 10px 39px;
+    padding: 15px 39px;
 }
 
 .latest_img {
-    width: 500px;
     height: 300px;
     float: left;
     object-fit: contain;
 }
 
 .description>p {
-    padding: 15px 0;
+    padding: 5px 0;
     font-size: large;
     font-weight: bold;
     color: black;
