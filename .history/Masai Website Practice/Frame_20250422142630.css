@@ -99,11 +99,6 @@
 }
 
 .qotes {
-    /* font-size: 150px; */
-    position: absolute;
-    /* height: ; */
-    left: 24px;
-    transform: skew(-13deg);
-    color: red;
-    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 40px !important;
 }

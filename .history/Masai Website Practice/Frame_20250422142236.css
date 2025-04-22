@@ -54,7 +54,7 @@
     color: #c03b4e;
 }
 
-.child1>.img2 {
+.child3>.img2 {
     position: absolute;
     width: 90%;
     height: auto;
@@ -63,7 +63,7 @@
     left: 15px;
 }
 
-.child2>img {
+.child4>img {
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     height: 370px;
@@ -71,7 +71,7 @@
     z-index: 0;
 }
 
-.child3 {
+.child5 {
     height: 340px;
     width: 79%;
     left: 155px;
@@ -82,7 +82,7 @@
     /* border: 1px solid #000; */
 }
 
-.child3>p {
+.child5>p {
     position: absolute;
     top: 70px;
     left: 40px;
@@ -90,20 +90,10 @@
     font-weight: 500;
 }
 
-.child3>h3 {
+.child5>h3 {
     position: absolute;
     bottom: 70px;
     left: 40px;
     font-size: x-large;
     font-weight: bolder;
-}
-
-.qotes {
-    /* font-size: 150px; */
-    position: absolute;
-    /* height: ; */
-    left: 24px;
-    transform: skew(-13deg);
-    color: red;
-    margin-bottom: 10px;
 }

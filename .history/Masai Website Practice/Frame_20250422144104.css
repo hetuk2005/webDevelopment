@@ -99,11 +99,9 @@
 }
 
 .qotes {
-    /* font-size: 150px; */
+    font-size: 150px !important;
     position: absolute;
-    /* height: ; */
     left: 24px;
     transform: skew(-13deg);
     color: red;
-    margin-bottom: 10px;
 }
