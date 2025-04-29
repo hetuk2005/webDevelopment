@@ -24,37 +24,35 @@
 }
 
 .navbar_parent {
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     display: flex;
-    box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
     align-items: center;
-    padding: 10px 70px;
+    padding: 10px 30px;
     position: relative;
     text-transform: uppercase;
 }
 
 .navbar_child1 {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
 .navbar_child1>img {
-    padding: 10px 0;
-    width: 110px;
+    width: 130px;
+    height: auto;
     object-fit: contain;
 }
 
 .navbar_child1>#navbar_courses {
-    font-size: 17px;
-    width: 130px;
-    height: 43px;
-    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
     padding: 7px;
     text-transform: uppercase;
-    border: 1px transparent;
     background-color: #d5e3f9;
 }
 
@@ -62,15 +60,10 @@
     display: flex;
     list-style-type: none;
     gap: 25px;
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 500;
     align-items: center;
     justify-content: center;
-}
-
-.navbar_child2>ul>li>a,
-.navbar_span>li>a {
-    text-decoration: none;
-    color: inherit;
 }
 
 .navbar_child2>ul>li:hover {
