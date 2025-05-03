@@ -533,7 +533,6 @@
 }
 
 .hiring_company {
-    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1019,8 +1018,7 @@ p {
     text-align: left;
 }
 
-.career_card>h5,
-.small_text1 {
+.career_card>h5 {
     padding: 0 18px;
     font-size: 27px;
     font-weight: bold;
@@ -1134,7 +1132,7 @@ p {
 
 hr {
     border: none;
-    height: 0.5px;
+    height: 1px;
     background-color: rgb(94, 93, 93);
 }
 
@@ -1493,8 +1491,6 @@ hr {
     .hiring_company {
         gap: 15px;
         position: relative;
-        width: 400px;
-        justify-content: left;
     }
     @keyframes scroll-mobile {
         0% {
@@ -1571,7 +1567,6 @@ hr {
     }
     .launch_parent {
         margin: 0;
-        padding-bottom: 130px;
     }
     .launch_parent1 {
         gap: 15px;
@@ -1665,128 +1660,5 @@ hr {
         padding: 9px;
         border-radius: 10px;
         background-color: rgb(250, 208, 208);
-    }
-    .career_path>h1 {
-        padding: 15px 0;
-        font-size: 21px;
-    }
-    .career_parent {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        scrollbar-width: none;
-        margin: 15px;
-    }
-    .career_card,
-    .career_card>img {
-        width: 400px;
-        height: auto;
-    }
-    .small_text1 {
-        font-size: 21px;
-        text-align: left;
-    }
-    .career_card:hover {
-        transform: scale(1);
-        box-shadow: 0 4px 10px rgba(0.3, 0.3, 0.3, 0.3);
-    }
-    .career_button {
-        margin: 0 20px;
-        background-color: white;
-        color: red;
-        font-size: medium;
-        height: 0;
-        width: 100px;
-    }
-    .pink_footer {
-        display: grid;
-        margin-top: 25px;
-        height: auto;
-        gap: 15px;
-    }
-    .pink_footer>p {
-        font-size: 17px;
-        padding-top: 10px;
-    }
-    .pink_footer>button {
-        width: 150px;
-        font-size: medium;
-        height: 40px;
-        margin: 0 65px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-    }
-    .black_footer {
-        border-radius: 0;
-    }
-    .footer_parent {
-        gap: 17px;
-        display: grid;
-    }
-    .footer_parent>h3 {
-        font-size: 18px;
-        padding: 0 15px;
-        text-align: center;
-        font-weight: 600;
-    }
-    .footer_parent>button {
-        height: 47px;
-        width: 180px;
-        font-size: medium;
-        letter-spacing: 1px;
-        margin: 0 123px;
-        border-radius: 10px;
-    }
-    .footer_child1>img {
-        width: 110px;
-        padding-top: 7px;
-    }
-    .footer_parent1 {
-        gap: 35px;
-        margin: 10px 0;
-        padding: 0 10px;
-        justify-content: left;
-    }
-    .footer_child2>p {
-        display: none;
-    }
-    .half_line {
-        margin: 0;
-    }
-    .footer_flex {
-        display: grid;
-        padding: 0;
-        padding-bottom: 110px;
-        gap: 23px;
-    }
-    .footer_flex2 {
-        bottom: 15px;
-        padding: 0;
-        align-items: center;
-    }
-    .footer_flex2>p {
-        font-size: 13px;
-        font-weight: normal;
-    }
-    .footer_button {
-        width: 270px;
-        padding: 15px;
-        height: 50px;
-    }
-    .footer_button>p {
-        font-size: 15px;
-    }
-    .footer_parent2 {
-        padding: 0 15px;
-        margin: 0;
-    }
-    .capital_text {
-        font-size: 12px;
-    }
-    .footer_address {
-        font-size: 10px;
-        font-weight: 500;
-    }
-    .footer_c2>p {
-        font-size: 10px;
     }
 }
