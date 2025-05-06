@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  background-image: url(../utils/Background_Image.jpg);
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 1px solid black;
+}
+
+.position > h1 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image1_2,
+.image3_4,
+.image5_6 {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.image1_2 {
+  padding: 215px 0;
+}
+
+.image3_4 {
+  padding: 10px 0;
+}
+
+.image5_6 {
+  gap: 15px;
+}
+
+.community1 {
+  height: 145px;
+  width: 217px;
+  object-fit: cover;
+}
+
+.community2 {
+  height: 235px;
+  width: 353px;
+  object-fit: cover;
+}
+
+.community3 {
+  height: 215px;
+  width: 437px;
+  object-fit: cover;
+}
+
+.community4 {
+  height: 215px;
+  width: 211px;
+  object-fit: cover;
+}
+
+.community5 {
+  height: 215px;
+  width: 213px;
+  object-fit: cover;
+}
+
+.community6 {
+  height: 215px;
+  width: 437px;
+  object-fit: cover;
+}

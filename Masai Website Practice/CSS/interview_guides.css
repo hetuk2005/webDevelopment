@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: sticky;
+}
+
+.first_image {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding-top: 10px;
+}
+
+.register {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 7px;
+    font-weight: bold;
+    border: 5px transparent;
+    background-color: #e9000a;
+    color: white;
+}
+
+.info {
+    width: 100%;
+    height: 170px;
+    background-color: #1c1c1e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    gap: 550px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.guides {
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: x-large;
+    height: 80px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: left;
+    padding-left: 15px;
+}
+
+.videoss {
+    background-color: whitesmoke;
+    gap: 10px;
+    padding-bottom: 70px;
+}
+
+.video_1_2_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.start_1 {
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 7px;
+    font-weight: bold;
+    border: 5px transparent;
+    background-color: #f71e28;
+    color: white;
+}
+
+.SDE_1 {
+    height: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+
+.start_2 {
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 7px;
+    font-weight: bold;
+    border: 5px transparent;
+    background-color: #f71e28;
+    color: white;
+}
+
+.SDE_2 {
+    height: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.start_3 {
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 7px;
+    font-weight: bold;
+    border: 5px transparent;
+    background-color: #f71e28;
+    color: white;
+}
+
+.SDE_3 {
+    height: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.start_4 {
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 7px;
+    font-weight: bold;
+    border: 5px transparent;
+    background-color: #f71e28;
+    color: white;
+}
+
+.SDE_4 {
+    height: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.start_5 {
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 7px;
+    font-weight: bold;
+    border: 5px transparent;
+    background-color: #f71e28;
+    color: white;
+}
+
+.SDE_5 {
+    height: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.video_4_5 {
+    padding-top: 45px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 33px;
+    padding-left: 24px;
+}
+
+.choose_guides {
+    height: 110px;
+    font-weight: bold;
+    background-color: white;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.last_para {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+}
+
+.para_1 {
+    padding-top: 20px;
+    height: 225px;
+    width: 300px;
+    background-color: #eaf0fd;
+    padding-left: 25px;
+    border-radius: 15px;
+    font-size: large;
+}
+
+.prac_head_1 {
+    margin-top: 20px;
+}
+
+.texxt {
+    margin-top: 11px;
+}
+
+.para_2 {
+    padding-top: 20px;
+    height: 225px;
+    width: 300px;
+    background-color: #e0f5f8;
+    padding-left: 25px;
+    border-radius: 15px;
+    font-size: large;
+}
+
+.prac_head {
+    margin-top: 20px;
+}
+
+.textt {
+    margin-top: 11px;
+}
+
+.para_3 {
+    padding-top: 20px;
+    height: 225px;
+    width: 300px;
+    background-color: #ededfa;
+    padding-left: 25px;
+    border-radius: 15px;
+    font-size: large;
+}
+
+.prac_head_3 {
+    margin-top: 20px;
+}
+
+.texxtt {
+    margin-top: 11px;
+}
