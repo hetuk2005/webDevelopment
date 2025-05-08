@@ -1,0 +1,1 @@
+// Data Type In JavaScript
