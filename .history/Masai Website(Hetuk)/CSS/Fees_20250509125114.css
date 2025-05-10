@@ -410,8 +410,7 @@ tbody tr:last-child td {
     margin: 27px 0;
 }
 
-.child3,
-.child5 {
+.child3 {
     background-color: black;
     height: 70px;
     width: 290px;
@@ -430,8 +429,7 @@ tbody tr:last-child td {
 }
 
 .child4>p,
-.child3>p,
-.child5>p {
+.child3>p {
     color: white;
     padding: 20px;
     text-align: center;
@@ -439,7 +437,7 @@ tbody tr:last-child td {
     font-weight: 500;
 }
 
-.after {
+p {
     color: #2b2b2b;
     font-size: 14px;
     text-align: center;
@@ -741,172 +739,7 @@ hr {
     /* border: 1px solid black; */
 }
 
-@media (max-width:320px) {
-    br {
-        display: none;
-    }
-    .pap_child2>p>b {
-        font-weight: normal;
-    }
-    .navbar_parent {
-        padding: 10px;
-        justify-content: center;
-    }
-    .navbar_child2 {
-        display: none;
-    }
-    .placement>h1 {
-        font-size: 27px;
-    }
-    .placement>p {
-        margin: 15px 7px;
-        font-size: 13px;
-    }
-    .pap {
-        display: grid;
-        padding: 40px 15px;
-    }
-    .pap_child1>h1 {
-        font-size: larger;
-        text-align: center;
-    }
-    .pap_child2 {
-        margin: 0;
-        padding: 15px 0;
-        border: 0px;
-    }
-    .pap_child2>p {
-        font-size: 15px;
-    }
-    .working>h1 {
-        padding: 15px;
-        text-align: center;
-    }
-    .working_flex1 {
-        padding: 15px 30px;
-        gap: 15px;
-        width: 320px;
-    }
-    .working_child1>p {
-        font-size: 30px;
-    }
-    .working_child2>p {
-        padding: 0;
-        font-size: 15px;
-        text-align: left;
-    }
-    .point_1,
-    .point_2,
-    .point_3 {
-        padding-top: 15px;
-        display: grid;
-        justify-items: center;
-        gap: 7px;
-    }
-    .text>h5 {
-        text-align: center;
-    }
-    .text>p {
-        padding: 5px 0;
-        font-size: 11px;
-    }
-    .working_flex2,
-    .working_flex3 {
-        justify-content: start;
-        padding: 15px 30px;
-        gap: 15px;
-        width: 320px;
-    }
-    .normal_text,
-    .gray_text {
-        padding: 10px 0;
-        width: 250px;
-        font-size: 13px;
-    }
-    .working_child3>h5 {
-        width: 240px;
-    }
-    .working_button {
-        padding: 10px 0;
-        width: 250px;
-        gap: 10px;
-    }
-    .working_button>button {
-        font-size: small;
-        font-weight: 600;
-        width: 105px;
-        height: 47px;
-    }
-    .working_button>h5 {
-        font-size: small;
-    }
-    .responsive_table {
-        padding: 0 10px;
-        width: 300px;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        scrollbar-width: none;
-    }
-    .category,
-    .pap2,
-    .fees,
-    .ctc,
-    .months {
-        padding: 0 15px;
-    }
-    h4 {
-        padding: 20px 10px;
-        font-size: 15px;
-    }
-    .working_child4>p {
-        padding: 10px 0;
-        text-align: left;
-    }
-    .working_button1 {
-        width: 320px;
-        padding: 0 15px;
-        gap: 15px;
-    }
-    .working_button1>button {
-        width: 115px;
-        font-size: medium;
-        font-weight: 600;
-    }
-    .working_button1>h5 {
-        font-size: small;
-    }
-    .parent,
-    .parent1 {
-        margin: 20px 0;
-        padding: 0 10px;
-        width: 320px;
-    }
-    .child1,
-    .child2,
-    .child3,
-    .child4,
-    .child5 {
-        height: 60px;
-        width: 150px;
-    }
-    .child1>p,
-    .child2>p,
-    .child4>p,
-    .child3>p {
-        font-size: small;
-    }
-    .child5>p {
-        font-size: small;
-        padding: 20px 10px;
-    }
-    .after {
-        width: 320px;
-        padding: 0 13px;
-        font-size: 10px;
-    }
-}
-
-@media (min-width:321px) and (max-width: 480px) {
+@media (max-width: 480px) {
     .navbar_parent {
         width: 100%;
         padding: 0;
@@ -1074,8 +907,7 @@ hr {
     .child1,
     .child2,
     .child3,
-    .child4,
-    .child5 {
+    .child4 {
         width: 200px;
         height: 50px;
     }
@@ -1085,15 +917,14 @@ hr {
     }
     .child2>p,
     .child3>p,
-    .child4>p,
-    .child5>p {
+    .child4>p {
         font-size: large;
         padding: 11px;
     }
     .parent1 {
         margin: 21px 0;
     }
-    .after {
+    p {
         padding: 0 15px;
         font-size: 9px;
         font-weight: 500;
@@ -1374,15 +1205,13 @@ hr {
     .child1,
     .child2,
     .child3,
-    .child4,
-    .child5 {
+    .child4 {
         width: 250px;
         height: 70px;
     }
     .child2,
     .child3,
-    .child4,
-    .child5 {
+    .child4 {
         padding: 10px;
     }
     .child1>p {
@@ -1391,8 +1220,7 @@ hr {
     }
     .child2>p,
     .child3>p,
-    .child4>p,
-    .child5>p {
+    .child4>p {
         font-size: larger;
         padding: 11px;
     }
@@ -1400,7 +1228,7 @@ hr {
         margin: 21px 0;
         padding-left: 200px;
     }
-    .after {
+    p {
         font-size: 13px;
         padding-left: 225px;
         padding-right: 21px;
