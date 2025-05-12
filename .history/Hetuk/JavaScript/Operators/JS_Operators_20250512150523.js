@@ -257,28 +257,3 @@ let voter_check = age > 18 ? "Eligable For Voting" : "Not Eligable For Voting";
 console.log(voter_check);
 
 /* 7. Type Operators */
-
-let str = "Hetuk";
-let num = 65;
-
-console.log(typeof str);
-console.log(typeof num);
-
-/* 8. Spread And Rest Operators */
-
-// Spread Operator
-
-let arr = [1, 2, 3, 4];
-let new_arr = [5, 6, 7, 8];
-
-let final_arr = [arr + new_arr];
-console.log(final_arr);
-
-let final_arr1 = [arr, new_arr];
-console.log(final_arr1);
-
-let final_arr2 = [...arr, ...new_arr];
-console.log(final_arr2);
-
-let final_arr3 = [...arr, 5, 6, 7, 8];
-console.log(final_arr3);
