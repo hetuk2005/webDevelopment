@@ -15,40 +15,40 @@
 
 //Using Basic Maths:-
 
-let num1 = 4;
-let num2 = 2;
+// let num1 = 4;
+// let num2 = 2;
 
-let sum = num1 + num2;
+// let sum = num1 + num2;
 
-console.log(sum);
+// console.log(sum);
 
-let sub = num1 - num2;
+// let sub = num1 - num2;
 
-console.log(sub);
+// console.log(sub);
 
-let multi = num1 * num2;
+// let multi = num1 * num2;
 
-console.log(multi);
+// console.log(multi);
 
-let div = num1 / num2;
+// let div = num1 / num2;
 
-console.log(div);
+// console.log(div);
 
-let modules = num1 % num2;
+// let modules = num1 % num2;
 
-console.log(modules);
+// console.log(modules);
 
-let exponentional = num1 ** num2;
+// let exponentional = num1 ** num2;
 
-console.log(exponentional);
+// console.log(exponentional);
 
-num1++;
+// num1++;
 
-console.log(num1);
+// console.log(num1);
 
-num2--;
+// num2--;
 
-console.log(num2);
+// console.log(num2);
 
 
 // console.log(num1 + num2);
@@ -76,17 +76,18 @@ console.log(num2);
 4. *= - Multiply & Assign
 5. /= - Divide & Assign
 6. %= - Modules & Assign
+
 */
 
-let num3 = 7;
-
-num3 += 3;
-
-console.log(num3);
+// let num3 = 7;
+// 
+// num3 += 3;
+// 
+// console.log(num3);
 
 // 1. Describe The Difference Between Arithmethic & Assignment Operators In Javascript
 
-// Answer:-1. In Arithmethic operator it just adds, substracts the one value to second value. 
+// Answer:-1. In Arithmethic operator it just adds, substracts the one value to second value.
 // 2. In Assignment Operator it adds operator and assign also it can be done through one value also.
 
 // 2. List Any 5 Arithmetic Operators & Explain With Their Use With Examples.
@@ -145,3 +146,43 @@ console.log(num3);
 // 3. Why Do We Use "+" Operator With Strings, And How Does It Behave Differently Compared To Numbers
 
 // Answer:- If we use + operator with string it take both words or letters what you have given and join them and in number if we apply + operator it will add both numbers.
+
+/* 3. Comparision Operator */
+
+let num4 = 2;
+let num5 = 3;
+
+console.log("checking:", num4 == num5);
+console.log("checking:", num4 == num5 - 1);
+
+/*
+
+1. == - Data Value
+2. === - Data Type
+
+*/
+
+let num6 = "2";
+
+console.log("checking:", num6 === num5);
+console.log("checking:", num6 === num5 - 1);
+console.log("checking:", num6 == num5 - 1);
+
+console.log(typeof num6);
+console.log(typeof num5);
+
+/*
+
+1. ! = - Data Value
+2. ! == - Data Type
+
+*/
+
+let flag1 = false;
+console.log(flag1 != true);
+
+/*  Task */
+
+// 1. !=
+
+console.log(num4 != num5 - 1);
