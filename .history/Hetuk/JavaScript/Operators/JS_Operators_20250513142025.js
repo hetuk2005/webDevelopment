@@ -297,51 +297,8 @@ sum1(1, 2, 3);
 
 /* 9. Bit-Wise Operators */
 
-// Converts Number Into Binary
-
 let number = 65;
 
 let binary = number.toString(2);
 
 console.log("binary:", binary);
-
-let binary1 = number.toString(6);
-
-console.log("binary1:", binary1);
-
-let binary2 = number.toString(8);
-
-console.log("binary2:", binary2);
-
-let binary3 = number.toString(16);
-
-console.log("binary3:", binary3);
-
-// Converts Binary Into Number
-
-let number1 = parseInt(binary, 2);
-console.log("binary:", binary);
-
-//Conversion Number To String
-
-let num65 = 65;
-console.log("num65:", num65);
-
-let new_data = num65.toString();
-console.log("new_data:", new_data);
-console.log("new_data:", typeof new_data);
-
-let new_data1 = String(num65);
-console.log("new_data:", new_data1);
-console.log("new_data:", typeof new_data1);
-
-let new_data2 = Number(new_data1);
-console.log("new_data:", new_data2);
-console.log("new_data:", typeof new_data2);
-
-let str1 = "Hetuk Patel";
-
-let ans = parseInt(str1);
-// let ans = Number(str1);
-
-console.log("ans:", ans);
