@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(./utils/Background\ Image.jpg);
+  background-image: url(../utils/Background\ Image.jpg);
   background-size: cover;
   background-repeat: repeat;
 }
@@ -45,7 +45,8 @@ body {
 .after {
   position: absolute;
   font-size: 8px;
-  padding: 5px 3px;
+  margin-top: 5px;
+  margin-left: 3px;
 }
 
 .child1 > ul > li:hover {
@@ -75,83 +76,76 @@ body {
   display: flex;
   padding: 35px 40px;
   color: whitesmoke;
+  z-index: 1;
 }
 
 .item {
   position: relative;
-  width: 1500px;
-  height: 500px;
+  width: 500px;
   z-index: 1;
+  height: 500px;
 }
 
 .item:hover {
-  transition: ease-in-out 0.1s;
-  transform: scale3d(1.1, 1.1, 1.1);
+  width: 1000px;
+  transition: all 0.3s linear;
 }
 
 .text {
   position: absolute;
   bottom: 0;
   font-size: 23px;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
   z-index: 1;
+  padding: 0 20px;
 }
 
-.text:hover {
-  transform: scale3d(0.9, 0.9, 0.9);
-  transition: ease-in-out 1s;
+.image1:hover,
+.image2:hover,
+.image3:hover,
+.image4:hover,
+.image5:hover {
+  filter: brightness(25%);
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5 {
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%) contrast(90%) saturate(110%);
+  height: 100%;
+  width: 100%;
 }
 
 .image1 {
-  filter: brightness(60%) contrast(90%) saturate(110%);
-  height: 100%;
-  width: 100%;
-  background-image: url(./utils/Solo\ Leveling.png);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../utils/Solo\ Leveling.png);
 }
 
 .image2 {
-  filter: brightness(60%) contrast(90%) saturate(110%);
-  height: 100%;
-  width: 100%;
-  background-image: url(./utils/Jujutsu\ Kaisen.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../utils/Jujutsu\ Kaisen.jpg);
 }
 
 .image3 {
-  filter: brightness(60%) contrast(90%) saturate(110%);
-  height: 100%;
-  width: 100%;
-  background-image: url(./utils/Demon\ Slayer.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../utils/Demon\ Slayer.jpg);
 }
 
 .image4 {
-  filter: brightness(60%) contrast(90%) saturate(110%);
-  height: 100%;
-  width: 100%;
-  background-image: url(./utils/Naruto.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../utils/Naruto.jpg);
 }
 
 .image5 {
-  filter: brightness(60%) contrast(90%) saturate(110%);
-  height: 100%;
-  width: 100%;
-  background-image: url(./utils/Death\ Note.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../utils/Death\ Note.jpg);
 }
 
 .latest {
   display: flex;
   gap: 27px;
 }
+
 .anime {
   display: flex;
   gap: 13px;
@@ -220,6 +214,7 @@ input {
   height: 45px;
   width: 300px;
 }
+
 input::placeholder {
   padding: 0 9px;
 }
