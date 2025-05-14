@@ -37,6 +37,7 @@ console.log("score2 = ", score2);
 let correctedUsername = "admin";
 let correctedPassword = "12345";
 
+
 let enteredUsername = "admin";
 let enteredUsername1 = "user";
 let enteredUsername2 = "admin";
