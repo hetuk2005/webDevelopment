@@ -32,3 +32,47 @@ for (let n = 1; n <= b; n++){
  sum += n;
     console.log("Sum Of First Five Numbers Is:", sum);
 }
+
+// 4. Print Multiplication Number
+
+let sum1 = 5;
+
+for (let m = 1; m <= 10; m++){
+    console.log(sum1*m);
+}
+
+// 5. Reverse Counting
+
+let arr3=[10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+for (let r = 0; r < arr3.length; r++){
+    console.log("Reverse Counting: ", arr3[r]);
+}
+
+// 6. Factorial Of A Number
+
+let sum2 = 1;
+
+for (let f = 1; f <= 5; f++){
+    sum2 *= f;
+}
+
+console.log("Factorial Number: ", sum2);
+
+// 7. Fibonacci Series
+
+let y = 1;
+let x = 0;
+let next;
+
+console.log("Fibonacci Series: ", x);
+console.log("Fibonacci Series: ", y);
+
+for (let s = 2; s < 5; s++){
+    next = x+y;
+    console.log("Fibonacci Series: ", next);
+    x = y;
+    y = next;
+}
+
+// 8. 
