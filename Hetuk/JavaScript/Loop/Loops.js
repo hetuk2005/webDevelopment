@@ -75,4 +75,14 @@ for (let s = 2; s < 5; s++){
     y = next;
 }
 
-// 8. 
+// 8. Triangle Pattern
+
+let row = 5;
+
+for (let t = 1; t <= row; t++){
+    let star = "";
+    for (let p = 1; p <= t; p++){
+        star += "*";
+    }
+    console.log(star);
+}

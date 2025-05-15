@@ -1,132 +1,132 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-size: 30px;
-    font-weight: 600;
-    background: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 600;
+  background: #000;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
 .container {
-    border-radius: 10px;
-    border: 7px solid gray;
-    height: 30%;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(12, 100px);
-    justify-self: center;
-    align-items: center;
-    gap: 10px;
-    top: 50%;
-    left: 47%;
-    transform: translate(-50%, -50%);
-    background: #fff;
+  border-radius: 10px;
+  border: 7px solid gray;
+  height: 30%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 100px);
+  justify-self: center;
+  align-items: center;
+  gap: 10px;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  background: #fff;
 }
 
 button {
-    height: 35% !important;
-    background: transparent;
-    border: 1px solid gray;
-    border: none;
-    height: auto;
-    color: gray;
+  height: 35% !important;
+  background: transparent;
+  border: 1px solid gray;
+  border: none;
+  height: auto;
+  color: gray;
 }
 
 img {
-    width: 30px;
-    height: 30px;
-    background: #fff;
+  width: 30px;
+  height: 30px;
+  background: #fff;
 }
 
 .left_arrow,
 .right_arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.1;
-    background: whitesmoke;
-    border-radius: 100%;
-    margin: auto 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.1;
+  background: whitesmoke;
+  border-radius: 100%;
+  margin: auto 23px;
 }
 
-.left_arrow>img,
-.right_arrow>img {
-    border-radius: 100%;
-    mix-blend-mode: color-burn;
+.left_arrow > img,
+.right_arrow > img {
+  border-radius: 100%;
+  mix-blend-mode: color-burn;
 }
 
 .left_arrow {
-    rotate: 180deg;
+  rotate: 180deg;
 }
 
 .left_arrow:hover,
 .right_arrow:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    /* border: 1px solid #fff; */
-    position: relative;
-    top: 15%;
-    animation-name: image;
-    animation-duration: 5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  /* border: 1px solid #fff; */
+  position: relative;
+  top: 15%;
+  animation-name: image;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes image {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.logo>img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    position: absolute;
+.logo > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
 }
 
 .active {
-    color: #000;
+  color: #000;
 }
 
 .active::after {
-    content: "";
-    background: #000;
-    margin: auto;
-    width: 25px;
-    height: 4px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+  content: "";
+  background: #000;
+  margin: auto;
+  width: 25px;
+  height: 4px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
 .btn:hover::after {
-    content: "";
-    background: #000;
-    margin: auto;
-    width: 25px;
-    height: 4px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    color: #000 !important;
+  content: "";
+  background: #000;
+  margin: auto;
+  width: 25px;
+  height: 4px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  color: #000 !important;
 }
 
 .btn:hover {
-    color: #000;
+  color: #000;
 }
