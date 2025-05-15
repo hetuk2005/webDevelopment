@@ -110,7 +110,7 @@ body {
 
 .item:hover img {
   height: 500px;
-  filter: brightness(20%);
+  filter: brightness(30%);
 }
 
 .latest {
