@@ -108,6 +108,7 @@
 }
 
 .navbar_child2 > ul,
+.fees > ul,
 .navbar_span > ul > li {
   display: flex;
   list-style-type: none;
@@ -118,7 +119,7 @@
 }
 
 .navbar_child2 > ul > li > a,
-.fees > li > a,
+.fees > ul > li > a,
 .navbar_span > ul > li > a {
   text-decoration: none;
   color: inherit;
@@ -1708,7 +1709,7 @@ hr {
     height: auto;
   }
   .career_button {
-    margin: 25px 85px;
+    display: none;
   }
   .pink_footer {
     display: grid;
@@ -2313,7 +2314,11 @@ hr {
 }
 
 @media (min-width: 481px) and (max-width: 770px) {
+  * {
+    scrollbar-width: none;
+  }
   .navbar_parent {
+    width: 760px;
     padding: 3px 10px;
     gap: 7px;
   }
@@ -2335,20 +2340,24 @@ hr {
     color: #000;
   }
   .stories_parent {
+    width: 760px;
     display: grid;
     padding: 25px 0;
   }
   .stories_child1 {
+    width: 760px;
     padding: 0;
   }
   br {
     display: none;
   }
   .stories_blue {
+    width: 770px;
     font-size: 48px;
     text-align: center;
   }
   .stories_black {
+    width: 770px;
     text-align: center;
     font-size: 25px;
   }
@@ -2356,7 +2365,10 @@ hr {
     margin: 3px 300px;
   }
   .stories_child2 {
-    padding: 15px 87px;
+    margin: 15px 0;
+    margin-left: 87px;
+    padding: 0;
+    width: 670px;
   }
   .stories_child2 > iframe {
     float: none;

@@ -85,13 +85,10 @@ body {
   width: 500px;
   height: 500px;
   position: relative;
-  overflow: hidden;
-  transition: flex 0.5s ease;
 }
 
 .item:hover {
-  flex-grow: 4;
-  height: 500px;
+  transition: flex 0.5s ease;
   width: 900px;
 }
 
@@ -379,10 +376,10 @@ h2 {
   background-color: #000;
   color: #fff;
   height: 50px;
-  padding: 20px 10px;
-  gap: 880px;
+  padding: 20px 45px;
+  gap: 900px;
   align-items: center;
-  border-top: 0.5px solid #c1c1c1;
+  border-top: 2px solid rgb(56, 56, 56);
 }
 
 .text1 {
@@ -393,6 +390,10 @@ h2 {
 
 .text1 > a {
   color: #1d21a1;
+}
+
+.text1 > a:hover {
+  text-decoration: underline;
 }
 
 .footer_img {
@@ -409,4 +410,10 @@ h2 {
 
 .image {
   filter: grayscale(10);
+}
+
+@media (max-width: 480px) {
+}
+
+@media (min-width: 481px) and (max-width: 770px) {
 }
