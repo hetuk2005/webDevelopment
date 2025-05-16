@@ -2313,6 +2313,20 @@ hr {
   }
 }
 
+.nobroker {
+  background: linear-gradient(to right, white 2px, transparent 2px) 0 0,
+    linear-gradient(to right, white 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, white 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, white 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, white 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, white 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, white 2px, transparent 2px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  padding: 5px;
+}
+
 @media (min-width: 481px) and (max-width: 770px) {
   * {
     scrollbar-width: none;
@@ -2320,20 +2334,29 @@ hr {
   .navbar_parent {
     width: 760px;
     padding: 3px 10px;
-    gap: 7px;
+    gap: 30px;
   }
   .navbar_span {
     grid-template-rows: repeat(1, 1fr);
   }
   .navbar_child2 > ul {
     align-items: last baseline;
-    gap: 15px;
+    font-size: small;
+  }
+  .navbar_span > ul > li {
+    font-size: small;
+  }
+  .button_new {
+    width: 35px;
+    height: 17px;
+    font-size: 9px;
   }
   .fees {
     align-items: normal;
   }
   .fees > ul {
     list-style-type: none;
+    font-size: small;
   }
   .fees > ul > li > a {
     text-decoration: none;
@@ -2628,9 +2651,9 @@ hr {
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: none;
-    margin: auto;
+    padding: 10px 0;
     width: 95%;
-    justify-content: center;
+    justify-content: start;
   }
   .career_card {
     width: 400px;
