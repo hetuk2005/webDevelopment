@@ -185,9 +185,9 @@ body {
 
 .child3 {
   flex: 3;
-  border-bottom: 1px solid rgb(208, 206, 206);
   margin: 10px 25px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgb(188, 186, 186);
 }
 
 .child4 {
@@ -321,13 +321,14 @@ h2 {
   /* border: 1px solid; */
   display: flex;
   align-items: center;
-  margin: 0 250px;
   padding: 30px 0;
+  margin: 0 70px;
   gap: 10px;
 }
 
 .btn,
-.btn3 {
+.btn3,
+.btn4 {
   width: 45px;
   height: 45px;
   border-radius: 5px;
@@ -338,7 +339,8 @@ h2 {
   color: grey;
 }
 
-.btn3:hover {
+.btn3:hover,
+.btn4:hover {
   background-color: rgb(208, 206, 206);
 }
 
@@ -412,9 +414,123 @@ h2 {
   filter: grayscale(10);
 }
 
+.search {
+  display: none;
+}
+
 @media (max-width: 480px) {
   .navbar {
     display: none;
+  }
+  .title {
+    width: 300px;
+    display: flex;
+    padding: 10px 0;
+    height: auto;
+    padding: 10px 30px;
+    align-items: center;
+    font-size: 15px;
+    gap: 50px;
+  }
+  .search {
+    display: inline-block;
+  }
+  .parent {
+    margin: 0 20px;
+    padding: 10px 15px;
+  }
+  .recent {
+    display: grid;
+    padding: 0;
+    width: 350px;
+    margin: 10px 0;
+    justify-self: center;
+  }
+  .image1 {
+    width: 350px;
+    filter: brightness(40%);
+    object-fit: cover;
+  }
+  .item:hover,
+  .item,
+  .item img,
+  .item:hover img {
+    width: 350px;
+    height: 200px;
+    transition: none;
+    object-fit: fill;
+  }
+  .text {
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: large;
+    font-weight: 600;
+  }
+  .latest {
+    display: grid;
+    padding-top: 30px;
+  }
+  .child3 {
+    margin: 10px;
+    width: 350px;
+    padding: 0;
+  }
+  .anime {
+    display: grid;
+    gap: 10px;
+    width: inherit;
+  }
+  .latest_img {
+    width: inherit;
+    height: 200px;
+    object-fit: cover;
+    float: none;
+  }
+  .description > p {
+    font-size: 15px;
+    padding: 3px 0;
+    padding-bottom: 15px;
+  }
+  .parent1 {
+    width: 300px;
+  }
+  br,
+  .btn4 {
+    display: none;
+  }
+  .description {
+    padding-bottom: 50px;
+  }
+  .pagination {
+    width: inherit;
+    margin: 0 35px;
+    padding: 15px 0;
+  }
+  .btn2 {
+    border-radius: 0px;
+    width: 70px;
+    height: 40px;
+  }
+  .btn,
+  .btn3,
+  .btn4 {
+    border-radius: 0px;
+    width: 70px;
+    height: 40px;
+  }
+  .btn1 {
+    width: 150px;
+    margin: 0 20px;
+    height: 40px;
+    border-radius: 0px;
+  }
+  .child4 {
+    padding: 0;
+  }
+  input {
+    width: 360px;
+    height: 45px;
   }
 }
 
