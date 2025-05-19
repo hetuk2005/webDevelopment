@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.parent {
+  border: 1px solid #000;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 600px;
+  width: 100%;
+  background-color: #eaf1f5;
+  clip-path: path(
+    "M50.5372 91.9404C67.7347 26.8469 25.5967 4.15342 1 1H689C645.215 13.5537 642.974 50.932 650.61 80.0338C654.819 96.0754 660.198 112.11 660.487 128.692C665.437 412.392 451.631 475.197 341 470.5C77.6592 455.806 34.2279 234.94 45.6348 115.458C46.3966 107.479 48.4897 99.6901 50.5372 91.9404Z"
+  );
+}
+
+.parent1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 35px;
+}
+
+.child1 {
+  background-image: linear-gradient(-60deg, #d2b47b, #fff, #d2b47b);
+  margin-top: 37px;
+  z-index: 1;
+  /* border: 1px solid #000; */
+  height: 250px;
+  border-radius: 30px;
+  width: 185px;
+  position: relative;
+  bottom: 21px;
+}
+.salary {
+  padding: 9px 0px;
+}
+.child1 > .img1 {
+  margin: 0 35px;
+  width: 100px;
+  margin-top: 25px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.A,
+.salary {
+  font-size: 23px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.A {
+  font-weight: bolder;
+  color: #c03b4e;
+}
+
+.child4 > .img2 {
+  position: absolute;
+  width: 185px;
+  height: 50px;
+  bottom: 20px;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 0px 15px;
+}
+
+.child2 > img {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 240px;
+  width: 280px;
+  z-index: 0;
+}
+
+.child3 {
+  height: 230px;
+  width: 75%;
+  left: 125px;
+  top: -49px;
+  position: relative;
+  background-color: #4a749c;
+  border-radius: 20px;
+  /* border: 1px solid #000; */
+}
+
+.child3 > p {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 20px;
+  font-weight: 200px;
+  color: #fff;
+}
+
+.child3 > h3 {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.qotes {
+  font-size: 50px;
+  position: absolute;
+  left: 10%;
+  transform: skew(-13deg);
+  color: red;
+  padding-top: 8px;
+}
+
+.parent5:hover {
+  box-shadow: 0 4px 10px rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+.parent5 {
+  background-image: url(../utils/Banner.webp);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: inherit;
+  width: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.parent5 > img {
+  height: inherit;
+  width: inherit;
+  object-fit: contain;
+  object-position: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  left: 63px;
+}
+
+.main_parent {
+  width: 40%;
+  height: 50%;
+}
