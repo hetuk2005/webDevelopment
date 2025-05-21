@@ -418,7 +418,19 @@ h2 {
   display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
+  .navbar {
+    display: none;
+  }
+  .title {
+    padding: 15px 0;
+    height: auto;
+    font-size: small;
+    text-align: center;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
   .navbar {
     display: none;
   }
@@ -531,6 +543,23 @@ h2 {
   input {
     width: 360px;
     height: 45px;
+  }
+  .ads {
+    rotate: none;
+    padding: 25px 0;
+    font-size: medium;
+  }
+  .footer {
+    gap: 20px;
+    display: grid;
+    justify-items: center;
+    height: auto;
+    margin-top: 30px;
+  }
+  .text1 {
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
   }
 }
 
