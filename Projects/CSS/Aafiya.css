@@ -6,6 +6,57 @@
   font-family: Poppins;
 }
 
+.darkmode {
+  background-color: #000;
+  color: #fff;
+}
+
+.darkmode .img1,
+.img3,
+.img4,
+.img5,
+.eligibility_form,
+.profile1 > img,
+.P > img {
+  background-color: #fff;
+}
+
+.theme_switch {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 7px;
+  right: 7px;
+  border: 2px solid;
+  background-color: #e8e9ed;
+  z-index: 1;
+}
+
+.theme_switch > img:hover {
+  rotate: 200deg;
+  transition: all 0.7s ease-in-out;
+}
+
+.darkmode .theme_switch {
+  border: 2px solid red;
+}
+
+.theme_switch img:first-child {
+  display: none;
+}
+
+.darkmode .theme_switch img:last-child {
+  display: none;
+}
+
+.darkmode .theme_switch img:first-child {
+  display: block;
+}
+
 .child1 {
   display: flex;
   gap: 50px;
