@@ -51,7 +51,7 @@ while (start <= end) {
 // let start2 = 2;
 
 // while (start2 <= N) {
-//     if (start2 % 2 == 0) {
+//     if (start2 % 2 == 1) {
 //         console.log("Odd Numbers: ", start2);
 //     }
 //     start2++;
