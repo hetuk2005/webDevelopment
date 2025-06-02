@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+body {
+  background-image: url(../utils/Background\ Image.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.title {
+  height: 110px;
+  width: 100%;
+  font-size: 33px;
+  font-weight: bolder;
+  color: white;
+  font-family: cursive;
+  font-style: italic;
+  padding: 10px 70px;
+}
+
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  position: relative;
+  border-top: 1px solid rgb(56, 56, 56);
+}
+
+.child1 > ul {
+  font-size: 15px;
+  color: white;
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.after {
+  position: absolute;
+  font-size: 8px;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+.child1 > ul > li:hover {
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+}
+
+.child2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 50px;
+}
+
+.child2 > img {
+  background-color: white;
+  height: 25px;
+}
+
+.parent {
+  display: flex;
+  background-color: whitesmoke;
+  margin: 0 45px;
+  padding: 30px;
+}
+
+.child3 {
+  flex: 3;
+}
+
+.info {
+  display: flex;
+  gap: 3px;
+  padding: 15px 0;
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7 {
+  color: rgb(255, 60, 60);
+  font-size: 14px;
+}
+
+.p1:hover,
+.p2:hover,
+.p3:hover,
+.p4:hover,
+.p5:hover,
+.p6:hover,
+.p7:hover {
+  text-decoration: underline;
+}
+
+span {
+  color: grey;
+}
+
+h5 {
+  font-size: 27px;
+  opacity: 0.8;
+}
+
+.time {
+  font-weight: 700;
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.clock {
+  height: 20px;
+  width: 20px;
+}
+
+.source {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.source:hover {
+  text-decoration: underline;
+}
+
+.profile {
+  height: 20px;
+  width: 20px;
+}
+
+h4 {
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 900;
+  font-size: 21px;
+  color: rgb(138, 0, 0);
+}
+
+.black {
+  font-size: 21px;
+  padding-top: 20px;
+  color: black;
+  opacity: 0.8;
+}
+
+.image1 {
+  margin: 0 300px;
+  width: 400px;
+  height: 550px;
+  object-fit: fill;
+}
+
+.child4 {
+  padding: 15px 0;
+  flex: 1;
+}
+
+input {
+  height: 45px;
+  width: 300px;
+}
+
+input::placeholder {
+  padding: 0 9px;
+}
+
+.child4 > h6 {
+  margin-top: 40px;
+  height: 40px;
+  width: 135px;
+  text-align: center;
+  background-color: rgb(51, 50, 50);
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+hr {
+  width: 300px;
+  border: 2px solid black;
+}
+
+.icons {
+  width: 220px;
+  display: flex;
+  gap: 15px;
+}
+
+.icons > img {
+  height: 40px;
+  width: 40px;
+  margin: 30px 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.child4 > h5 {
+  margin-top: 10px;
+  height: 40px;
+  width: 185px;
+  text-align: center;
+  background-color: rgb(51, 50, 50);
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.uploads {
+  padding: 15px 0;
+  padding-right: 15px;
+  color: red;
+}
+
+.uploads > p {
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+.child4 > h4 {
+  height: 33px;
+  width: 190px;
+  text-align: center;
+  background-color: rgb(51, 50, 50);
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+.discord {
+  height: auto;
+  width: 310px;
+  margin: 20px 0;
+  object-fit: contain;
+}
+
+.child4 > h3 {
+  height: 33px;
+  width: 200px;
+  text-align: center;
+  background-color: rgb(51, 50, 50);
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.telegram {
+  height: auto;
+  width: 310px;
+  margin: 20px 0;
+  object-fit: contain;
+}
+
+.child4 > h2 {
+  margin-top: 40px;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  background-color: rgb(51, 50, 50);
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 13px 0;
+}
+
+.ads {
+  rotate: 35deg;
+  font-size: small;
+  padding-top: 110px;
+  padding-left: 20px;
+}
+
+.footer {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  height: 50px;
+  padding: 20px 45px;
+  gap: 900px;
+  align-items: center;
+  border-top: 2px solid rgb(56, 56, 56);
+}
+
+.text1 {
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: medium;
+}
+
+.text1 > a {
+  color: #1d21a1;
+}
+
+.text1 > a:hover {
+  text-decoration: underline;
+}
+
+.footer_img {
+  display: flex;
+  gap: 10px;
+}
+
+.footer_img > img {
+  height: 25px;
+  width: 25px;
+  object-fit: fill;
+  background-color: #fff;
+}
+
+.image {
+  filter: grayscale(10);
+}
+
+.search {
+  display: none;
+}

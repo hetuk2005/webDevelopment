@@ -132,6 +132,16 @@ body {
   object-fit: contain;
 }
 
+.description > p > a,
+.uploads > p > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.item > a > .text {
+  color: whitesmoke;
+}
+
 .description > p {
   padding-top: 11px;
   font-size: 21px;
