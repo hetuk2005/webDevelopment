@@ -20,6 +20,15 @@
   background-color: #fff;
 }
 
+.profile1 > img,
+.P > img {
+  border-radius: 51%;
+}
+
+.darkmode .text1:hover {
+  color: red;
+}
+
 .theme_switch {
   height: 50px;
   width: 50px;
@@ -183,6 +192,10 @@
   font-size: 20px;
 }
 
+.child2 > ul > li:hover {
+  color: black;
+}
+
 .home_img > h3 {
   font-size: 37px;
   font-weight: normal;
@@ -209,18 +222,32 @@
   border: transparent;
 }
 
+.darkmode .nav2 > ul > li:hover {
+  background-color: #fff;
+  color: #000;
+  height: 55px;
+}
+
+.nav2 > ul > li:hover {
+  background-color: #000;
+  color: #fff;
+  height: inherit;
+}
+
 .nav2 > ul {
   list-style-type: none;
   display: flex;
   gap: 40px;
-  padding: 25px 60px;
+  height: 55px;
+  margin: 0;
+  padding: 0 15px;
   border-bottom: 2px solid gray;
   font-size: large;
   font-weight: 500;
 }
 
-.nav2 > ul > .list:hover {
-  text-decoration: underline;
+.nav2 > ul > li {
+  padding: 15px 10px;
 }
 
 .treatment_overview {

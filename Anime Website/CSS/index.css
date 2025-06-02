@@ -85,6 +85,7 @@ body {
   width: 500px;
   height: 500px;
   position: relative;
+  object-fit: contain;
 }
 
 .item:hover {
@@ -276,6 +277,7 @@ h4 {
   height: auto;
   width: 310px;
   margin: 20px 0;
+  object-fit: contain;
 }
 
 h3 {
@@ -295,6 +297,7 @@ h3 {
   height: auto;
   width: 310px;
   margin: 20px 0;
+  object-fit: contain;
 }
 
 h2 {
@@ -419,14 +422,169 @@ h2 {
 }
 
 @media (max-width: 320px) {
-  .navbar {
+  .navbar,
+  br,
+  .btn,
+  .btn4,
+  .btn4:hover {
     display: none;
   }
   .title {
     padding: 15px 0;
     height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+  }
+  .search {
+    display: inline-block;
+    font-size: medium;
+  }
+  .title > h1 {
+    font-size: medium;
+  }
+  .parent {
+    margin: 0;
+  }
+  .recent {
+    display: grid;
+    padding: 0;
+    width: 290px;
+    margin: 10px 0;
+    justify-self: center;
+  }
+  .image1 {
+    width: 290px;
+    filter: brightness(40%);
+  }
+  .item:hover,
+  .item,
+  .item img,
+  .item:hover img {
+    width: 300px;
+    height: 350px;
+    transition: none;
+    object-fit: fill;
+  }
+  .text {
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 15px;
+    width: 270px;
+    font-weight: 600;
+  }
+  .latest {
+    display: grid;
+    padding-top: 30px;
+  }
+  .parent1 {
+    width: 290px;
+  }
+  .child3 {
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  .anime {
+    display: grid;
+    gap: 10px;
+    width: 290px;
+    padding-bottom: 25px;
+  }
+  .latest_img {
+    width: 290px;
+    height: 200px;
+    object-fit: fill;
+    float: none;
+  }
+  .description > p {
+    font-size: 16px;
+    padding: 3px 10px;
+    padding-bottom: 15px;
+  }
+  .time {
+    padding-left: 10px;
+  }
+  .pagination {
+    margin: 0 15px;
+    padding: 15px 0;
+  }
+  .btn2,
+  .btn3 {
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+  }
+  .btn1 {
+    width: 100px;
+    font-size: x-small;
+    font-weight: 900;
+    margin: 0;
+    height: 40px;
+    border-radius: 0px;
+  }
+  input {
+    width: 290px;
+    height: 40px;
+  }
+  h6 {
+    margin-top: 20px;
+    height: 33px;
+    width: 115px;
     font-size: small;
+  }
+  hr {
+    width: 290px;
+  }
+  .icons {
+    padding: 0 1px;
+  }
+  h5 {
+    height: 33px;
+    width: 115px;
+    font-size: x-small;
+  }
+  h4 {
+    height: 33px;
+    width: 125px;
+    font-size: x-small;
+  }
+  .discord {
+    width: 290px;
+  }
+  h3,
+  h2 {
+    height: 33px;
+    width: 130px;
+    font-size: x-small;
+    padding: 13px 0;
+  }
+  .telegram {
+    width: 290px;
+  }
+  h2 {
+    font-size: small;
+    padding: 10px 0;
+  }
+  .ads {
+    rotate: 0deg;
+    padding: 50px 5px;
+    font-size: large;
+    font-weight: 500;
+  }
+  .footer {
+    gap: 20px;
+    display: grid;
+    justify-items: center;
+    height: auto;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .text1 {
     text-align: center;
+    font-size: small;
+    font-weight: 600;
   }
 }
 
@@ -494,7 +652,7 @@ h2 {
     width: inherit;
   }
   .latest_img {
-    width: inherit;
+    width: 335px;
     height: 200px;
     object-fit: cover;
     float: none;
@@ -564,4 +722,201 @@ h2 {
 }
 
 @media (min-width: 481px) and (max-width: 770px) {
+  .navbar,
+  br {
+    display: none;
+  }
+  .search {
+    display: inline-block;
+  }
+  .item:hover,
+  .item:hover img {
+    transition: none;
+  }
+  .title {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    font-size: large;
+  }
+  .parent {
+    margin: auto;
+    padding: 0 15px;
+    padding-top: 20px;
+    height: 495vh;
+  }
+  .recent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .text {
+    font-size: larger;
+    padding: 0 15px;
+    left: 0;
+    bottom: 10px;
+    font-weight: bold;
+  }
+  .item:hover,
+  .item,
+  .item img,
+  .item:hover img {
+    width: 350px;
+    height: 300px;
+    transition: none;
+    object-fit: fill;
+  }
+  .item img {
+    filter: brightness(60%);
+  }
+  .latest {
+    display: grid;
+  }
+  .parent1 {
+    width: 730px;
+    border-bottom: 1px solid rgb(188, 186, 186);
+  }
+  .anime {
+    width: 730px;
+  }
+  .child3 {
+    margin: 10px 20px;
+    padding-bottom: 30px;
+  }
+  .latest_img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .description > p {
+    font-size: 21px;
+    padding: 5px 0;
+    width: 450px;
+    padding-bottom: 25px;
+  }
+  .pagination {
+    width: 730px;
+    padding-left: 130px;
+    margin: 0;
+  }
+  .btn1 {
+    margin: 0 20px;
+    width: 170px;
+    font-size: smaller;
+    font-weight: 700;
+  }
+  .child4 {
+    position: relative;
+  }
+  input {
+    position: absolute;
+    top: 13px;
+    height: 35px;
+    margin: 0 50px;
+  }
+  h6 {
+    position: absolute;
+    top: 14px;
+    left: 390px;
+    margin: 0;
+    height: 33px;
+    width: 125px;
+    font-size: medium;
+  }
+  .hr_1 {
+    position: absolute;
+    left: 390px;
+    top: 45px;
+  }
+  .icons {
+    position: absolute;
+    left: 390px;
+    top: 35px;
+  }
+  h5 {
+    position: absolute;
+    top: 130px;
+    height: 33px;
+    left: 50px;
+    font-size: medium;
+  }
+  .hr_2 {
+    position: absolute;
+    left: 50px;
+    top: 170px;
+  }
+  .uploads {
+    position: absolute;
+    left: 50px;
+    top: 160px;
+    width: 370px;
+  }
+  .uploads > p {
+    font-size: medium;
+  }
+  h4 {
+    position: absolute;
+    left: 50px;
+    top: 650px;
+  }
+  .hr_3 {
+    position: absolute;
+    left: 50px;
+    top: 680px;
+  }
+  .discord {
+    position: absolute;
+    top: 680px;
+    left: 50px;
+  }
+  h3 {
+    position: absolute;
+    left: 430px;
+    top: 628px;
+  }
+  .hr_4 {
+    position: absolute;
+    left: 430px;
+    top: 680px;
+  }
+  .telegram {
+    position: absolute;
+    left: 430px;
+    top: 678px;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+  }
+  h2 {
+    position: absolute;
+    top: 810px;
+    left: 50px;
+  }
+  .hr_5 {
+    position: absolute;
+    top: 890px;
+    left: 50px;
+  }
+  .ads {
+    position: absolute;
+    top: 880px;
+    left: 50px;
+    rotate: 35deg;
+    font-weight: bold;
+  }
+  .footer {
+    gap: 20px;
+    display: grid;
+    justify-items: center;
+    height: auto;
+    margin-top: 30px;
+  }
+  .text1 {
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
+  }
 }
