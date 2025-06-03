@@ -112,59 +112,72 @@
             <p class="sl">||Download Solo Leveling Season 2 Episodes in Hindi Multi Audio||</p>
             <div class="episode1">
                 <p>season 2</p>
-                <div class="episode1_1">
+                <div class="episode1_2 open-popup-btn">
                     <p class="small_1">Episode 1</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 2</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 3</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 4</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 5</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 6</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 7</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 8</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 9</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 10</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 11</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
+                <div class="episode1_1 open-popup-btn">
                     <p class="small_1">Episode 12</p>
                     <p class="bold_2">+</p>
                 </div>
-                <div class="episode1_1">
-                    <p class="small_1">Episode 13</p>
+                <div class="episode1_1 open-popup-btn">
+                    <p class="small_1">Episode 13 {NEW}</p>
                     <p class="bold_2">+</p>
                 </div>
             </div>
+            <div class="popup-overlay"></div>
+            <div class="popup">
+                <button class="watch">Watch / Download</button>
+                <div class="popup-close-btn">&times;</div>
+            </div>
+            <div class="zip1">
+            <p class="zip">||Complete Pack Single Zip File||</p>
+            <div class="episode1_3 open-popup-btn">
+                <p class="small_1">Zip Files Single Download Links</p>
+                <p class="bold_2">+</p>
+            </div>
+            </div>
+            <p class="add">COMPLETE SEASON 2 ADDED</p>
             </div>
             <div class="child4">
                 <input type="text" placeholder="Type Here To Search...">
@@ -232,4 +245,18 @@
             </div>
         </div>
     </body>
+    <script>
+        var openpopupbtns = document.querySelectorAll(".open-popup-btn");
+        var closepopupbtn = document.querySelector(".popup-close-btn");
+      
+        openpopupbtns.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            document.body.classList.add("popup-active");
+          });
+        });
+      
+        closepopupbtn.addEventListener("click", function () {
+          document.body.classList.remove("popup-active");
+        });
+        </script>
 </html>
