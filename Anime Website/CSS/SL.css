@@ -9,6 +9,7 @@ body {
   background-image: url(../utils/Background\ Image.jpg);
   background-size: cover;
   background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .title {
@@ -110,7 +111,7 @@ span {
 }
 
 h5 {
-  font-size: 27px;
+  font-size: 26px;
   opacity: 0.8;
 }
 
@@ -127,8 +128,8 @@ h5 {
   align-items: center;
   gap: 7px;
   text-align: center;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   opacity: 0.5;
 }
 
@@ -143,8 +144,8 @@ h5 {
   align-items: center;
   gap: 7px;
   text-align: center;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 13px;
   opacity: 0.5;
 }
 
@@ -160,14 +161,14 @@ h5 {
 h4 {
   text-align: center;
   padding: 20px 0;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 21px;
   color: rgb(138, 0, 0);
 }
 
 .black {
   font-size: 21px;
-  padding-top: 20px;
+  padding-top: 13px;
   color: black;
   opacity: 0.8;
 }
@@ -177,6 +178,123 @@ h4 {
   width: 400px;
   height: 550px;
   object-fit: fill;
+}
+
+.anime_info {
+  width: 91%;
+  padding: 27px 0;
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgb(188, 186, 186);
+}
+
+.genre,
+.org,
+.run,
+.lang,
+.episodes,
+.sub,
+.quality,
+.encoder,
+.synopsis {
+  display: flex;
+  gap: 3px;
+  padding: 7px 0;
+  align-items: center;
+}
+
+.synopsis {
+  align-items: normal;
+  gap: 5px;
+  padding: 25px 0;
+}
+
+.bold {
+  text-transform: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.bold_1 {
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.red {
+  color: rgb(250, 33, 33);
+  font-weight: bold;
+  font-size: 17px;
+  text-transform: none;
+}
+
+.green {
+  color: green;
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: none;
+}
+
+.blue {
+  color: rgb(49, 49, 253);
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.screenshot {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 27px 0;
+  padding: 15px;
+  border: 1px solid;
+}
+
+.small {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.bold_2 {
+  font-size: large;
+  font-weight: 600;
+}
+
+.ss {
+  width: 91%;
+  border: 0.3px solid rgb(213, 212, 212);
+}
+
+.sl {
+  font-size: x-large;
+  font-weight: 700;
+  padding: 25px 0;
+  text-align: center;
+  opacity: 0.8;
+  border-bottom: 1px solid rgb(188, 186, 186);
+  width: 91.5%;
+}
+
+.episode1 {
+  width: 93%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.episode1_1,
+.episode1_2 {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 0 20px;
+  border: 1px solid;
+}
+
+.episode1_1 > p {
+  text-transform: none;
 }
 
 .child4 {
