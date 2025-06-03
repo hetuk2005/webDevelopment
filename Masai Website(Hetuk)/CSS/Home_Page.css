@@ -16,7 +16,7 @@
 
 /*This Is Navbar CSS */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -88,8 +88,6 @@ li:hover {
   background-color: #e8000b;
 }
 
-/*this is property we have to apply into placement holder div*/
-
 .my-container {
   display: flex;
   align-items: center;
@@ -103,7 +101,7 @@ li:hover {
   border-radius: 12px;
 }
 
-/****css for fist main parents****/
+/*css for fist main parents*/
 .parents_main_1 {
   display: flex;
   font-size: 35px;
@@ -187,13 +185,13 @@ li:hover {
   padding: 50px 30px;
   width: 50%;
 }
-/**********************************************/
+/****************/
 .scroll-wrrapper {
   width: 50%;
   overflow: hidden;
   background-color: #eaf1f5;
   clip-path: path(
-    "M50.5372 91.9404C67.7347 26.8469 25.5967 4.15342 1 1H689C645.215 13.5537 642.974 50.932 650.61 80.0338C654.819 96.0754 660.198 112.11 660.487 128.692C665.437 412.392 451.631 475.197 341 470.5C77.6592 455.806 34.2279 234.94 45.6348 115.458C46.3966 107.479 48.4897 99.6901 50.5372 91.9404Z"
+    'M50.5372 91.9404C67.7347 26.8469 25.5967 4.15342 1 1H689C645.215 13.5537 642.974 50.932 650.61 80.0338C654.819 96.0754 660.198 112.11 660.487 128.692C665.437 412.392 451.631 475.197 341 470.5C77.6592 455.806 34.2279 234.94 45.6348 115.458C46.3966 107.479 48.4897 99.6901 50.5372 91.9404Z'
   );
 }
 .parents_child_2 {
@@ -390,7 +388,7 @@ li:hover {
   font-size: 20px;
   font-weight: bolder;
 }
-/********************************/
+/************/
 .child_1 {
   display: flex;
   gap: 11px;
@@ -558,7 +556,7 @@ li:hover {
   padding: 6px 10px;
   border-radius: 3px;
   position: absolute;
-  top: 177.1%;
+  top: 174.2%;
   left: 26.1%;
   font-weight: bold;
   background-color: #6e71c6;
@@ -629,7 +627,7 @@ li:hover {
   width: 133px;
   height: 28px;
   position: absolute;
-  top: 214.6%;
+  top: 211.6%;
   left: 24%;
   padding: 7px 9px;
   font-size: 13px;
@@ -745,11 +743,11 @@ li:hover {
   background-color: #6e71c6;
   color: whitesmoke;
   position: absolute;
-  top: 177%;
+  top: 174%;
   left: 53.9%;
 }
 
-/*****/
+/***/
 
 .card_3 {
   width: 390px;
@@ -856,11 +854,11 @@ li:hover {
   color: white;
   padding: 5px 12px;
   position: absolute;
-  top: 177%;
+  top: 174%;
   left: 75.3%;
 }
 
-/*********************/
+/*******/
 .parents_main_3 {
   background-color: #f4f1f1;
   height: 450px;
@@ -962,7 +960,7 @@ li:hover {
   font-size: 16px;
 }
 
-/*****************************************************/
+/*******************/
 .career_outcome_1 {
   display: flex;
   gap: 10px;
@@ -1057,7 +1055,7 @@ li:hover {
   margin: 0px 40px;
   margin-bottom: 40px;
 }
-/***************************************/
+/*************/
 .parents_main_4 {
   background-color: #fbfbfb;
   padding: 30px 0px;
@@ -1108,7 +1106,7 @@ li:hover {
     object-fit: fill;
   }
   
-  /********************************************/
+  /****************/
 .STD_4:hover {
   background-color: #e8000b;
   color: whitesmoke;
@@ -1219,7 +1217,7 @@ li:hover {
   margin-top: 18px;
 }
 
-/****/
+/**/
 
 .B3 {
   border: 1px solid #ea0237;
@@ -1290,7 +1288,7 @@ HEAD .parents_main_7 {
     border-radius: 10px;
     margin: 0px 10px;
   }
-  /***********************************************************/
+  /*********************/
   /*.parents_main_9{
     margin: 0px 35px;
   .Students {
@@ -1349,7 +1347,7 @@ HEAD .parents_main_7 {
   object-fit: fill;
 }
 
-/********************************************/
+/****************/
 .parents_main_6 {
   margin: 60px 38px;
   display: flex;
@@ -1438,7 +1436,7 @@ HEAD .parents_main_7 {
   margin-top: 13px;
 }
 
-/****/
+/**/
 
 .B3 {
   border: 1px solid #ea0237;
@@ -1455,7 +1453,7 @@ HEAD .parents_main_7 {
   color: whitesmoke;
 }
 
-/*******************/
+/*******/
 .parents_main_7 {
   background-color: #c8f1f8;
   height: 350px;
@@ -1545,7 +1543,7 @@ HEAD .parents_main_7 {
   border-radius: 60px;
   margin: 10px 0px;
 }
-/*******************************************************/
+/*******************/
 .grid {
   background-image: url(../utils/Background_Image.jpg);
   width: 100%;
@@ -1646,7 +1644,7 @@ HEAD .parents_main_7 {
   width: 400px;
   object-fit: cover;
 }
-/***********parents11************/
+/****parents11*****/
 .parents_13 {
   height: 500px;
   display: none;
@@ -1725,7 +1723,7 @@ HEAD .parents_main_7 {
   object-fit: contain;
 }
 
-/***********************************************************/
+/*********************/
 
 .parents_main_9 {
   margin: 0px 40px;
@@ -1803,7 +1801,7 @@ HEAD .parents_main_7 {
       margin: 0px 10px;
     }
   
-    /***********************************************************/
+    /*********************/
 .background_image {
   height: 100vh;
   background-image: url(../utils/Background_Image.jpg);
@@ -1831,7 +1829,7 @@ HEAD .parents_main_7 {
   display: none;
 }
 
-/****************************************************/
+/******************/
 .patrents_main_10 {
   background-color: #e8e2e2;
   height: 900px;
@@ -1968,6 +1966,11 @@ ul li {
 }
 
 @media (max-width: 320px) {
+  .parents,
+  .popup-overlay,
+  .popup {
+    display: none !important;
+  }
   .navbar_child2 {
     display: none;
   }
@@ -2227,12 +2230,262 @@ ul li {
     gap: 15px;
     grid-template-columns: repeat(3, 1fr) !important;
   }
+  .scroll-wrrapper {
+    height: 340px !important;
+  }
+  .parents_child_2 {
+    position: relative;
+    left: 0;
+    display: flex;
+    gap: 180px;
+    justify-content: space-between;
+    animation: 20s scroll infinite;
+    width: fit-content;
+    /* border: 1px solid salmon; */
+  }
+  @keyframes scroll {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
+  .position_child_1 {
+    position: relative;
+    width: 290px !important;
+    margin: 20px 10px !important;
+  }
+
+  .N1,
+  .N3,
+  .N5,
+  .N7 {
+    float: right;
+  }
+
+  .SDE-1 {
+    width: 100px;
+    height: 150px;
+    border-radius: 17px;
+    z-index: 3;
+    position: absolute;
+    left: 30px;
+    /* margin: 80px 0px;*/
+  }
+  .rahul-kumar {
+    width: 150px;
+    height: 145px;
+    border-bottom-left-radius: 10px;
+  }
+  .A1 {
+    font-size: 10px;
+    padding: 9px 0px;
+  }
+  .A2 {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 6px 0px;
+  }
+  .N2 {
+    height: 150px;
+    width: 80% !important;
+    background-color: #4a749c;
+    border-radius: 15px;
+    color: #fff;
+    padding: 6px 17px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    z-index: 0;
+  }
+  .qotes-1 {
+    color: red;
+    height: 15px !important;
+    font-size: 40px;
+    padding: 15px 0px;
+  }
+  .position_child_2 {
+    position: relative;
+    width: 290px !important;
+    margin: 20px 12px !important;
+  }
+  .SDE-2 {
+    width: 100px;
+    height: 150px;
+    border-radius: 17px;
+    z-index: 3;
+    position: absolute;
+    left: 30px;
+    top: 0px !important;
+  }
+  .N4 {
+    height: 150px;
+    width: 80% !important;
+    background-color: #4a749c;
+    border-radius: 15px;
+    color: #fff;
+    padding: 0px 18px;
+    position: absolute;
+    top: 138px;
+    right: 0;
+    z-index: 0;
+  }
+  .A3 {
+    font-size: 10px !important;
+    padding: 10px 0px;
+  }
+  .A4 {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .position_child_3 {
+    position: relative;
+    width: 295px !important;
+    margin: 20px 0;
+    margin-left: 0px !important;
+  }
+  .SDE-3 {
+    width: 100px;
+    height: 150px;
+    border-radius: 17px;
+    z-index: 3;
+    position: absolute;
+    left: 30px;
+  }
+  .N6 {
+    height: 150px;
+    width: 80% !important;
+    background-color: #4a749c;
+    border-radius: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    position: absolute;
+    top: 135px;
+    right: 0;
+    z-index: 0;
+  }
+  .N8 {
+    height: 150px;
+    width: 80% !important;
+    background-color: #4a749c;
+    border-radius: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    position: absolute;
+    top: 135px;
+    right: 0;
+    z-index: 0;
+  }
+  .A7 {
+    font-size: 10px;
+    padding: 10px 0px;
+  }
+  .A8 {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .position_child_4 {
+    position: relative;
+    width: 290px !important;
+    margin: 20px 0px !important;
+    margin-left: 20px !important;
+  }
+  .SDE-4 {
+    width: 100px;
+    height: 150px;
+    border-radius: 17px;
+    z-index: 3;
+    position: absolute;
+    left: 30px;
+  }
+
+  .A5 {
+    font-size: 10px;
+    padding: 13px 0px;
+  }
+  .A6 {
+    font-size: 20px;
+    font-weight: bolder;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .navbar_child2 {
     display: none;
   }
+  .parentschild_1,
+  .parentschild_2 {
+    display: none;
+  }
+  .parents_2 {
+    display: none !important;
+  }
+  .popup {
+    width: 30%;
+  }
+  .parents {
+    display: grid;
+    margin: 50px 0px;
+    justify-content: end;
+  }
+  .main {
+    justify-content: space-between !important;
+    gap: 30px;
+    border-radius: 10px;
+    padding: 0px 10px !important;
+    margin: 20px 0px;
+    border: 1px solid #f50536;
+    background-color: #fef2f2;
+  }
+
+  .SD {
+    display: flex;
+    gap: 6px !important;
+    justify-content: start !important;
+    align-items: start !important;
+    width: 93% !important;
+    padding: 11px 0px;
+    height: 40px;
+    font-weight: bolder;
+    border-radius: 5px;
+    color: #f50536;
+  }
+  .arro {
+    width: 7%;
+  }
+  .parents_1 {
+    width: 100% !important;
+    height: inherit;
+    border: 3px solid rgb(237, 235, 235);
+    border-bottom: none;
+    border-top: none;
+    padding: 0px 20px;
+    border-left: none;
+    border-right: none !important;
+  }
+
   .parents_main_1 {
     display: grid;
     padding: 0px 0px;
@@ -2344,12 +2597,12 @@ ul li {
   }
   .career_outcome_1 {
     display: grid;
-    gap: 10px;
+    gap: 0px;
     font-size: 67px;
     justify-content: center;
+    text-align: center;
+    padding: 50px 0px !important;
     font-weight: bold;
-    padding: 0px 250px;
-    padding-top: 80px;
     margin-top: 500px;
   }
   .n1 {
@@ -2370,11 +2623,11 @@ ul li {
     gap: 0px;
     justify-content: center;
     align-items: center;
+    width: 50%;
     margin: auto;
   }
   .career_outcomechild_1 {
     margin: 60px 0px;
-    margin-right: 20px;
   }
 
   .travels_1 {
@@ -2401,7 +2654,6 @@ ul li {
   .number_5 {
     font-size: 24px;
     margin: auto;
-    /*text-align: center;*/
     width: 80%;
   }
   .p3 {
@@ -2419,7 +2671,7 @@ ul li {
   .parents_main_4 {
     background-color: #fbfbfb;
     margin: 80px 0px;
-    height: auto;
+    /* height: auto; */
     width: 100% !important;
   }
   .Students {
@@ -2727,6 +2979,60 @@ ul li {
     gap: 10px;
     margin: 0px 15px;
   }
+  .parentschild_1,
+  .parentschild_2 {
+    display: none;
+  }
+  .arro {
+    width: 7%;
+  }
+  .popup {
+    width: 30%;
+    /* display: grid;
+  place-items: center;*/
+  }
+  .parents {
+    display: grid;
+    margin: 50px 0px;
+    justify-content: end;
+  }
+  .parents_1 {
+    width: 80% !important;
+    margin: auto;
+    height: inherit;
+    border: 3px solid rgb(237, 235, 235);
+    border-bottom: none;
+    border-top: none;
+    padding: 0px 20px;
+    border-left: none;
+    border-right: none !important;
+  }
+  .parents_2 {
+    display: none !important;
+  }
+  .main {
+    justify-content: space-between !important;
+    gap: 30px;
+    border-radius: 10px;
+    padding: 0px 10px !important;
+    margin: 20px 0px;
+    border: 1px solid #f50536;
+    background-color: #fef2f2;
+  }
+
+  .SD {
+    display: flex;
+    gap: 0px;
+    justify-content: start !important;
+    align-items: start !important;
+    width: 93% !important;
+    padding: 12px 0px;
+    height: 40px;
+    font-weight: bolder;
+    border-radius: 5px;
+    color: #f50536;
+  }
+
   .navbar_child1 {
     display: flex;
     align-items: center;
@@ -3143,15 +3449,15 @@ ul li {
   }
 }
 
-/* From Uiverse.io by JaydipPrajapati1910 */
+/* this is popup code on course btn */
 button {
   background: transparent;
   position: relative;
   padding: 5px 10px;
   display: flex;
   align-items: center;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 600px;
   text-decoration: none;
   cursor: pointer;
   border: 1px solid black;
@@ -3175,7 +3481,7 @@ button::before {
   right: 0;
   bottom: 0;
   margin: auto;
-  content: "";
+  content: '';
   border-radius: 50%;
   display: block;
   width: 20em;
@@ -3209,13 +3515,14 @@ button:hover::before {
   left: 50%;
   top: -150%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 75%;
   border-radius: 10px;
   height: auto;
   background: #f5f5f5;
   z-index: 7;
   /* padding: 50px;*/
 }
+
 body.popup-active .popup {
   top: 50%;
 }
@@ -3225,11 +3532,11 @@ body.popup-active .popup-overlay {
 .popup .popup-close-btn {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
   font-size: 20px;
   background-color: #555;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 30px;
   color: #eee;
   font-weight: bold;
 }
@@ -3243,7 +3550,7 @@ body.popup-active .popup-overlay {
   display: flex;
   gap: 30px;
   justify-content: center;
-  margin: 0 40px;
+  margin: 0 20px;
 }
 .parents_1 {
   width: 25%;
@@ -3381,11 +3688,11 @@ body.popup-active .popup-overlay {
   font-size: 23px;
   font-weight: bold;
 }
-.p-0 {
+.pminorcredit_1 {
   color: #6c68cc;
   width: 400px;
   height: 40px;
-  font-size: 24px;
+  font-size: 19px;
   font-weight: bolder;
   margin: 30px 0px;
   border: 2px solid rgb(207, 205, 205);
@@ -3410,15 +3717,10 @@ body.popup-active .popup-overlay {
   gap: 30px;
   margin: 40px 0px;
 }
-.p_1-2 {
-  font-size: 18px;
-  font-weight: bold;
-  color: rgb(119, 118, 118);
-}
+
 .p_2-2 {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
-  color: rgb(67, 65, 65);
 }
 .p_2-2 {
   padding: 9px 0px;
@@ -3426,16 +3728,7 @@ body.popup-active .popup-overlay {
 .p_2-2:hover {
   color: #534fd3;
 }
-.p_3-2 {
-  width: 200px;
-  height: 40px;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 20px;
-  padding: 10px;
-  border: 1px sd #f4dbd9;
-}
+
 .logo-1 {
   display: flex;
   justify-content: center;
@@ -3449,42 +3742,19 @@ body.popup-active .popup-overlay {
   gap: 30px;
   margin: 45px 0px;
 }
-.parentschild_2 > h2 {
+.hedingsoftware_1 {
   width: 300px;
-  height: 50px;
-  padding: 10px 0px;
+  height: 40px;
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 0px 0px;
   border: 2px solid rgb(205, 203, 203);
   border-right: none;
   border-top: none;
   border-left: none;
   color: #e81f3d;
 }
-.p_4-2 {
-  font-size: 18px;
-  font-weight: bold;
-  color: rgb(119, 118, 118);
-}
-.p_5-2 {
-  font-size: 20px;
-  font-weight: bold;
-  color: rgb(67, 65, 65);
-  padding: 9px 0px;
-}
-.p_5-2:hover {
-  color: #534fd3;
-}
-.p_6-2 {
-  width: 200px;
-  height: 40px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #e33e63;
-  background-color: #f4dbd9;
-  text-align: center;
-  border-radius: 20px;
-  padding: 9px 0px;
-  border: 1px splid #f4dbd9;
-}
+
 .logo_4 {
   display: flex;
   gap: 30px;
@@ -3492,6 +3762,23 @@ body.popup-active .popup-overlay {
   justify-content: center;
   align-items: center;
 }
-.parentschild_2 {
-  margin: 46px 0px;
+.parentschild_2_1 {
+  margin: 50px 0px;
+}
+.p_1-2 {
+  font-size: 15px;
+  font-weight: bolder;
+  color: rgb(67, 65, 65);
+}
+.p_3-2 {
+  font-size: 17px;
+  text-align: center;
+  padding: 12px 0px;
+  height: 45px;
+  width: 220px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 1px solid #f9e2e8;
+  color: #cd4665;
+  background-color: #f9e2e8;
 }

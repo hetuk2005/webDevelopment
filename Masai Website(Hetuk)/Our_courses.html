@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/Our_courses.css">
+</head>
+
+<body>
+    <button id="open-popup-btn">open popup</button>
+    <div class="popup-overlay"></div>
+    <div class="popup">
+        <div class="parents">
+            <div class="parents_1">
+
+                <div class="box">
+                    <div class="box_1">
+                        <img src="./utils/Software Development.svg" class="Software_img">
+                        <p class="p_8">Software Development</p>
+                    </div>
+                    <img src="./utils/Arrow Down.svg" class="arro">
+                </div>
+
+                <div class="box-2">
+                    <div class="box_2">
+                        <img src="./utils/AI.svg" class="Al_img">
+                        <p class="p_9">Al/ML</p>
+                    </div>
+                    <img src="./utils/Arrow Down.svg" class="arro">
+                </div>
+
+                <div class="box-3">
+                    <div class="box_3">
+                        <img src="./utils/Data Science.svg" class="data Science_img">
+                        <p class="p_11">Data Science</p>
+                    </div>
+                    <img src="./utils/Arrow Down.svg" class="arro">
+                </div>
+
+                <div class="box-4">
+                    <div class="box_4">
+                        <img src="./utils/Electronics.svg" class="Electronics_img">
+                        <p class="p_12">Electronics</p>
+                    </div>
+                    <img src="./utils/Arrow Down.svg" class="arro">
+                </div>
+
+                <div class="box-5">
+                    <div class="box_5">
+                        <img src="./utils/Marketing.svg" class="Marketing_img">
+                        <p class="p_13">Marketing</p>
+                    </div>
+                    <img src="./utils/Arrow Down.svg" class="arro">
+                </div>
+
+                <div class="box-6">
+                    <div class="box_6">
+                        <img src="./utils/Management.svg" class="Management">
+                        <p class="p_14">Management</p>
+                    </div>
+                    <img src="./utils/Arrow Down.svg" class="arro">
+                </div>
+
+            </div>
+            <div class="parents_2">
+
+                <div class="parentschild_1">
+                    <h3>Software Development Courses</h3>
+                    <p class="p-0">Minor Credit</p>
+
+                    <div class="logo">
+                        <img src="./utils/IIT Guawahati.svg" class="Guawahati">
+                        <div class="card_1">
+                            <p class="p_1">Daksh Gurukul, IIT Guawahati</p>
+                            <p class="p_2">Credit-Linked program in CSE & Al</p>
+                            <p class="p_3">Applicaton Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="logo-1">
+                        <img src="./utils/IIt Mandi.svg" class="mandi">
+                        <div class="card_2">
+                            <p class="p_1">CCE, IIT Mandi</p>
+                            <p class="p_2">Minor in Cyber Security & Ethical Haking </p>
+                            <p class="p_3">Applicaton Closed</p>
+                        </div>
+                    </div>
+
+
+                    <div class="logo-2">
+                        <img src="./utils/IIt Mandi.svg" class="mandi">
+                        <div class="card_3">
+                            <p class="p_1">CCE, IIT Mandi</p>
+                            <p class="p_2">Minor in CSE & Advanced Technologies </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="parentschild_2">
+                    <h2>Bootcamp 0 Upfront Feex</h2>
+                    <div class="logo_4">
+                        <img src="./utils/Masai_One.svg" class="masai">
+                        <div class="card_4">
+                            <p class="p_4">MASAI ONE</p>
+                            <div class="p_5">Software Development</div>
+                            <p class="p_6">Applicaton Closed</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="popup-close-btn">&times;</div>
+
+    </div>
+    <script>var openpopupbtn = document.querySelector("#open-popup-btn");
+        var closepopupbtn = document.querySelector(".popup-close-btn");
+
+        openpopupbtn.addEventListener("click", function () {
+
+            document.body.classList.add("popup-active");
+        });
+
+        closepopupbtn.addEventListener("click", function () {
+
+            document.body.classList.remove("popup-active");
+        });
+    </script>
+</body>
+
+</html>

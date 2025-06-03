@@ -1,0 +1,73 @@
+
+-> khushi 
+    home_page -> done 
+    hire_from_us
+
+-> hetuk
+    success_stories
+    interviews_guides
+
+
+-> farhan
+    fees
+
+
+
+
+
+    media-query of the cours
+
+
+     .parents_2 {
+    display: none !important;
+  }
+  .popup {
+    width: 30%;
+  }
+  .parents {
+    display: grid;
+    margin: 50px 0px;
+    justify-content: end;
+  }
+  .main {
+    justify-content: space-between !important;
+    gap: 30px;
+    border-radius: 10px;
+    padding: 0px 10px !important;
+    margin: 20px 0px;
+    border: 1px solid #f50536;
+    background-color: #fef2f2;
+  }
+
+  .SD {
+    display: flex;
+    gap: 6px !important;
+    justify-content: start !important;
+    align-items: start !important;
+    width: 93% !important;
+    padding: 11px 0px;
+    height: 40px;
+    font-weight: bolder;
+    border-radius: 5px;
+    color: #f50536;
+  }
+  .arro {
+    width: 7%;
+  }
+  .parents_1 {
+    width: 100% !important;
+    height: inherit;
+    border: 3px solid rgb(237, 235, 235);
+    border-bottom: none;
+    border-top: none;
+    padding: 0px 20px;
+    border-left: none;
+    border-right: none !important;
+  }
+
+
+  task 
+
+  media-query of -> course in every page 
+
+  hire form us -> screen size 320px and 320 
