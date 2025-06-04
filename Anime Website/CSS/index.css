@@ -29,6 +29,8 @@ body {
   align-items: center;
   background-color: black;
   position: relative;
+  height: 40px;
+  padding: 0 7px;
   border-top: 1px solid rgb(56, 56, 56);
 }
 
@@ -36,23 +38,65 @@ body {
   font-size: 15px;
   color: white;
   display: flex;
-  gap: 25px;
+  gap: 10px;
   list-style-type: none;
   justify-content: center;
   align-items: center;
 }
 
-.after {
+.child1 > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  padding: 5px;
+  height: 100%;
+  transition: all 0.3s ease;
+  font-size: small;
+}
+
+.dropdown {
+  display: none;
   position: absolute;
-  font-size: 8px;
-  margin-top: 5px;
-  margin-left: 3px;
+  color: black;
+  background-color: white;
+  list-style: none;
+  padding: 10px 0;
+  top: 100%;
+  left: 0;
+  min-width: 300px;
+  z-index: 1;
+  border: 1px transparent;
+  height: auto;
+}
+
+.child1 ul li:hover > .dropdown {
+  display: block;
+}
+
+.child1 ul li {
+  position: relative;
+}
+
+.dropdown li {
+  font-weight: 600;
+  opacity: 0.5;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+
+.dropdown li:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: all 0.1s ease-in-out;
+  text-decoration: underline;
+  color: white;
+  background-color: black;
 }
 
 .child1 > ul > li:hover {
   background-color: whitesmoke;
   color: black;
-  cursor: pointer;
 }
 
 .child2 {
