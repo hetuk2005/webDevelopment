@@ -867,6 +867,12 @@ h2 {
   .uploads > p {
     font-size: medium;
   }
+
+  .uploads > p > a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   h4 {
     position: absolute;
     left: 50px;

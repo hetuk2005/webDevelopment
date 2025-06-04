@@ -180,6 +180,11 @@ h4 {
   object-fit: fill;
 }
 
+.image1:hover {
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+
 .anime_info {
   width: 91%;
   padding: 27px 0;
@@ -329,6 +334,257 @@ h4 {
   text-align: center;
 }
 
+.season1 {
+  border-bottom: 1px solid rgb(188, 186, 186);
+  width: 93%;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px 0;
+  color: red;
+}
+
+.watch_on {
+  width: 93%;
+  font-size: large;
+  font-weight: 600;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: none;
+  color: rgb(216, 2, 216);
+}
+
+.season1:hover {
+  text-decoration: underline;
+}
+
+.click {
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid rgb(188, 186, 186);
+  padding: 25px 0;
+}
+
+.click > .red,
+.click > p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.click > .red:hover {
+  text-decoration: underline;
+}
+
+.button {
+  padding: 25px 0;
+  width: 93%;
+}
+
+.button > button {
+  font-size: 17px;
+  text-transform: none;
+  height: 30px;
+  margin: 1px 0;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+.button > .black {
+  color: #fff;
+  border: 1px transparent;
+  background-color: #0d0d0d;
+}
+
+.button > .hover {
+  border: 1px transparent;
+  background-color: #d2cece;
+}
+
+.button > .hover:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.like,
+.author {
+  width: 97%;
+}
+
+.like > hr,
+.author > hr,
+.comment > hr {
+  border: 1.5px solid;
+  width: inherit;
+}
+
+.like > button,
+.btn_author,
+.btn_comment {
+  width: 160px;
+  height: 35px;
+  text-transform: none;
+  font-size: medium;
+  font-weight: 600;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background-color: #181818;
+  color: #fff;
+}
+
+.like_anime {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.anime1 > a,
+.anime2 > a,
+.anime3 > a {
+  text-decoration: none;
+}
+
+.anime1 > a > p,
+.anime2 > a > p,
+.anime3 > a > p {
+  width: 85%;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 0;
+  color: #000;
+}
+
+.anime1 > a > p:hover,
+.anime2 > a > p:hover,
+.anime3 > a > p:hover {
+  color: red;
+}
+
+.anime1 > a > img,
+.anime2 > a > img,
+.anime3 > a > img {
+  height: 200px;
+  width: 290px;
+  object-fit: fill;
+}
+
+.anime1 > a > img:hover,
+.anime2 > a > img:hover,
+.anime3 > a > img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.author1,
+.comment1 {
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+}
+
+.posts {
+  font-weight: 600;
+  font-size: 9px;
+  width: 100px;
+  padding: 7px;
+  border: 1px solid rgb(188, 186, 186);
+  height: 30px;
+  color: #555;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.author_info {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.author_info > img {
+  border-radius: 50%;
+  height: 115px;
+  width: 115px;
+  object-fit: cover;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  form {
+    transform: rotate(0deg);
+    transition: all 0.5s ease-in-out;
+  }
+  to {
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.author_info > img:hover {
+  animation-play-state: paused;
+}
+
+.text > h5 {
+  text-transform: capitalize;
+}
+
+.text > h5:hover {
+  color: red;
+}
+
+.text > p {
+  text-transform: none;
+  font-size: medium;
+}
+
+.flex_comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.flex_comment > button {
+  padding: 5px;
+}
+
+.num {
+  width: 35px;
+}
+
+.flex_comment > button:hover,
+.posts:hover {
+  border: 1px solid red;
+  color: red;
+}
+
+.comment {
+  width: 97%;
+  margin-top: 70px;
+}
+
+.outline {
+  width: 94%;
+  border: 1px solid rgb(154, 153, 153);
+  margin: 20px 0;
+  padding: 30px;
+  background-color: #ece9e9;
+}
+
+.outline > input {
+  width: 100%;
+  height: 45px;
+}
+
+.outline > input::placeholder {
+  text-transform: none;
+  font-size: large;
+  font-weight: 600;
+}
+
 .child4 {
   padding: 15px 0;
   flex: 1;
@@ -397,6 +653,11 @@ hr {
 .uploads > p {
   font-size: 13px;
   padding: 10px 0;
+}
+
+.uploads > p > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .child4 > h4 {
@@ -472,7 +733,7 @@ hr {
 .text1 {
   text-transform: capitalize;
   font-weight: normal;
-  font-size: medium;
+  font-size: 15px;
 }
 
 .text1 > a {
