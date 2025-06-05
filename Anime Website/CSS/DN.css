@@ -329,6 +329,7 @@ h4 {
 }
 
 .sl {
+  text-transform: none;
   font-size: x-large;
   font-weight: 700;
   padding: 25px 0;
@@ -377,6 +378,7 @@ h4 {
   padding: 25px 0;
   font-size: x-large;
   font-weight: bold;
+  text-transform: none;
   text-align: center;
 }
 
@@ -390,7 +392,8 @@ h4 {
   text-align: center;
 }
 
-.season1 {
+.season1,
+.season2 {
   border-bottom: 1px solid rgb(188, 186, 186);
   width: 93%;
   font-size: large;
@@ -398,6 +401,10 @@ h4 {
   text-align: center;
   padding: 25px 0;
   color: red;
+}
+
+.season2 {
+  border: 0px;
 }
 
 .watch_on {
@@ -410,7 +417,8 @@ h4 {
   color: rgb(216, 2, 216);
 }
 
-.season1:hover {
+.season1:hover,
+.season2:hover {
   text-decoration: underline;
 }
 
@@ -822,21 +830,19 @@ hr {
 }
 
 .open-popup-btn {
-  background: transparent;
   position: relative;
   padding: 5px 10px;
   display: flex;
   align-items: center;
   font-size: 16px;
-  text-decoration: none;
-  cursor: pointer;
-  border: 1px solid inherit;
-  overflow: hidden;
   color: black;
   transition: color 0.3s 0.1s ease-out;
   text-align: center;
-  text-transform: uppercase;
   height: 40px;
+}
+
+.zip1 > .open-popup-btn {
+  margin: 15px 0;
 }
 
 .open-popup-btn::before {
@@ -904,9 +910,48 @@ body.popup-active .popup-overlay {
 .watch {
   width: 160px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 7px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   background-color: blue;
   color: #fff;
   font-weight: bold;
   margin: 15px 500px;
+  border: 1px transparent;
+}
+
+.watch:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.track {
+  width: 400px;
+  border: 1px solid rgb(188, 186, 186);
+  padding: 10px 0;
+}
+
+.track1 {
+  padding: 10px 17px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  border-bottom: 1px solid rgb(188, 186, 186);
+}
+
+.track1_1 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  padding: 5px 15px;
+  text-transform: none;
+  padding-top: 15px;
+}
+
+.track2 {
+  text-transform: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  padding: 5px 15px;
 }
