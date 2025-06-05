@@ -329,6 +329,7 @@ h4 {
 }
 
 .sl {
+  text-transform: none;
   font-size: x-large;
   font-weight: 700;
   padding: 25px 0;
@@ -375,6 +376,7 @@ h4 {
   width: 93%;
   opacity: 0.8;
   padding: 25px 0;
+  text-transform: none;
   font-size: x-large;
   font-weight: bold;
   text-align: center;
@@ -909,4 +911,8 @@ body.popup-active .popup-overlay {
   color: #fff;
   font-weight: bold;
   margin: 15px 500px;
+}
+
+.zip1 > .open-popup-btn {
+  margin: 15px 0;
 }
