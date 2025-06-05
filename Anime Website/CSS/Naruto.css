@@ -79,6 +79,7 @@ body {
 
 .child1 ul li:hover > .dropdown {
   display: block;
+  cursor: pointer;
 }
 
 .child1 ul li {
@@ -93,6 +94,7 @@ body {
 }
 
 .dropdown li:hover {
+  cursor: pointer;
   opacity: 1;
   transform: scale(1.05);
   transition: all 0.1s ease-in-out;
@@ -103,6 +105,7 @@ body {
 
 .child1 > ul > li:hover,
 .child1 > ul > a > li:hover {
+  cursor: pointer;
   background-color: whitesmoke;
   color: black;
 }
@@ -159,6 +162,7 @@ body {
 .p5:hover,
 .p6:hover,
 .p7:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -206,6 +210,7 @@ h5 {
 }
 
 .source:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -245,6 +250,7 @@ h4 {
 }
 
 .image1:hover {
+  cursor: pointer;
   transform: scale(0.9);
   transition: all 0.5s ease-in-out;
 }
@@ -448,6 +454,7 @@ h4 {
 .season1:hover,
 .season2:hover,
 .season1_1:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -468,6 +475,7 @@ h4 {
 }
 
 .click > .red:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -497,6 +505,7 @@ h4 {
 }
 
 .button > .hover:hover {
+  cursor: pointer;
   background-color: red;
   color: #fff;
 }
@@ -554,6 +563,7 @@ h4 {
 .anime2 > a > p:hover,
 .anime3 > a > p:hover {
   color: red;
+  cursor: pointer;
 }
 
 .anime1 > a > img,
@@ -567,6 +577,7 @@ h4 {
 .anime1 > a > img:hover,
 .anime2 > a > img:hover,
 .anime3 > a > img:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
@@ -625,6 +636,7 @@ h4 {
 }
 
 .text > h5:hover {
+  cursor: pointer;
   color: red;
 }
 
@@ -650,6 +662,7 @@ h4 {
 
 .flex_comment > button:hover,
 .posts:hover {
+  cursor: pointer;
   border: 1px solid red;
   color: red;
 }
@@ -835,6 +848,7 @@ hr {
 }
 
 .text1 > a:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -951,6 +965,7 @@ body.popup-active .popup-overlay {
 }
 
 .watch:hover {
+  cursor: pointer;
   color: #fff;
   background-color: #000;
 }

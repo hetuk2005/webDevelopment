@@ -1,0 +1,64 @@
+body {
+  background-image: url(../utils/Background_Telegram.jpg);
+  color: whitesmoke;
+}
+
+header {
+  padding: 30px 0;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.clock {
+  height: 100px;
+  margin: auto;
+  width: 50%;
+  display: block;
+  animation: scroll 0.7s linear infinite;
+  transition: all 0.7s ease-in-out;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.telegram {
+  height: 100px;
+  width: 300px;
+  display: block;
+  margin: auto;
+  object-fit: contain;
+}
+
+h4 {
+  font-size: large;
+  text-align: center;
+  padding: 15px 0;
+}
+
+ul {
+  font-size: x-large;
+  text-align: center;
+  margin: 15px 0;
+}
+
+ul > li {
+  margin: 10px 20px;
+  text-align: left;
+  list-style-type: armenia;
+}

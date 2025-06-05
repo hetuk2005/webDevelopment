@@ -79,6 +79,7 @@ body {
 
 .child1 ul li:hover > .dropdown {
   display: block;
+  cursor: pointer;
 }
 
 .child1 ul li {
@@ -93,6 +94,7 @@ body {
 }
 
 .dropdown li:hover {
+  cursor: pointer;
   opacity: 1;
   transform: scale(1.05);
   transition: all 0.1s ease-in-out;
@@ -103,6 +105,7 @@ body {
 
 .child1 > ul > li:hover,
 .child1 > ul > a > li:hover {
+  cursor: pointer;
   background-color: whitesmoke;
   color: black;
 }
@@ -159,6 +162,7 @@ body {
 .p5:hover,
 .p6:hover,
 .p7:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -207,6 +211,7 @@ h5 {
 
 .source:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .profile {
@@ -239,6 +244,7 @@ h4 {
 .image1:hover {
   transform: scale(0.9);
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .anime_info {
@@ -364,6 +370,7 @@ h4 {
   padding: 15px;
   margin: 0 20px;
   border: 1px solid;
+  cursor: pointer;
 }
 
 .episode1_1 > p,
@@ -419,6 +426,7 @@ h4 {
 
 .season1:hover,
 .season2:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -440,6 +448,7 @@ h4 {
 
 .click > .red:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .button {
@@ -470,6 +479,7 @@ h4 {
 .button > .hover:hover {
   background-color: red;
   color: #fff;
+  cursor: pointer;
 }
 
 .like,
@@ -525,6 +535,7 @@ h4 {
 .anime2 > a > p:hover,
 .anime3 > a > p:hover {
   color: red;
+  cursor: pointer;
 }
 
 .anime1 > a > img,
@@ -540,6 +551,7 @@ h4 {
 .anime3 > a > img:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .author1,
@@ -597,6 +609,7 @@ h4 {
 
 .text > h5:hover {
   color: red;
+  cursor: pointer;
 }
 
 .text > p {
@@ -623,6 +636,7 @@ h4 {
 .posts:hover {
   border: 1px solid red;
   color: red;
+  cursor: pointer;
 }
 
 .comment {
@@ -807,6 +821,7 @@ hr {
 
 .text1 > a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer_img {
@@ -905,6 +920,7 @@ body.popup-active .popup-overlay {
   border-radius: 50%;
   font-weight: bold;
   text-align: center;
+  cursor: pointer;
 }
 
 .watch {
@@ -918,6 +934,7 @@ body.popup-active .popup-overlay {
   font-weight: bold;
   margin: 15px 500px;
   border: 1px transparent;
+  cursor: pointer;
 }
 
 .watch:hover {
