@@ -842,7 +842,7 @@ hr {
 }
 
 .zip1 > .open-popup-btn {
-  margin: 15px 0;
+  margin: 15px 20px;
 }
 
 .open-popup-btn::before {

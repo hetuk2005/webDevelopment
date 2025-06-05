@@ -302,30 +302,32 @@ h4 {
   font-size: 15px;
   text-transform: none;
 }
-
-.screenshot {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 27px 0;
-  padding: 15px;
-  border: 1px solid;
-}
-
 .small {
   font-size: 17px;
   font-weight: 500;
 }
 
+.screenshot {
+  width: 93%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.screen {
+  margin: 20px 0;
+}
+
+.screenshot1 {
+  margin: 20px 0;
+  height: auto;
+  width: 920px;
+  object-fit: contain;
+}
+
 .bold_2 {
   font-size: large;
   font-weight: 600;
-}
-
-.ss {
-  width: 91%;
-  border: 0.3px solid rgb(213, 212, 212);
 }
 
 .sl {
@@ -346,13 +348,16 @@ h4 {
   padding-bottom: 17px;
 }
 
+.episode1 {
+  border: 0px;
+}
+
 .episode1 > p {
   text-align: center;
   padding: 25px 0;
-  font-size: 18px;
+  font-size: 20px;
+  opacity: 0.7;
   font-weight: 700;
-  color: rgb(157, 2, 2);
-  text-decoration: underline;
 }
 
 .episode1_1,
@@ -392,7 +397,6 @@ h4 {
   text-align: center;
 }
 
-.season1,
 .season2 {
   border-bottom: 1px solid rgb(188, 186, 186);
   width: 93%;
@@ -407,17 +411,6 @@ h4 {
   border: 0px;
 }
 
-.watch_on {
-  width: 93%;
-  font-size: large;
-  font-weight: 600;
-  padding: 15px 0;
-  text-align: center;
-  text-transform: none;
-  color: rgb(216, 2, 216);
-}
-
-.season1:hover,
 .season2:hover {
   text-decoration: underline;
 }
@@ -841,7 +834,7 @@ hr {
   height: 40px;
 }
 
-.zip1 > .open-popup-btn {
+.open-popup-btn {
   margin: 15px 0;
 }
 
