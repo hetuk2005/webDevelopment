@@ -606,7 +606,7 @@ h2 {
   }
 }
 
-@media (min-width: 481px) and (max-width: 770px) {
+@media (min-width: 481px) and (max-width: 840px) {
   .navbar,
   br {
     display: none;
@@ -630,11 +630,11 @@ h2 {
     margin: auto;
     padding: 0 15px;
     padding-top: 20px;
-    height: 495vh;
+    height: 350vh;
   }
   .recent {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0fr);
     gap: 5px;
   }
   .text {
