@@ -606,7 +606,7 @@ h2 {
   }
 }
 
-@media (min-width: 481px) and (max-width: 840px) {
+@media (min-width: 481px) and (max-width: 770px) {
   .navbar,
   br {
     display: none;
@@ -631,6 +631,212 @@ h2 {
     padding: 0 15px;
     padding-top: 20px;
     height: 350vh;
+  }
+  .recent {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 5px;
+  }
+  .text {
+    font-size: larger;
+    padding: 0 15px;
+    left: 0;
+    bottom: 10px;
+    font-weight: bold;
+  }
+  .item:hover,
+  .item,
+  .item img,
+  .item:hover img {
+    width: 350px;
+    height: 300px;
+    transition: none;
+    object-fit: fill;
+  }
+  .item img {
+    filter: brightness(60%);
+  }
+  .latest {
+    display: grid;
+  }
+  .parent1 {
+    width: 730px;
+    border-bottom: 1px solid rgb(188, 186, 186);
+  }
+  .anime {
+    width: 730px;
+  }
+  .child3 {
+    margin: 10px 20px;
+    padding-bottom: 30px;
+  }
+  .latest_img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .description > p {
+    font-size: 21px;
+    padding: 5px 0;
+    width: 450px;
+    padding-bottom: 25px;
+  }
+  .pagination {
+    width: 730px;
+    padding-left: 130px;
+    margin: 0;
+  }
+  .btn1 {
+    margin: 0 20px;
+    width: 170px;
+    font-size: smaller;
+    font-weight: 700;
+  }
+  .child4 {
+    position: relative;
+  }
+  input {
+    position: absolute;
+    top: 13px;
+    height: 35px;
+    margin: 0 50px;
+  }
+  h6 {
+    position: absolute;
+    top: 14px;
+    left: 390px;
+    margin: 0;
+    height: 33px;
+    width: 125px;
+    font-size: medium;
+  }
+  .hr_1 {
+    position: absolute;
+    left: 390px;
+    top: 45px;
+  }
+  .icons {
+    position: absolute;
+    left: 390px;
+    top: 35px;
+  }
+  h5 {
+    position: absolute;
+    top: 130px;
+    height: 33px;
+    left: 50px;
+    font-size: medium;
+  }
+  .hr_2 {
+    position: absolute;
+    left: 50px;
+    top: 170px;
+  }
+  .uploads {
+    position: absolute;
+    left: 50px;
+    top: 160px;
+    width: 370px;
+  }
+  .uploads > p {
+    font-size: medium;
+  }
+
+  .uploads > p > a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h4 {
+    position: absolute;
+    left: 50px;
+    top: 650px;
+  }
+  .hr_3 {
+    position: absolute;
+    left: 50px;
+    top: 680px;
+  }
+  .discord {
+    position: absolute;
+    top: 680px;
+    left: 50px;
+  }
+  h3 {
+    position: absolute;
+    left: 430px;
+    top: 628px;
+  }
+  .hr_4 {
+    position: absolute;
+    left: 430px;
+    top: 680px;
+  }
+  .telegram {
+    position: absolute;
+    left: 430px;
+    top: 678px;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+  }
+  h2 {
+    position: absolute;
+    top: 810px;
+    left: 50px;
+  }
+  .hr_5 {
+    position: absolute;
+    top: 890px;
+    left: 50px;
+  }
+  .ads {
+    position: absolute;
+    top: 880px;
+    left: 50px;
+    rotate: 35deg;
+    font-weight: bold;
+  }
+  .footer {
+    gap: 20px;
+    display: grid;
+    justify-items: center;
+    height: auto;
+    margin-top: 30px;
+  }
+  .text1 {
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 840px) {
+  .navbar,
+  br {
+    display: none;
+  }
+  .search {
+    display: inline-block;
+  }
+  .item:hover,
+  .item:hover img {
+    transition: none;
+  }
+  .title {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    font-size: large;
+  }
+  .parent {
+    margin: auto;
+    padding: 0 15px;
+    padding-top: 20px;
+    height: 295vh !important;
   }
   .recent {
     display: grid;
