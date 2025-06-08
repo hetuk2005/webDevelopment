@@ -973,6 +973,158 @@ body.popup-active .popup-overlay {
   padding: 5px 15px;
 }
 
+@media (max-width: 480px) {
+  .navbar,
+  br,
+  .flex_comment {
+    display: none;
+  }
+  .search {
+    display: inline-block;
+  }
+  .item:hover,
+  .item:hover img {
+    transition: none;
+  }
+  .title {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    font-size: 15px;
+  }
+  .parent {
+    margin: 0;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .info {
+    flex-wrap: wrap;
+  }
+  .image1 {
+    width: 97%;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+  .anime_info {
+    width: inherit;
+  }
+  h4,
+  .black {
+    font-size: larger;
+    padding: 10px 0;
+  }
+  .genre,
+  .org,
+  .run,
+  .lang,
+  .episodes,
+  .sub,
+  .quality,
+  .encoder,
+  .synopsis {
+    align-items: start;
+  }
+  .screenshot,
+  .sl,
+  .ss,
+  .episode1,
+  .zip1,
+  .zip,
+  .add,
+  .season1,
+  .season2,
+  .watch_on,
+  .click,
+  .button,
+  .anime1 > a > p,
+  .anime2 > a > p,
+  .anime3 > a > p,
+  .like,
+  .author,
+  .like_anime,
+  .comment,
+  .outline,
+  .hr_1,
+  .hr_2,
+  .hr_3,
+  .hr_4,
+  .hr_5,
+  .icons,
+  .purple,
+  .track,
+  .none,
+  .season1_1 {
+    width: inherit;
+  }
+  .zip {
+    padding: 15px 0;
+  }
+  .watch {
+    margin: 30px 65px;
+  }
+  .click {
+    padding: 15px 0;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .like_anime {
+    justify-content: start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .comment {
+    margin-top: 30px;
+  }
+  input {
+    width: 330px;
+  }
+  .child4 > h6 {
+    margin-top: 20px;
+  }
+  .icons {
+    justify-content: space-around;
+  }
+  .icons > img {
+    width: 50px;
+    height: auto;
+    object-fit: initial;
+  }
+  .uploads {
+    padding: 15px 5px;
+  }
+  .hr_3,
+  .hr_4 {
+    margin-bottom: 30px;
+  }
+  .discord,
+  .telegram {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  .child4 > h2 {
+    margin-top: 20px;
+  }
+  .ads {
+    padding: 30px 10px;
+    rotate: 0deg;
+    font-size: large;
+    font-weight: 600;
+  }
+  .footer {
+    gap: 15px;
+    padding: 20px;
+    height: auto;
+  }
+  .text1 {
+    font-size: small;
+    font-weight: 600;
+  }
+}
+
 @media (min-width: 481px) and (max-width: 840px) {
   .navbar,
   br {
