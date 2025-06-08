@@ -1,4 +1,6 @@
 body {
+  margin-bottom: 30px;
+  height: auto;
   background-image: url(../utils/Background_Telegram.jpg);
   color: whitesmoke;
 }
@@ -51,14 +53,15 @@ h4 {
   padding: 15px 0;
 }
 
-ul {
+ol > p {
   font-size: x-large;
   text-align: center;
   margin: 15px 0;
+  margin-bottom: 15px;
 }
 
-ul > li {
+ol > li {
+  font-size: x-large;
   margin: 10px 20px;
   text-align: left;
-  list-style-type: armenia;
 }
