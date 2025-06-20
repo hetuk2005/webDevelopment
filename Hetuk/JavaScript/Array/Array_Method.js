@@ -1,14 +1,16 @@
+/* Array Methods */
+
 let arry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // 1. Splice Method
 
 // arry.splice(index_number_which_to_change, how_many_numbers_to_change_from_that_index, change_numbers);
 
-// arry.splice(2, 1, 23, 24);
+arry.splice(2, 1, 23, 24);
 
-// arry.splice(2, 2, 23, 24);
+arry.splice(2, 2, 23, 24);
 
-// console.log(arry)
+console.log(arry)
 
 // 2. Slice Method
 
@@ -20,38 +22,38 @@ let arry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // let arry2 = arry.slice(1,3);
 
-// console.log(arry1)
-// console.log(arry2)
+console.log(arry1)
+console.log(arry2)
 
 // 3. Shift Method
 
-// arry.shift()
+arry.shift()
 
-// console.log(arry)
+console.log(arry)
 
 // 4. Unshift Method
 
-// arry.unshift(15)
+arry.unshift(15)
 
-// console.log(arry)
+console.log(arry)
 
 // 5. toString
 
 // let arry1 = arry.toString();
 
-// console.log(arry1)
+console.log(arry1)
 
 // 6. join
 
 // let arry1 = arry.join("-");
 
-// console.log(arry1)
+console.log(arry1)
 
 // 7. delete
 
-// delete arry[1]
+delete arry[1]
 
-// console.log(arry)
+console.log(arry)
 
 // 8. concat
 
@@ -61,3 +63,10 @@ let arry2 = [14, 15];
 let arry3 = arry.concat(arry1, arry2);
 
 console.log(arry3)
+
+// 9. sort
+
+let aary5 = [1, 23, 100, 2, 5, 4, 66];
+
+let arry6 = aary5.sort((a, b) => a - b);
+console.log(arry6);
