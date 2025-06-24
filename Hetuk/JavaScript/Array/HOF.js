@@ -31,3 +31,18 @@ console.log(arr3);
 
 let arr4 = array.reduce((acc, curr) => acc + curr);
 console.log(arr4);
+
+// 5. Reducer
+
+let createSumReducer = (prop) => {
+    return (acc, obj) => acc + obj[prop];
+};
+
+let items = [
+    { name: 'Apple', price: 95 },
+    { name: 'GreenApple', price: 100 },
+    { name: 'PineApple', price: 70 }
+];
+
+let totalprice = items.reduce(createSumReducer('price'), 0);
+console.log("Total Price: ", totalprice);

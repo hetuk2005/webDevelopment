@@ -117,13 +117,28 @@ console.log(price);
 
 // 4. How Many Times Each Item Appears
 
-// let name = ['Hetuk', 'Pratham', 'Hetuk', 'Hrishi'];
+let name1 = ['Hetuk', 'Pratham', 'Hetuk', 'Hrishi'];
 
-// let repeat = name.reduce((acc, curr) => {
-//     return
-// })
+let repeat = name1.reduce((acc, curr) => {
+    acc[curr] = (acc[curr] || 0) + 1;
+    return acc;
+}, {});
+console.log(repeat);
 
 // 5. Find Maximum Numbers
 
 let max = students.reduce((acc, curr) => Math.max(acc, curr));
 console.log("Maximum Number: ", max);
+
+// 6. MASAI Do Same As 4th Question
+
+let word = 'MASAI';
+
+let funcword = word.split('');
+console.log('Funcword: ', funcword);
+
+let repeat1 = funcword.reduce((acc, curr) => {
+    acc[curr] = (acc[curr] || 0) + 1;
+    return acc;
+}, {});
+console.log(repeat1);
