@@ -115,10 +115,15 @@ let price = obj.reduce((acc, curr) => acc + Object.values(curr)[0], 0);
 // Object.values(curr)[0] - Extracts Price, 0 - It Gives Number For Addition
 console.log(price);
 
-// 4. How Many Times It Is Repeated
+// 4. How Many Times Each Item Appears
 
-let name = ['Hetuk', 'Pratham', 'Hetuk', 'Hrishi'];
+// let name = ['Hetuk', 'Pratham', 'Hetuk', 'Hrishi'];
 
-let repeat = name.reduce((acc, curr) => {
-    return 
-})
+// let repeat = name.reduce((acc, curr) => {
+//     return
+// })
+
+// 5. Find Maximum Numbers
+
+let max = students.reduce((acc, curr) => Math.max(acc, curr));
+console.log("Maximum Number: ", max);
