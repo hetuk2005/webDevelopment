@@ -47,23 +47,15 @@ console.log(arr);
 
 // shift
 
-Array.prototype.first_remove = function (...values) {
-
-    let newLength = this.length;
-    console.log('newLength: ', newLength); // 5 -> 5-1 = 4
-
-    // Shift Existing Elements To The Right
-    for (let i = newLength - 1; i >= values.length; i--) {
-        this[i] = this[i - values.length];
-    }
-
-    // Add New Elements At The Beginning
-    for (let i = 0; i < values.length; i++) {
-        this[i] = values[i];
-    }
-
-    return this.length;
-};
-
+Array.prototype.first_remove = function () {
+    if (this.length == 0) return undefined;
+        let removed = this[0];
+        for (let i = 1; i < this.length; i++) {
+            this[i - 1] = this[i];
+        }
+        this.length = this.length - 1;
+        return removed;
+    };
+    
 arr.first_remove();
 console.log(arr);
