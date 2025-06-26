@@ -12,22 +12,46 @@
             crossorigin="anonymous">
         <style>
         .card_div {
+            cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 20px;
             flex-direction: column;
             padding: 20px;
+            margin: 10px 0;
             border-radius: 20px;
             border: 2px solid red;
+            box-shadow: 0 4px 7px black;
         }
         body{
             padding: 0 20px;
+        }
+        h1{
+            text-align: center;
         }
         .card_div>img{
             width: 230px;
             height: 230px;
             object-fit: contain;
+        }
+        .card_div>p,
+        .card_div>.rating {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 230px;
+            text-align: center;
+        }
+        .price,
+        .category,
+        .rating,.description {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            text-align: center;
+            margin: 0;
         }
         .card_div>.rating{
             display: flex;
@@ -44,12 +68,15 @@
     </head>
 
     <body class="h-100 w-100">
-        <h1>Api Call</h1>
+        <h1>Shopping Website</h1>
         <!-- Small screen button -->
-        <button onclick="Apicalling()"
-            class="bg-success text-white border-0 p-3 m-3 rounded-2">
-            Click Me
-        </button>
+        <div class="d-flex justify-content-center align-items-center mt-3">
+            <button
+                onclick="Apicalling(); confirm('Prices Are High Please Dont Buy, If You Can Buy Then Continue, Can You Buy?'); document.body.style.background='lightblue'"
+                class="bg-success text-white border-0 p-2 rounded-2">
+                Click Here To Get List
+            </button>
+        </div>
         <div class="infos" id="info"></div>
     </body>
     <!-- js file  -->

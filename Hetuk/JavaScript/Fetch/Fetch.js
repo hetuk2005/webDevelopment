@@ -28,18 +28,28 @@ const appendsFunc = (data) => {
   data.forEach((element) => {
     let cardDiv = document.createElement('div');
     let img = document.createElement('img');
-      let title = document.createElement('h1');
-      let price = document.createElement('h3');
-      let description = document.createElement('h3');
-      let category = document.createElement('h3');
+      let title = document.createElement('h5');
+      let price = document.createElement('p');
+      let description = document.createElement('p');
+      let category = document.createElement('p');
       let rating = document.createElement('div');
-      let rate = document.createElement('h3');
-      let count = document.createElement('h3');
-
-      cardDiv.className = 'card_div';
+      let rate = document.createElement('p');
+    let count = document.createElement('p');
+    
+    cardDiv.className = 'card_div';
       
-      rating.className = 'rating';
+    rating.className = 'rating';
 
+    price.className = 'price';
+    
+    description.className = 'description';
+    
+    category.className = 'category';
+    
+    rate.className = 'rate';
+    
+    count.className = 'count';
+    
     img.src = element.image;
 
     title.innerText = element.title;
