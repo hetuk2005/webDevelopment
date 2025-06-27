@@ -9,45 +9,16 @@
             rel="stylesheet"
             integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
             crossorigin="anonymous">
-        <style>
-            .card_div {
-                cursor: pointer;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-                flex-direction: column;
-                padding: 20px;
-                margin: 10px 0;
-                border-radius: 20px;
-                border: 2px solid red;
-                box-shadow: 0 5px 7px black;
-            }
-            body{
-                padding: 30px 20px;
-            }
-            h6,h1{
-                padding: 15px 0;
-                text-align: center;
-                text-transform: capitalize;
-                font-weight: bold;
-            }
-            .infos {
-                padding: 20px 0;
-                display: grid;
-                grid-template-columns: repeat(3,1fr);
-                gap: 10px;
-            }
-        </style>
+        <link rel="stylesheet" href="./Fetch1.css">
     </head>
     <body class="h-100 w-100">
-        <h1>Dog Breeds Information</h1>
+        <h1>Cat Breeds Api Call</h1>
         <!-- Small screen button -->
         <div class="d-flex justify-content-center align-items-center mt-3">
             <button
-                onclick="Apicalling(); confirm('Do You Have Dog?'); document.body.style.background='lightblue'"
-                class="bg-success text-white border-0 p-2 rounded-2">
-                Click Here To Get Info About Dogs Breeds
+                onclick="Apicalling(); confirm('Do You Have Cat?'); document.body.style.background='lightblue'"
+                class="bg-danger text-white border-0 p-2 rounded-2">
+                Click Here To Get Cat Breeds
             </button>
         </div>
         <div class="infos" id="info"></div>

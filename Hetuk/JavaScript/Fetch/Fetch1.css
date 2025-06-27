@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Libertinus Math";
+}
+
+body {
+  padding: 20px;
+}
+
+.detail_div {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px 0;
+}
+
+#info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.card_div {
+  width: 470px;
+  box-shadow: 0 5px 15px red;
+  border-radius: 30px;
+  border: 1px solid red;
+}
+
+img {
+  width: inherit;
+  height: 300px;
+  object-fit: cover;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.detail_div > p {
+  padding: 3px 0;
+}
+
+.detail_div1 {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
