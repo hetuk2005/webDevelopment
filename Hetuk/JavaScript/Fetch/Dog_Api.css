@@ -26,6 +26,7 @@ body {
   justify-items: center;
   gap: 30px;
   margin: 20px 0;
+  height: auto;
 }
 
 .card_div {
