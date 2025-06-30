@@ -1,16 +1,45 @@
-const api = 'https://www.omdbapi.com/?s=avengers&apikey=3d15e923';
+const apiKey = `3d15e923`;
 
-const ApiCalling = () => {
-    fetch(api)
-        .then((res) => res.json())
-        .then((res) => appendsFunc(res))
-        .catch((err) => console.log(err));
+const dataLoad = async () => {
+    
+    let random = [{ name: 'ironman' }, { name: 'superman' }, { name: 'avengers' }, { name: 'thor' }, { name: 'loki' }];
+    
+    const api = `https://www.omdbapi.com/?s=scam&apikey=${apiKey}`;
+    
+    try {
+        const response = await fetch(api);
+        const data = await response.json();
+        appendsFunc(data);
+    } catch (error) {
+        console.log('Error: ', error);
+    }
+};
+
+const ApiCalling = async (event) => {
+    if (event.key === 'Enter') {
+        const searchApi = document.querySelector('#searchInput');
+        console.log('Search Api: ', searchApi.value.length);
+
+        if (searchApi.value.length === 0) return;
+        
+        const api=`https://www.omdbapi.com/?s=${searchApi.value}&apikey=${apiKey}`
+        
+        try {
+            const response = await fetch(api);
+            const data = await response.json();
+            console.log('Data: ', data);
+            appendsFunc(data);
+            searchApi.value = '';
+        } catch (error) {
+            console.log('Error: ', error);
+        }
+    }
+    return;
 };
 
 const appendsFunc = (data) => {
-    
     let mainDiv = document.getElementById('info');
-
+    mainDiv.innerHTML = '';
     data.Search.forEach(hello => {
         
         const cardDiv = document.createElement('div');

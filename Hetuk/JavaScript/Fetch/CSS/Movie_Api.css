@@ -70,3 +70,21 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+
+@media (max-width: 320px) {
+  #info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card_div,
+  img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+  .card_div {
+    height: 780px;
+  }
+  .name_div {
+    height: 360px;
+  }
+}
