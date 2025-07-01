@@ -19,7 +19,7 @@ const appendData = (value) => {
         let id = document.createElement('p');
         let text = document.createElement('p');
 
-        container.classList.add('container'); // Or We Can Give Class Like This:- container.className = 'conatiner';
+        container.classList.add('container');  // Or We Can Give Class Like This:- container.className = 'conatiner';
 
         id.innerText = el.id;
         id.classList.add('id_data');
