@@ -5,61 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Paginations</title>
-        <script src="./index.js" defer></script>
-
-        <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            width: 100%;
-            height: 100vh;
-        }
-
-        /* .main,
-        .btn {
-            border: 1px solid red;
-        } */
-
-        .main {
-            height: max-content;
-        }
-
-        .btn {
-            text-align: center;
-            padding: 20px;
-
-        }
-
-        input,
-        span {
-            text-align: center;
-            width: 60px;
-            border-radius: 20px;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        input:disabled {
-            cursor: not-allowed !important;
-            opacity: 0.6;
-        }
-
-        .container {
-            /* border: 1px solid blue; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .id_data::after {
-            content: " 👉🏻 ";
-        }
-    </style>
+        <link rel="stylesheet" href="./CSS/index.css">
     </head>
 
     <body onload="dataFetch()">
@@ -74,5 +20,6 @@
         </div>
 
     </body>
+    <script src="./index.js" defer></script>
 
 </html>
