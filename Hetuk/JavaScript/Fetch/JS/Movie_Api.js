@@ -12,9 +12,7 @@ const dataLoad = async () => {
     { name: "space" },
     { name: "earth" },
     { name: "animal" },
-    {
-      name: "disney",
-    },
+    { name: "disney" },
   ];
 
   let movie = Math.round(Math.random() * random.length);
