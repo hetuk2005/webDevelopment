@@ -67,6 +67,8 @@ const appendsFunc = (data) => {
     const imdb = document.createElement("p");
     const type = document.createElement("p");
 
+    const link = document.createElement("a");
+
     cardDiv.className = "card_div";
     nameDiv.className = "name_div";
     gridDiv.className = "grid_div";
@@ -77,10 +79,15 @@ const appendsFunc = (data) => {
     imdb.innerText = `Imdb ID: ${hello.imdbID}`;
     type.innerText = `Type: ${hello.Type}`;
 
+    link.href = `Movie_Details.html?id=${hello.imdbID}`;
+    link.style.textDecoration = "none";
+    link.style.color = "inherit";
+
     gridDiv.append(year, imdb, type);
     nameDiv.append(title, gridDiv);
     cardDiv.append(img, nameDiv);
-    mainDiv.append(cardDiv);
+    link.append(cardDiv);
+    mainDiv.append(link);
   });
 };
 
