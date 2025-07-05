@@ -1,10 +1,8 @@
 const apiKey = "3d15e923";
 
-// Get IMDb ID from URL
 const urlParams = new URLSearchParams(window.location.search);
 const imdbID = urlParams.get("id");
 
-// Fetch movie details using IMDb ID
 const getMovieDetails = async () => {
   if (!imdbID) return;
 
