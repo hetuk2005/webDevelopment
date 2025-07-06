@@ -140,6 +140,25 @@ h1 {
   text-align: center;
 }
 
+.poster {
+  display: block;
+  margin: 30px auto;
+  width: 50%;
+  object-fit: contain;
+}
+
+h4 {
+  font-size: x-large;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.plot {
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
 @media (max-width: 320px) {
   #info {
     grid-template-columns: repeat(1, 1fr);
