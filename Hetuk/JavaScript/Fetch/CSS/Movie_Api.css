@@ -39,7 +39,7 @@ body {
 img {
   width: inherit;
   height: 600px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: inherit;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -59,7 +59,7 @@ img {
   font-weight: 600;
   padding: 20px;
   background-color: antiquewhite;
-  height: 250px;
+  height: 300px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
