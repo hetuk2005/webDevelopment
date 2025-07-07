@@ -37,6 +37,11 @@ body {
   margin: 30px 0;
 }
 
+.card_div:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+}
+
 img {
   width: 300px;
   height: 300px;
@@ -76,7 +81,7 @@ h1 {
 #loader {
   position: absolute;
   left: 50%;
-  top: 50%;
+  bottom: 0;
   z-index: 1;
   width: 120px;
   height: 120px;
@@ -145,8 +150,17 @@ h1 {
 .poster {
   display: block;
   margin: 30px auto;
-  width: 50%;
-  object-fit: contain;
+  width: 25%;
+  height: 500px;
+  object-fit: fill;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px whitesmoke;
+  cursor: pointer;
+}
+
+.poster:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
 }
 
 h4 {
@@ -206,9 +220,11 @@ h4 {
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+  border: 3px solid;
 }
 
 .images:hover {
+  transition: all 0.3s ease-in-out;
   transform: scale(1.05);
 }
 

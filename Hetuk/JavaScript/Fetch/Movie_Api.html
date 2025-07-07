@@ -15,26 +15,26 @@
         <div class="poster-scroll-container">
             <div id="posterScroll" class="poster-scroll"></div>
         </div>
+        <h1>Movie Information Api</h1>
+        <div class="flex">
+            <div class="child1">
+                <a href="#">Home</a>
+                <a href="#">Bollywood</a>
+                <a href="#">Hollywood</a>
+                <a href="#">Tollywood</a>
+                <a href="#">Hindi Dubbed</a>
+                <a href="#">Web Series</a>
+                <input type="search" id="searchInput"
+                    onkeydown="ApiCalling(event);"
+                    class="text-black border-3 p-2 rounded-2"
+                    placeholder="🔍 Search Movie">
+            </div>
+            <div class="child2">
+                <img src="./Author Info.jpeg" alt="Logo" class="images">
+            </div>
+        </div>
         <div id="loader"></div>
         <div id="myDiv">
-            <h1>Movie Information Api</h1>
-            <div class="flex">
-                <div class="child1">
-                    <a href="#">Home</a>
-                    <a href="#">Bollywood</a>
-                    <a href="#">Hollywood</a>
-                    <a href="#">Tollywood</a>
-                    <a href="#">Hindi Dubbed</a>
-                    <a href="#">Web Series</a>
-                    <input type="search" id="searchInput"
-                        onkeydown="ApiCalling(event);"
-                        class="text-black border-3 p-2 rounded-2"
-                        placeholder="🔍 Search Movie">
-                </div>
-                <div class="child2">
-                    <img src="./Author Info.jpeg" alt="Logo" class="images">
-                </div>
-            </div>
             <div id="info"></div>
         </div>
     </body>

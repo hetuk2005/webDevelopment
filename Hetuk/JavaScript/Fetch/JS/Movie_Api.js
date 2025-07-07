@@ -112,6 +112,7 @@ const loadPostersForScroll = async () => {
     try {
       const response = await fetch(api);
       const data = await response.json();
+      const limitedPosters = posters.slice(0, 20);
       if (data.Search) {
         data.Search.forEach((movie) => {
           if (movie.Poster && movie.Poster !== "N/A") {
