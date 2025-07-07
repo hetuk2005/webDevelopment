@@ -102,3 +102,44 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
+const loadPostersForScroll = async () => {
+  const keywords = ["marvel", "batman", "avengers", "harry potter", "spider"];
+  const posters = [];
+
+  for (let keyword of keywords) {
+    const api = `https://www.omdbapi.com/?s=${keyword}&apikey=${apiKey}`;
+    try {
+      const response = await fetch(api);
+      const data = await response.json();
+      if (data.Search) {
+        data.Search.forEach((movie) => {
+          if (movie.Poster && movie.Poster !== "N/A") {
+            posters.push(movie.Poster);
+          }
+        });
+      }
+    } catch (error) {
+      console.log("Poster Error: ", error);
+    }
+  }
+
+  const scrollContainer = document.getElementById("posterScroll");
+  if (!scrollContainer) return;
+
+  posters.forEach((url) => {
+    const img = document.createElement("img");
+    img.src = url;
+    scrollContainer.appendChild(img);
+  });
+
+  // Duplicate for infinite scroll
+  posters.forEach((url) => {
+    const img = document.createElement("img");
+    img.src = url;
+    scrollContainer.appendChild(img);
+  });
+};
+
+// Call this when the page loads
+window.addEventListener("load", loadPostersForScroll);

@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: black;
   padding: 20px;
 }
 
@@ -17,28 +18,28 @@ body {
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #info {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   gap: 30px;
   margin: 20px 0;
-  height: auto;
 }
 
 .card_div {
-  width: 470px;
-  box-shadow: 0 5px 15px red;
+  width: 300px;
+  box-shadow: 0 5px 15px whitesmoke;
   border-radius: 30px;
-  border: 1px solid red;
+  border: 1px solid #fff;
+  margin: 30px 0;
 }
 
 img {
-  width: inherit;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   object-fit: fill;
   border-radius: inherit;
   border-bottom-left-radius: 0;
@@ -51,15 +52,16 @@ img {
 }
 
 .name_div > h3 {
-  font-size: 41px;
+  font-size: 21px;
   text-align: center;
+  font-weight: 600;
 }
 
 .name_div {
   font-weight: 600;
   padding: 20px;
   background-color: antiquewhite;
-  height: 300px;
+  height: 200px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -151,12 +153,93 @@ h4 {
   font-size: x-large;
   text-align: center;
   padding: 10px 0;
+  color: #fff;
 }
 
 .plot {
   width: 50%;
   margin: auto;
   display: block;
+}
+
+.poster-scroll-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px;
+  background-color: #111;
+  margin: 30px 0;
+}
+
+.poster-scroll {
+  display: flex;
+  gap: 20px;
+  animation: scroll 30s linear infinite;
+}
+
+.poster-scroll img {
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.poster-scroll img:hover {
+  transform: scale(1.15);
+}
+
+.poster-scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-70%);
+  }
+}
+
+.images {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.images:hover {
+  transform: scale(1.05);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: rgb(49, 48, 48);
+}
+
+.child1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.child1 > a {
+  padding: 7px;
+  font-size: x-large;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.child1 > a:hover {
+  background-color: #fff;
+  color: black;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.07);
 }
 
 @media (max-width: 320px) {
