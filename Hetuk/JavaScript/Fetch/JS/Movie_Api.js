@@ -103,44 +103,35 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 
-const loadPostersForScroll = async () => {
-  const keywords = ["marvel", "batman", "avengers", "harry potter", "spider"];
-  const posters = [];
+const keywords = ["batman", "marvel", "avengers", "harry potter"];
 
-  for (let keyword of keywords) {
-    const api = `https://www.omdbapi.com/?s=${keyword}&apikey=${apiKey}`;
+async function loadPosters() {
+  const scrollDiv = document.getElementById("posterScroll");
+
+  for (let word of keywords) {
+    const api = `https://www.omdbapi.com/?s=${word}&apikey=${apiKey}`;
     try {
-      const response = await fetch(api);
-      const data = await response.json();
-      const limitedPosters = posters.slice(0, 20);
+      const res = await fetch(api);
+      const data = await res.json();
+
       if (data.Search) {
         data.Search.forEach((movie) => {
           if (movie.Poster && movie.Poster !== "N/A") {
-            posters.push(movie.Poster);
+            const link = document.createElement("a");
+            link.href = `Movie_Details.html?id=${movie.imdbID}`;
+
+            const img = document.createElement("img");
+            img.src = movie.Poster;
+
+            link.appendChild(img);
+            scrollDiv.appendChild(link);
           }
         });
       }
-    } catch (error) {
-      console.log("Poster Error: ", error);
+    } catch (err) {
+      console.log("Error loading posters:", err);
     }
   }
+}
 
-  const scrollContainer = document.getElementById("posterScroll");
-  if (!scrollContainer) return;
-
-  posters.forEach((url) => {
-    const img = document.createElement("img");
-    img.src = url;
-    scrollContainer.appendChild(img);
-  });
-
-  // Duplicate for infinite scroll
-  posters.forEach((url) => {
-    const img = document.createElement("img");
-    img.src = url;
-    scrollContainer.appendChild(img);
-  });
-};
-
-// Call this when the page loads
-window.addEventListener("load", loadPostersForScroll);
+window.addEventListener("load", loadPosters);
