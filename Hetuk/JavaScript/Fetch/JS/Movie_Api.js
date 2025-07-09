@@ -38,7 +38,7 @@ const ApiCalling = async (event) => {
 
     if (searchApi.value.length === 0) return;
 
-    const api = `https://www.omdbapi.com/?s=${searchApi.value}&apikey=${apiKey}`;
+    const api = `https://www.omdbapi.com/?s=${searchApi.value}&apikey=${apiKey}&page=4`;
 
     try {
       const response = await fetch(api);

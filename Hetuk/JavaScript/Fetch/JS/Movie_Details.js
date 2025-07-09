@@ -20,6 +20,7 @@ const getMovieDetails = async () => {
 const showDetails = (movie) => {
   const container = document.getElementById("movieDetails");
   const movie_detail_card = document.createElement("div");
+  const parent = document.createElement("div");
   const title = document.createElement("h1");
   const poster = document.createElement("img");
   const year = document.createElement("h4");
@@ -35,6 +36,7 @@ const showDetails = (movie) => {
   const runtime = document.createElement("h4");
 
   movie_detail_card.className = "movie_detail_card";
+  parent.className = "parent";
   poster.className = "poster";
   plot.className = "plot";
 
@@ -53,9 +55,9 @@ const showDetails = (movie) => {
   }`;
   runtime.innerHTML = `<u>Run</u> <u>Time</u>: ${movie.Runtime}`;
   writer.innerHTML = `<u>Writer</u>: ${movie.Writer}`;
+  parent.append(title, poster);
   movie_detail_card.append(
-    title,
-    poster,
+    parent,
     year,
     genre,
     director,
