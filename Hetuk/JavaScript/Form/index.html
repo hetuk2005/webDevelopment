@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-transform: capitalize;
+            }
+            body,form{
+                padding: 15px;
+            }
+            table, th,td{
+                width: auto;
+                border: 2px solid;
+            }
+            td{
+                padding: 5px 10px;
+            }
+            button{
+                width: 100%;
+                border: 2px solid;
+                border-radius: 5px;
+                margin: 2px 0;
+            }
+      </style>
+    </head>
+    <body onload="UI()">
+        <form onsubmit="formFunction(event)">
+            <input type="text" id="userName" placeholder="Enter You Name"
+                required>
+            <input type="email" id="userEmail" placeholder="Enter Your Email"
+                required>
+            <input type="password" id="userPass"
+                placeholder="Enter Your Password" required>
+            <input type="submit">
+        </form>
+        <section id="infoTable"></section>
+    </body>
+    <script src="./index.js"></script>
+</html>
