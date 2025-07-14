@@ -8,6 +8,10 @@
   font-family: "Libertinus Math";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   padding: 20px;
@@ -261,6 +265,25 @@ h4 {
   color: black;
   transition: all 0.5s ease-in-out;
   transform: scale(1.07);
+}
+
+#back > a {
+  text-decoration: none;
+}
+
+#back {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#back.show {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 ::-webkit-scrollbar {

@@ -135,3 +135,13 @@ async function loadPosters() {
 }
 
 window.addEventListener("load", loadPosters);
+
+const back = document.getElementById("back");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    back.classList.add("show");
+  } else {
+    back.classList.remove("show");
+  }
+});

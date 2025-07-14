@@ -59,8 +59,8 @@ function UI() {
     td3.innerText = el.name;
     td4.innerText = el.email;
     td5.innerText = el.pass;
-    editButton.innerText = `edit`;
-    deleteButton.innerText = `delete`;
+    editButton.innerText = `✏️`;
+    deleteButton.innerText = `🗑️`;
 
     tr.append(th1, th2, th3, th4, th5, th6);
     thead.append(tr);
