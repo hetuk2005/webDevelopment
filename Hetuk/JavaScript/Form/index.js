@@ -1,4 +1,5 @@
 let dataBase = JSON.parse(localStorage.getItem("formData")) || []; // json to object => parse
+let editIndex = null;
 console.log(dataBase);
 
 function formFunction(e) {
@@ -8,15 +9,26 @@ function formFunction(e) {
   let email = document.querySelector("#userEmail").value;
   let pass = document.querySelector("#userPass").value;
 
-  let personData = {
-    id: Date.now(),
-    name,
-    email,
-    pass,
-  };
-  dataBase.push(personData);
-
+  if (editIndex !== null) {
+    // Update existing record
+    dataBase[editIndex] = {
+      ...dataBase[editIndex],
+      name,
+      email,
+      pass,
+    };
+    editIndex = null;
+  } else {
+    let personData = {
+      id: Date.now(),
+      name,
+      email,
+      pass,
+    };
+    dataBase.push(personData);
+  }
   localStorage.setItem("formData", JSON.stringify(dataBase)); // object to json => stringify
+  document.querySelector("form").reset();
   UI();
 }
 
@@ -62,6 +74,9 @@ function UI() {
     editButton.innerText = `✏️`;
     deleteButton.innerText = `🗑️`;
 
+    editButton.onclick = () => editUser(i);
+    deleteButton.onclick = () => deleteUser(i);
+
     tr.append(th1, th2, th3, th4, th5, th6);
     thead.append(tr);
     tr2.append(td1, td2, td3, td4, td5, editButton, deleteButton);
@@ -70,4 +85,22 @@ function UI() {
 
     mainDiv.append(table);
   });
+}
+
+// Delete Function
+function deleteUser(index) {
+  if (confirm("Are you sure you want to delete this entry?")) {
+    dataBase.splice(index, 1);
+    localStorage.setItem("formData", JSON.stringify(dataBase));
+    UI();
+  }
+}
+
+// Edit Function
+function editUser(index) {
+  const user = dataBase[index];
+  document.querySelector("#userName").value = user.name;
+  document.querySelector("#userEmail").value = user.email;
+  document.querySelector("#userPass").value = user.pass;
+  editIndex = index;
 }
