@@ -74,7 +74,10 @@ function UI() {
     editButton.innerText = `✏️`;
     deleteButton.innerText = `🗑️`;
 
-    editButton.onclick = () => editUser(i);
+    editButton.addEventListener("click", function () {
+      editUser(i);
+    });
+    // editButton.onclick = () => editUser(i);
     deleteButton.onclick = () => deleteUser(i);
 
     tr.append(th1, th2, th3, th4, th5, th6);

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo List</title>
+        <!-- <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"> -->
+        <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                body{
+                    background-color: black;
+                }
+                .container{
+                    width: 500px;
+                    padding: 40px;
+                    text-align: center;
+                    background-color: whitesmoke;
+                    margin-left: 35%;
+                    margin-top: 10px;
+                }
+                h1{
+                    padding-bottom: 20px;
+                    font-size: 45px;
+                    font-weight: 600;
+                    letter-spacing: 3px;
+                }
+                #input{
+                    width: 270px;
+                    padding: 10px;
+                    border: 2px solid;
+                    font-size: 19px;
+                    border-radius: 10px;
+                }
+                input::placeholder{
+                    text-align: center;
+                    font-size: 19px;
+                }
+                button{
+                    background-color: coral;
+                    font-size: 19px;
+                    font-weight: bold;
+                    padding: 10px;
+                    border: 2px solid coral;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                }
+                button:hover{
+                    transform: scale(1.03);
+                }
+                ul{
+                    color: black;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>ToDo List</h1>
+            <input type="text" placeholder="Enter Your Task" id="input">
+            <button onclick="Add()">Add</button>
+        </div>
+        <div class="text"></div>
+    </body>
+    <!-- <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+    <script src="./toDo.js"></script>
+</html>
