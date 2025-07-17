@@ -3,67 +3,85 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ToDo List</title>
+        <title>Document</title>
         <style>
-                *{
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                    font-family: 'Times New Roman', Times, serif;
-                }
-                body{
-                    background-color: black;
-                }
-                .container{
-                    width: 500px;
-                    padding: 40px;
-                    text-align: center;
-                    background-color: whitesmoke;
-                    margin-left: 35%;
-                    margin-top: 10px;
-                }
-                h1{
-                    padding-bottom: 20px;
-                    font-size: 45px;
-                    font-weight: 600;
-                    letter-spacing: 3px;
-                }
-                #input{
-                    width: 270px;
-                    padding: 10px;
-                    border: 2px solid;
-                    font-size: 19px;
-                    border-radius: 10px;
-                }
-                input::placeholder{
-                    text-align: center;
-                    font-size: 19px;
-                }
-                button{
-                    background-color: coral;
-                    font-size: 19px;
-                    font-weight: bold;
-                    padding: 10px;
-                    border: 2px solid coral;
-                    border-radius: 10px;
-                    cursor: pointer;
-                    transition: all 0.3s ease-in-out;
-                }
-                button:hover{
-                    transform: scale(1.03);
-                }
-                ul{
-                    color: black;
-                }
-            </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>ToDo List</h1>
-            <input type="text" placeholder="Enter Your Task" id="input">
-            <button onclick="Add()">Add</button>
-        </div>
-        <div class="text"></div>
-    </body>
-    <script src="./toDo.js"></script>
-</html>
+        *{
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+        body,form{
+            padding: 20px 0px;
+        }
+        table{
+            border: 3px solid black;
+        }
+        th,td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 3px;
+            text-transform: capitalize;
+        }
+        button{
+            width: 100%;
+        }
+        .tablebutton{
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport"
+                    content="width=device-width, initial-scale=1.0" />
+                <title>To-Do List</title>
+                <style>
+    * {
+      box-sizing: border-box;
+      text-transform: capitalize;
+    }
+    body {
+      padding: 20px;
+      font-family: sans-serif;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      padding: 8px;
+      width: 300px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 8px 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  </style>
+            </head>
+            <body onload="renderTodoList()">
+
+                <form onsubmit="handleForm(event)">
+                    <input id="taskInput" type="text"
+                        placeholder="Enter your task" required />
+                    <input type="submit" value="Add Task" />
+                </form>
+
+                <section id="todoTable"></section>
+            </body>
+            <script src="./toDo.js"></script>
+        </html>
