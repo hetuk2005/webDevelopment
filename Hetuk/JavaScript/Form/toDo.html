@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
         *{
             padding: 0;
             box-sizing: border-box;
             text-transform: capitalize;
+            font-family: 'Times New Roman', Times, serif;
         }
         body,form{
             padding: 20px 0px;
+        }
+        h1{
+          text-align: center;
         }
         table{
             border: 3px solid black;
@@ -22,66 +26,56 @@
             padding: 3px;
             text-transform: capitalize;
         }
-        button{
-            width: 100%;
-        }
         .tablebutton{
             display: flex;
             gap: 5px;
         }
+        .div{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 70px;
+          margin: 20px 0;
+        }
+        form{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+        }
+        input,
+        button{
+          padding: 7px 15px;
+          border-radius: 10px;
+          border: 2px solid;
+          font-size: 15px;
+          font-weight: 600;
+        }
+        input[type="submit"],
+        button{
+          cursor: pointer;
+        }
+        input{
+          text-align: center;
+        }
+        .button{
+          display: flex;
+          gap:30px;
+        }
+        .checkbox{
+          cursor: pointer;
+        }
     </style>
-        <!DOCTYPE html>
-        <html lang="en">
-            <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport"
-                    content="width=device-width, initial-scale=1.0" />
-                <title>To-Do List</title>
-                <style>
-    * {
-      box-sizing: border-box;
-      text-transform: capitalize;
-    }
-    body {
-      padding: 20px;
-      font-family: sans-serif;
-    }
-    form {
-      margin-bottom: 20px;
-    }
-    input[type="text"] {
-      padding: 8px;
-      width: 300px;
-      margin-right: 10px;
-    }
-    button {
-      padding: 8px 16px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #333;
-      padding: 8px;
-      text-align: center;
-    }
-    .action-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
-  </style>
-            </head>
-            <body onload="renderTodoList()">
+    <body onload="renderTodoList()">
+      <h1>To Do List</h1>
 
-                <form onsubmit="handleForm(event)">
-                    <input id="taskInput" type="text"
-                        placeholder="Enter your task" required />
-                    <input type="submit" value="Add Task" />
-                </form>
+      <form onsubmit="handleForm(event)">
+        <input id="taskInput" type="text"
+          placeholder="Enter your task" required />
+        <input type="submit" value="Add Task" />
+      </form>
 
-                <section id="todoTable"></section>
-            </body>
-            <script src="./toDo.js"></script>
-        </html>
+      <section id="todoTable"></section>
+    </body>
+    <script src="./toDo.js"></script>
+  </html>

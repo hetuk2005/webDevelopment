@@ -66,12 +66,16 @@ const renderTodoList = () => {
   todoTable.innerHTML = "";
   dataBase?.map((el) => {
     let div = document.createElement("div");
+    let button = document.createElement("div");
     let text = document.createElement("h4");
     let edits_btn = document.createElement("button");
     let delete_btn = document.createElement("button");
     let id = document.createElement("p");
     let checkBox = document.createElement("input");
 
+    div.className = "div";
+    button.className = "button";
+    checkBox.className = "checkbox";
     checkBox.type = "checkBox";
     text.innerText = el.textTodo;
     id.innerText = el.id;
@@ -79,7 +83,8 @@ const renderTodoList = () => {
     edits_btn.innerText = "edits";
     delete_btn.innerText = "delete";
 
-    div.append(checkBox, id, text, edits_btn, delete_btn);
+    button.append(edits_btn, delete_btn);
+    div.append(checkBox, id, text, button);
     todoTable.append(div);
   });
 };
