@@ -75,13 +75,43 @@ const renderTodoList = () => {
 
     div.className = "div";
     button.className = "button";
+    delete_btn.classList = "delete_btn";
+    edits_btn.classList = "edits_btn";
     checkBox.className = "checkbox";
     checkBox.type = "checkBox";
     text.innerText = el.textTodo;
     id.innerText = el.id;
 
-    edits_btn.innerText = "edits";
-    delete_btn.innerText = "delete";
+    edits_btn.innerText = "✏️";
+    delete_btn.innerText = "🗑️";
+
+    // Here We Are Editing The Function Of The Data From LS
+
+    edits_btn.addEventListener("click", function () {
+      let editToggole = dataBase.map((sl) => {
+        console.log(sl);
+        if (el.id === sl.id) {
+          return {
+            ...sl,
+            isEdit: !sl.isEdit,
+          };
+        }
+        return sl;
+      });
+      dataBase = editToggole;
+      localStorage.setItem("formData", JSON.stringify(dataBase));
+      renderTodoList();
+    });
+
+    // Here We Are Deleteing The Function Of The Data From LS
+
+    delete_btn.addEventListener("click", function () {
+      let finalData = dataBase.filter((ml) => ml.id !== el.id);
+
+      dataBase = finalData;
+      localStorage.setItem("formData", JSON.stringify(dataBase));
+      renderTodoList();
+    });
 
     button.append(edits_btn, delete_btn);
     div.append(checkBox, id, text, button);
