@@ -16,7 +16,7 @@ const ApiCalling = () => {
 
       const card = document.querySelector(".card");
       const card_1 = document.createElement("div");
-      card_1.innerHTML = "";
+      card.innerHTML = "";
       const weather = document.createElement("div");
       const details = document.createElement("div");
       const col = document.createElement("div");
