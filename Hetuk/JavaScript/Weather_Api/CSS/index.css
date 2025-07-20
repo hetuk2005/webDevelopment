@@ -18,12 +18,14 @@ h1 {
 }
 
 .card {
-  width: 30%;
+  width: 27%;
   display: block;
   margin: auto;
-  height: 530px;
+  /* height: 530px; */
+  height: auto;
   background: linear-gradient(135deg, #00feba, #5b548a);
   border-radius: 20px;
+  padding: 30px 0;
   /* border: 2px solid #fff; */
 }
 
@@ -32,7 +34,7 @@ h1 {
   gap: 5px;
   justify-items: center;
   width: 100%;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 
 input,
@@ -51,6 +53,9 @@ input {
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   cursor: pointer;
 }
@@ -67,30 +72,34 @@ button {
   font-weight: 700;
 }
 
-.weather > img {
+.weather_icon {
   width: 130px;
   height: 130px;
   object-fit: contain;
+  margin-bottom: 15px;
 }
 
 .details {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 35px;
   margin-top: 15px;
+  padding: 0 10px;
 }
 
-.col {
+.col,
+.col_1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 21px;
+  gap: 10px;
 }
 
-.col > img {
+.col > img,
+.col_1 > img {
   width: 80px;
-  height: 80px;
+  height: 60px;
   object-fit: contain;
 }
 
