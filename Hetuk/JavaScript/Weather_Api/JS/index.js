@@ -1,14 +1,22 @@
 let api_key = "bc3879d0be0368c59db7c196ee0dd4e5";
 
 const ApiCalling = () => {
-  const cityInput = document.querySelector(".search input").value;
+  const inputField = document.querySelector(".search input");
+  const cityInput = inputField.value;
+
   let api = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${cityInput}&appid=${api_key} `;
 
   fetch(api)
     .then((res) => res.json())
     .then((data) => {
+      if (data.cod === "404") {
+        alert("City not found!");
+        return;
+      }
+
       const card = document.querySelector(".card");
       const card_1 = document.createElement("div");
+      card_1.innerHTML = "";
       const weather = document.createElement("div");
       const details = document.createElement("div");
       const col = document.createElement("div");
@@ -45,7 +53,6 @@ const ApiCalling = () => {
       wind_img.src = "./Utils/wind.png";
       hum_text.innerText = "Humidity";
       wind_text.innerText = "Wind Speed";
-      card_1.innerHTML = "";
 
       child_1.append(humidity, hum_text);
       col.append(hum_img, child_1);
@@ -70,10 +77,7 @@ const ApiCalling = () => {
         weather_icon.src = "./Utils/snow.png";
       }
 
-      if (data.cod === "404") {
-        alert("City not found!");
-        return;
-      }
+      inputField.value = "";
     })
 
     .catch((err) => {
