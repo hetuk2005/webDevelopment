@@ -25,14 +25,15 @@
             box-shadow: 0 4px 7px black;
         }
         body{
+            text-transform:capitalize;
+            background-color: aquamarine;
             padding: 0 20px;
-        }
-        h1{
             text-align: center;
         }
         .card_div>img{
-            width: 230px;
+            width: inherit;
             height: 230px;
+            mix-blend-mode: darken;
             object-fit: contain;
         }
         .card_div>p,
@@ -67,15 +68,10 @@
     </style>
     </head>
 
-    <body class="h-100 w-100">
-        <h1>Shopping Website</h1>
+    <body class="h-100 w-100" onload="Apicalling()">
+        <h1>Fake Store</h1>
         <!-- Small screen button -->
         <div class="d-flex justify-content-center align-items-center mt-3">
-            <button
-                onclick="Apicalling(); confirm('Prices Are High Please Dont Buy, If You Can Buy Then Continue, Can You Buy?'); document.body.style.background='lightblue'"
-                class="bg-success text-white border-0 p-2 rounded-2">
-                Click Here To Get List
-            </button>
         </div>
         <div class="infos" id="info"></div>
     </body>
