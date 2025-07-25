@@ -30,8 +30,9 @@
             padding:10px;
         }
         h1{
-            margin: 20px;
+            margin-bottom: 10px;
             text-align: center;
+            cursor: pointer;
         }
         .div_image{
             width: inherit;
@@ -85,6 +86,8 @@
             /* background-color: black; */
             scale: 1.02;
             transition: all 0.2s ease-in-out;
+            border: 2px solid;
+            border-radius: 50%;
         }
         nav{
             display: flex;
@@ -124,14 +127,22 @@
         }
         .cart{
             /* border: 1px solid red; */
-            height: 30px;
-            width: 30px;
+            height: 35px;
+            width: 35px;
             object-fit: contain;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: all 0.2s ease-in-out;
+        }
+        .cart:hover{
+            box-shadow: 1.5px 0.3px 1.5px 1.5px black;
         }
     </style>
     </head>
 
     <body class="h-100 w-100" onload="Apicalling()">
+        <h1>Fake Store</h1>
         <nav>
             <img src="./Logo.png" alt="Logo">
             <ul>
@@ -142,7 +153,6 @@
             </ul>
             <img src="./Cart.svg" alt="Cart Button" class="cart">
         </nav>
-        <h1>Fake Store</h1>
         <!-- Small screen button -->
         <div class="d-flex justify-content-center align-items-center mt-3">
         </div>
