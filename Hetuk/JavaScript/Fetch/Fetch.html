@@ -38,6 +38,11 @@
             height: 230px;
             mix-blend-mode: darken;
             object-fit: contain;
+            transition: all 0.5s ease-in-out;
+        }
+        .div_image:hover{
+            border-radius: 50%;
+            mix-blend-mode: normal;
         }
         .card_div>p,
         .card_div>.rating {
@@ -106,17 +111,21 @@
             padding-top: 15px;
             cursor: pointer;
         }
+        li{
+            border-radius: 50%;
+        }
         li:hover{
+            border-radius: 0;
             padding: 10px;
             background-color: black;
             color: whitesmoke;
             line-height: 28px;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.7s ease-in-out;
         }
         .cart{
             /* border: 1px solid red; */
-            height: 35px;
-            width: 35px;
+            height: 30px;
+            width: 30px;
             object-fit: contain;
         }
     </style>
@@ -138,6 +147,12 @@
         <div class="d-flex justify-content-center align-items-center mt-3">
         </div>
         <div class="infos" id="info"></div>
+
+        <!-- After Clicking It Should Display -->
+
+        <div class="cart_btn_pag">
+
+        </div>
     </body>
     <!-- js file  -->
     <script src="./JS/Fetch.js"></script>
