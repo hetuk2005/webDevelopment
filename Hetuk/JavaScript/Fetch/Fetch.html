@@ -27,10 +27,13 @@
         body{
             text-transform:capitalize;
             background-color: aquamarine;
-            padding: 0 20px;
+            padding:10px;
+        }
+        h1{
+            margin: 20px;
             text-align: center;
         }
-        .card_div>img{
+        .div_image{
             width: inherit;
             height: 230px;
             mix-blend-mode: darken;
@@ -65,10 +68,71 @@
             grid-template-columns: repeat(3,1fr);
             gap: 10px;
         }
+        .cart_btn{
+            width: 50px;
+            height: 40px;
+            object-fit: contain;
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .cart_btn:hover{
+            /* background-color: black; */
+            scale: 1.02;
+            transition: all 0.2s ease-in-out;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            border: 2px solid;
+            margin: 10px 0;
+            border-radius: 60px;
+        }
+        nav>img{
+            height: 40px;
+            width: 40px;
+            object-fit: contain;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            gap: 100px;
+            font-weight: 700;
+            font-size: larger;
+            padding-top: 15px;
+            cursor: pointer;
+        }
+        li:hover{
+            padding: 10px;
+            background-color: black;
+            color: whitesmoke;
+            line-height: 28px;
+            transition: all 0.3s ease-in-out;
+        }
+        .cart{
+            /* border: 1px solid red; */
+            height: 35px;
+            width: 35px;
+            object-fit: contain;
+        }
     </style>
     </head>
 
     <body class="h-100 w-100" onload="Apicalling()">
+        <nav>
+            <img src="./Logo.png" alt="Logo">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Products</li>
+                <li>Contact Us</li>
+            </ul>
+            <img src="./Cart.svg" alt="Cart Button" class="cart">
+        </nav>
         <h1>Fake Store</h1>
         <!-- Small screen button -->
         <div class="d-flex justify-content-center align-items-center mt-3">
