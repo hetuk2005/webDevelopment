@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSON ToDo</title>
+        <style>
+            body{
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            h1{
+                color: whitesmoke;
+            }
+            .main_div{
+                background-color: #a5a3a3;
+                width: 50%;
+                height: auto;
+            }
+            .input_div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                padding: 20px;
+            }
+            input{
+                width: 200px;
+                height: 25px;
+                border: 2px solid;
+                font-weight: 700;
+            }
+            input::placeholder{
+                font-weight: 700;
+                text-align: center;
+            }
+            .add{
+                font-size: large;
+                font-weight: 700;
+                width: 70px;
+                padding: 4px 0;
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ToDo List</h1>
+        <div class="main_div">
+            <div class="input_div">
+                <input type="text" id="todos" placeholder="Enter The Task">
+                <button onclick="myTodos()" class="add">Add</button>
+            </div>
+            <div id="dataInfo"></div>
+        </div>
+    </body>
+    <script src="./index.js"></script>
+</html>

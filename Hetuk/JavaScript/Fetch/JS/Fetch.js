@@ -36,8 +36,13 @@ const appendsFunc = (data) => {
     let rate = document.createElement("p");
     let count = document.createElement("p");
     let cart_btn = document.createElement("img");
+    let cart_btn_pag = document.createElement("div");
+    let next = document.createElement("button");
+    let num = document.createElement("button");
+    let prev = document.createElement("button");
 
     cardDiv.className = "card_div";
+    title.className = "title";
     rating.className = "rating";
     price.className = "price";
     description.className = "description";
@@ -46,6 +51,11 @@ const appendsFunc = (data) => {
     count.className = "count";
     cart_btn.className = "cart_btn";
     img.className = "div_image";
+    cart_btn_pag.className = "cart_btn_pag";
+    next.className = "next";
+    prev.className = "prev";
+    num.className = "num";
+    let cart_visible = false;
 
     cart_btn.src = "./Cart.svg";
     img.src = element.image;
@@ -55,9 +65,33 @@ const appendsFunc = (data) => {
     category.innerHTML = `<b><u>Category</u>: ${element.category}</b>`;
     rate.innerHTML = `<b><u>Rate</u>: ${element.rating.rate}</b>`;
     count.innerHTML = `<b><u>Count</u>: ${element.rating.count}</b>`;
+    next.innerHTML = `+`;
+    prev.innerHTML = `-`;
+    num.innerHTML = ``;
 
     rating.append(rate, count);
-    cardDiv.append(img, title, price, description, category, rating, cart_btn);
+    cart_btn_pag.append(prev, num, next);
+    cardDiv.append(
+      img,
+      title,
+      price,
+      description,
+      category,
+      rating,
+      cart_btn,
+      cart_btn_pag
+    );
     dataShow.append(cardDiv);
+
+    cart_btn.addEventListener("click", () => {
+      cart_visible = !cart_visible;
+      if (cart_visible) {
+        cart_btn.style.display = "none";
+        cart_btn_pag.style.display = "flex";
+      } else {
+        cart_btn.style.display = "inline-block";
+        cart_btn_pag.style.display = "none";
+      }
+    });
   });
 };

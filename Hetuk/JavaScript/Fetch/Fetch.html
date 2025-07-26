@@ -18,11 +18,12 @@
             align-items: center;
             gap: 20px;
             flex-direction: column;
+            
             padding: 20px;
-            margin: 10px 0;
+            margin: 10px 20px;
             border-radius: 20px;
-            border: 2px solid red;
-            box-shadow: 0 4px 7px black;
+            /* border: 2px solid red; */
+            box-shadow: 4px 4px 10px 2px black;
         }
         body{
             text-transform:capitalize;
@@ -45,11 +46,13 @@
             border-radius: 50%;
             mix-blend-mode: normal;
         }
+        .title{
+            text-align: center;
+            font-size: x-large;
+            font-weight: 700;
+        }
         .card_div>p,
         .card_div>.rating {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
             width: 230px;
             text-align: center;
         }
@@ -75,14 +78,15 @@
             gap: 10px;
         }
         .cart_btn{
-            width: 50px;
+            width: 50px;            
+            box-shadow: 1.5px 0.5px 1.5px 1.5px black;
             height: 40px;
             object-fit: contain;
             border: 1px solid;
             border-radius: 10px;
             padding: 10px;
         }
-        .cart_btn:hover, #next:hover,#prev:hover{
+        .cart_btn:hover, .next:hover,.prev:hover{
             /* background-color: black; */
             scale: 1.02;
             transition: all 0.2s ease-in-out;
@@ -143,6 +147,7 @@
             justify-content: center;
             align-items: center;
             gap: 20px;
+            display: none;
         }
         .cart_btn_pag>button{
             box-shadow: 1px 0.3px 1px 1px black;
@@ -175,12 +180,12 @@
         <div class="infos" id="info"></div>
 
         <!-- After Clicking It Should Display -->
-
+        <!-- 
         <div class="cart_btn_pag">
             <button id="next">+</button>
             <button id="num"></button>
             <button id="prev">-</button>
-        </div>
+        </div> -->
     </body>
     <!-- js file  -->
     <script src="./JS/Fetch.js"></script>
