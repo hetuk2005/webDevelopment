@@ -82,7 +82,7 @@
             border-radius: 10px;
             padding: 10px;
         }
-        .cart_btn:hover{
+        .cart_btn:hover, #next:hover,#prev:hover{
             /* background-color: black; */
             scale: 1.02;
             transition: all 0.2s ease-in-out;
@@ -138,6 +138,22 @@
         .cart:hover{
             box-shadow: 1.5px 0.3px 1.5px 1.5px black;
         }
+        .cart_btn_pag{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .cart_btn_pag>button{
+            box-shadow: 1px 0.3px 1px 1px black;
+            width: 40px;
+            height: 40px;
+            font-size: x-large;
+            font-weight: 900;
+            text-align: center;
+            background-color: transparent;
+            border-radius: 10px;
+        }
     </style>
     </head>
 
@@ -161,7 +177,9 @@
         <!-- After Clicking It Should Display -->
 
         <div class="cart_btn_pag">
-
+            <button id="next">+</button>
+            <button id="num"></button>
+            <button id="prev">-</button>
         </div>
     </body>
     <!-- js file  -->
