@@ -36,7 +36,7 @@ async function appendData() {
   }
   console.log("data:", data);
 
-  const main_div = document.querySelector("#datainfo");
+  const main_div = document.querySelector("#dataInfo");
 
   main_div.innerHTML = "";
 
@@ -48,16 +48,21 @@ async function appendData() {
     let checkbox = document.createElement("input");
     let delete_btn = document.createElement("button");
     let edit_btn = document.createElement("button");
+    let x = document.createElement("button");
+    let y = document.createElement("button");
 
     checkbox.type = "checkbox";
     checkbox.name = "checkbox";
 
     div.className = "todo_list";
+    id.classList.add("id");
 
     id.innerText = el.id;
     text.innerText = el.text;
-    delete_btn.innerHTML = "<b>Delete</b>";
-    edit_btn.innerHTML = "<b>Edit</b>";
+    x.src = "./Edit_Btn.svg";
+    y.src = "";
+    delete_btn.innerHTML = "🗑️";
+    edit_btn.innerHTML = "✏️";
 
     div.append(checkbox, id, text, edit_btn, delete_btn);
     main_div.append(div);
