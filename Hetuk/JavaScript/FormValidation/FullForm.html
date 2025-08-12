@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Full Form Validation</title>
+        <style>
+            span{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" onsubmit="myForm(event)">
+            <div class="user_div">
+                <label for="user">Username</label>
+                <input type="text" id="user" autocomplete="off" name="user">
+                <span id="username_message"></span>
+            </div>
+            <div class="pass_div">
+                <label for="pass">Password</label>
+                <input type="text" id="pass" autocomplete="off" name="pass">
+                <span id="pass_message"></span>
+            </div>
+            <div class="confpass_div">
+                <label>Confirm Password</label>
+                <input type="text" id="confpass" autocomplete="off"
+                    name="confpass">
+                <span id="confpass_message"></span>
+            </div>
+            <div class="mobile">
+                <label for="mobile">Mobile Number</label>
+                <input type="text" id="mobile" autocomplete="off" name="mobile">
+                <span id="mobile_message"></span>
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="text" id="email" autocomplete="off" name="email">
+                <span id="email_message"></span>
+            </div>
+            <input type="submit">
+        </form>
+    </body>
+    <script src="./FullForm.js"></script>
+</html>
