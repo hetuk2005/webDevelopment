@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Email Password Validation</title>
+        <style>
+            body,#myForm{
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                gap: 10px;
+            }
+            button{
+                border-radius: 5px;
+                border: 1px solid;
+                width: 70px;
+                cursor: pointer;
+                padding: 5px;
+            }
+            #message,#message_pass{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" id="myForm" onsubmit="myFunc(event)">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <span id="message"></span>
+            <label for="pass">Password</label>
+            <input type="text" id="pass">
+            <span id="message_pass"></span>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+    <script src="./EmailPassValidation.js"></script>
+</html>
