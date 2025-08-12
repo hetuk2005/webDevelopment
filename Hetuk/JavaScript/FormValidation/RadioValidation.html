@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Form Validation</title>
+    <style>
+        #message{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form name="myRadio" onsubmit="myRadioFunc(event)">
+            <input type="radio" name="content" value="office">office</input>
+            <input type="radio" name="content" value="home">home</input>
+            <input type="radio" name="content" value="vacation">vacation</input>
+            <input type="radio" name="content" value="adventure">adventure</input>
+            <p id="message"></p>
+            <button type="submit">Submit</button>
+    </form>
+</body>
+<script src="./RadioValidation.js"></script>
+</html>
