@@ -1,11 +1,11 @@
 const myForm = (e) => {
   e.preventDefault();
 
-  let username = document.querySelector("#user");
-  let pass = document.querySelector("#pass");
-  let confirm_password = document.querySelector("#confpass");
-  let mobile = document.querySelector("#mobile");
-  let email = document.querySelector("#email");
+  let username = document.querySelector("#user").value;
+  let pass = document.querySelector("#pass").value;
+  let confirm_password = document.querySelector("#confpass").value;
+  let mobile = document.querySelector("#mobile").value;
+  let email = document.querySelector("#email").value;
 
   // Username Validation
 
@@ -21,22 +21,44 @@ const myForm = (e) => {
     document.getElementById("username_message").innerHTML =
       "Only Charaters Allowed";
     return false;
+  } else {
+    document.getElementById("username_message").innerHTML = "";
   }
 
   // Password Validation
 
-  if (pass == "") {
+  if (pass.trim() == "") {
     document.getElementById("pass_message").innerHTML =
-      "Please Fill The Password Field";
+      "Please Enter The Password";
     return false;
-  } else if (pass.length <= 5 || pass.length > 20) {
+  } else if (pass.length > 8 && pass.length > 20) {
     document.getElementById("pass_message").innerHTML =
-      "Please Enter The Length Between 5 To 20";
+      "Please Enter The Corrected Length";
     return false;
-  } else if (!isNaN(pass != confirm_password)) {
-    document.getElementById("pass_message").innerHTML =
-      "Password Not Matched With Confired Password";
-    return false;
+  } else {
+    const UpperCase = /[A-Z]/.test(pass);
+    const LowerCase = /[a-z]/.test(pass);
+    const NumCase = /[0-9]/.test(pass);
+    const SpecialCase = /[!@#$%^&*\,.?":{}|<>]/.test(pass);
+    if (!UpperCase) {
+      document.getElementById("pass_message").innerHTML =
+        "Please Enter The One Upper Case In Password";
+      return false;
+    } else if (!LowerCase) {
+      document.getElementById("pass_message").innerHTML =
+        "Please Enter The One Lower Case In Password";
+      return false;
+    } else if (!NumCase) {
+      document.getElementById("pass_message").innerHTML =
+        "Please Enter The One Number In Password";
+      return false;
+    } else if (!SpecialCase) {
+      document.getElementById("pass_message").innerHTML =
+        "Please Enter The One Special Charater Case In Password";
+      return false;
+    } else {
+      document.getElementById("pass_message").innerHTML = "";
+    }
   }
 
   // Confirm Password Validation
@@ -45,6 +67,12 @@ const myForm = (e) => {
     document.getElementById("confpass_message").innerHTML =
       "Please Fill The Confirm Password Field";
     return false;
+  } else if (pass != confirm_password) {
+    document.getElementById("confpass_message").innerHTML =
+      "Password Not Matched With Confired Password";
+    return false;
+  } else {
+    document.getElementById("confpass_message").innerHTML = "";
   }
 
   // Mobile Number Validation
@@ -61,6 +89,8 @@ const myForm = (e) => {
     document.getElementById("mobile_message").innerHTML =
       "Mobile Number Should Be Numbers";
     return false;
+  } else {
+    document.getElementById("mobile_message").innerHTML = "";
   }
 
   // Email Validation
@@ -78,5 +108,11 @@ const myForm = (e) => {
     document.getElementById("email_message").innerHTML =
       "Please Fill The Email Field";
     return false;
+  } else {
+    document.getElementById("email_message").innerHTML = "";
+    alert("Form Submited");
+    // document.querySelectorAll("input").values = "";
   }
+
+  document.querySelectorAll("input").values = "";
 };
