@@ -98,7 +98,7 @@ class bankAccount {
   deposit(amount) {
     if (amount > 0) {
       this.#balance += amount;
-      console.log("Deposited ₹${amount}");
+      console.log(`Deposited ₹${amount}`);
     } else {
       console.log("Invalid Deposit Amount");
     }
@@ -107,13 +107,23 @@ class bankAccount {
   withdraw(amount) {
     if (amount <= this.#balance) {
       this.#balance -= amount;
-      console.log("Withdrawn ₹${amount}");
+      console.log(`Withdrawn ₹${amount}`);
     } else {
       console.log("Insufficient Balance");
     }
   }
 
   checkBalance() {
-    console.log("Current Balance: ₹${this.balance}");
+    console.log(`Current Balance: ₹${this.#balance}`);
   }
 }
+
+// Create An Account
+
+const account = new bankAccount("Hetuk Patel");
+
+// Interact Using Abstracted Methods
+
+account.deposit(1000);
+account.withdraw(600);
+account.checkBalance();
