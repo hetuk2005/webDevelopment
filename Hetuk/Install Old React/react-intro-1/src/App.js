@@ -15,7 +15,6 @@ function App() {
 
   return (
     <>
-      <>Hello</>
       <h1 id="counter">Counter {count}</h1>
       <button onClick={handleIncre}>+</button>
       <button onClick={handleDecre}>-</button>
