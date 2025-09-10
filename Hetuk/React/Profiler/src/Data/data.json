@@ -1,0 +1,38 @@
+{
+    "profile":[{
+        "img":"https://github.com/hetuk2005/webDevelopment/blob/main/My_Image%20(Anime).jpg?raw=true",
+        "name":"Hetuk Patel",
+        "designation":"Web-Developer",
+        "skill":["FrontEnd","BackEnd","Mern","Typescript"],
+        "platform":[
+            {"name":"HTML","color":"tomato"},
+            {"name":"CSS","color":"blue"},
+            {"name":"JavaScript","color":"yellow"},
+            {"name":"React","color":"skyblue"}
+        ],
+        "socialMedia":[
+            {
+                "rate":"5.2k",
+                "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/900px-2023_Facebook_icon.svg.png?20231011122028",
+                "text":"like",
+                "text1":"fans",
+                "color":"blue"
+            },
+            {
+                "rate":"1.4k",
+                "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/768px-Logo_of_Twitter.svg.png?20220821125553",
+                "text":"tweet",
+                "text1":"following",
+                "color":"green"
+            },
+            {
+                "rate":"2.8k",
+                "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Google_Plus_logo_%282015-2019%29.svg/1200px-Google_Plus_logo_%282015-2019%29.svg.png",
+                "text":"follow",
+                "text1":"followers",
+                "color":"red"
+            }
+        ]
+    }
+]
+}
