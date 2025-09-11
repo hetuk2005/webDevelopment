@@ -23,7 +23,16 @@
 ],
 "Details":[
     {
-        "phone":""
+        "phone":"https://raw.githubusercontent.com/hetuk2005/webDevelopment/094f94a125b05b9da868a5062a3fbbc6dee92b4b/Hetuk/React/Profiler1/src/Utils/Phone.svg",
+        "number":"+91-23235 45456"
+    },
+    {
+        "phone":"https://raw.githubusercontent.com/hetuk2005/webDevelopment/094f94a125b05b9da868a5062a3fbbc6dee92b4b/Hetuk/React/Profiler1/src/Utils/Email.svg",
+        "number":"info@btechiot.com"
+    },
+    {
+        "phone":"https://raw.githubusercontent.com/hetuk2005/webDevelopment/094f94a125b05b9da868a5062a3fbbc6dee92b4b/Hetuk/React/Profiler1/src/Utils/Location.svg",
+        "number":"Vijayawada, A.P"
     }
 ]
     }
