@@ -4,9 +4,28 @@
         "name":"Hetuk Patel",
         "designation":"Full-Stack Web Developer",
         "description":"I'm Having 4 Years + Experience As A Full-Stack Web Developer. My Speciality Is Custom Layout Designs And I Have Designed E-Commerce, Materimonial, And Services Based Websites.",
-    "socialMedia":[{
-        "icon":""
-    }]
+    "socialMedia":[
+        {
+            "icon":"https://raw.githubusercontent.com/hetuk2005/webDevelopment/05cb058b41a1fbc0798b7fcf0b7a900415ae33ef/Hetuk/React/Profiler1/src/Utils/LinkedIn.svg"
+        },
+        {
+        "icon":"https://raw.githubusercontent.com/hetuk2005/webDevelopment/05cb058b41a1fbc0798b7fcf0b7a900415ae33ef/Hetuk/React/Profiler1/src/Utils/Facebook.svg"
+    },
+    {
+        "icon":"https://raw.githubusercontent.com/hetuk2005/webDevelopment/05cb058b41a1fbc0798b7fcf0b7a900415ae33ef/Hetuk/React/Profiler1/src/Utils/Instagram.svg"
+    },
+    {
+        "icon":"https://raw.githubusercontent.com/hetuk2005/webDevelopment/05cb058b41a1fbc0798b7fcf0b7a900415ae33ef/Hetuk/React/Profiler1/src/Utils/GitHub.svg"
+    },
+    {
+        "icon":"https://raw.githubusercontent.com/hetuk2005/webDevelopment/05cb058b41a1fbc0798b7fcf0b7a900415ae33ef/Hetuk/React/Profiler1/src/Utils/Dribbble.svg"
+    }
+],
+"Details":[
+    {
+        "phone":""
+    }
+]
     }
     ]
 }
