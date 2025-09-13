@@ -5,6 +5,9 @@ export function Profile() {
 
   return (
       <>
+          <div>
+              Hello World
+          </div>
           {
               data?.profile.map((el) => (
                   <main key={el.name}>
