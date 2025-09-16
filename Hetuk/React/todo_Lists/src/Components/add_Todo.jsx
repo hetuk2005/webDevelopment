@@ -23,7 +23,6 @@ export const AddTodo = () => {
 
     return (
         <>
-            <h1>Hello World</h1>
             <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column", gap:"20px"}}>
                 <h1>Todo</h1>
                 <div style={{display:"flex", justifyContent:"center", alignItems:"center", gap:"10px"}}>
