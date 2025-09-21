@@ -18,6 +18,7 @@ export const Counters = () => {
 
     return (
         <>
+            <div>Hello World</div>
             <div>
                 <h1>Counter: {state.count}</h1>
                 
