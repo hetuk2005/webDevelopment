@@ -1,4 +1,5 @@
-import { useContext } from "react"
+import { useContext } from "react";
+import { CreateContexts } from "../Context/Context_Provider";
 
 export const Counter = () => {
     const { count, setCount } = useContext(CreateContexts);
