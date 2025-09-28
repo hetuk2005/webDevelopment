@@ -6,7 +6,8 @@ export const Dummy = () => {
 
     return (
         <>
-            <h1>Dummy { count }</h1>
+            <h1>Dummy {count}</h1>
+            <h1>Hello World</h1>
         </>
     )
 }
