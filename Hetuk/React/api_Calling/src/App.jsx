@@ -1,13 +1,13 @@
 import './App.css'
 import { ListTodo } from './Component/ListTodo'
 import { Todos } from './Component/todos'
-// import { ApiCall } from './Component/apiCalling'
+import { ApiCall } from './Component/apiCalling'
 
 function App() {
 
   return (
     <>
-      {/* <ApiCall /> */}
+      <ApiCall />
       <Todos />
       <ListTodo />
     </>
