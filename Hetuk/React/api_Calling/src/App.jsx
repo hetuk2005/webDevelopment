@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       <ApiCall />
-      <h1>Hello Everyone</h1>
       <Todos />
       <ListTodo />
     </>
