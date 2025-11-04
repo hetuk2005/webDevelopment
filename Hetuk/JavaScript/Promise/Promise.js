@@ -1,3 +1,4 @@
+
 // ? promise took callback function and also took (resolve,reject)
 
 // Resolve
