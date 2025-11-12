@@ -28,15 +28,15 @@ var number;
 
 number = "65";
 
-console.log(number)
+console.log(number);
 
 // 3. Variable Leakage In var Key-Word
 
 var another_number = "10";
 
 for (var i = 0; i < 5; i++) {
-    console.log(another_number);
-    console.log(i);
+  console.log(another_number);
+  console.log(i);
 }
 
 console.log(i);
@@ -46,8 +46,8 @@ console.log(i);
 // 4. Leakage Handle By let Key-Word
 
 for (let j = 0; j < 5; j++) {
-    console.log(another_number);
-    console.log(j);
+  console.log(another_number);
+  console.log(j);
 }
 
 // console.log(j);
@@ -104,8 +104,29 @@ console.log(data);
 
 //const Key-Word
 
-const naam65 = "Hetuk"
+const naam65 = "Hetuk";
 
-naam65 = "Hetuk Vinod Patel"
+naam65 = "Hetuk Vinod Patel";
 
 console.log(naam65);
+
+for (var i = 0; i < 3; i++) {
+  console.log(i);
+  setTimeout(() => {
+    console.log(i);
+  }, 100);
+}
+
+// var is a function scope not local scope
+// That means only 1 variable i exists for the entire loop
+// When setTimeout runs after 100ms, the loop has already finished and i has become 3
+// So all callbacks print the same value: 3
+
+for (let i = 0; i < 3; i++) {
+  console.log(i);
+  setTimeout(() => {
+    console.log(i);
+  }, 100);
+}
+
+ // let is a block scope
