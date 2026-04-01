@@ -1,3 +1,0 @@
-bootstrap framework
-javascript
-responsive website
