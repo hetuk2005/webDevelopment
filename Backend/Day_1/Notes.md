@@ -4,5 +4,14 @@
 
  commonJS => const sum= required("path") || module.exports default fileName
 
- -To Create Folder
-            
+ - To Create Folder
+            - mkdir <dir_name>
+
+ - To Create File
+            - touch <file_name>
+
+ - To Change Folder || File
+            - cd <dir_name || file_name>
+
+ - To Read File
+            - node <file_name>
