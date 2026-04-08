@@ -15,3 +15,6 @@
 
  - To Read File
             - node <file_name>
+
+ - To Delete File || Folder
+            - rm -rf <file || dir>
