@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>She Can Foundation</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+
+        <!-- NAV -->
+        <nav id="navbar">
+            <a href="#" class="nav-logo">She<span>Can</span> Foundation</a>
+            <button class="theme-toggle" onclick="toggleTheme()"
+                aria-label="Toggle dark mode">
+                <span id="theme-icon">🌙</span> Dark Mode
+            </button>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-text">
+                <div class="hero-badge">🌸 Empowering Women Since 2015</div>
+                <h1>She Can.<br><em>She Will.</em><br>She Does.</h1>
+                <p class="hero-sub">
+                    A movement dedicated to unlocking the boundless potential of
+                    women and girls — through education, mentorship, and
+                    unyielding community support.
+                </p>
+                <a href="#about" class="btn-primary">
+                    Discover Our Mission
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round"><path
+                            d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+            </div>
+
+            <div class="hero-image-wrap">
+                <!-- Using a real image from Unsplash (freely usable) -->
+                <img
+                    class="hero-img"
+                    src="https://images.unsplash.com/photo-1573497161161-c3e73707e25c?w=900&auto=format&fit=crop&q=80"
+                    alt="Women empowered through education and community"
+                    onerror="this.style.display='none'; document.getElementById('img-fallback').style.display='flex';" />
+                <div class="hero-img-placeholder" id="img-fallback"
+                    style="display:none;">
+                    <svg viewBox="0 0 64 64" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="20" r="12" fill="white"
+                            opacity=".9" />
+                        <path d="M8 56c0-13.255 10.745-24 24-24s24 10.745 24 24"
+                            fill="white" opacity=".9" />
+                    </svg>
+                    <p>She Can Foundation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <div class="stats">
+            <div class="stat reveal">
+                <span class="stat-num" data-target="12000">0</span>
+                <span class="stat-label">Women Empowered</span>
+            </div>
+            <div class="stat reveal" style="transition-delay:.1s">
+                <span class="stat-num" data-target="48">0</span>
+                <span class="stat-label">Communities Reached</span>
+            </div>
+            <div class="stat reveal" style="transition-delay:.2s">
+                <span class="stat-num" data-target="320">0</span>
+                <span class="stat-label">Scholarships Awarded</span>
+            </div>
+            <div class="stat reveal" style="transition-delay:.3s">
+                <span class="stat-num" data-target="95">0</span>
+                <span class="stat-label">% Graduate Rate</span>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="about-inner">
+                <p class="section-label reveal">About Us</p>
+                <h2 class="reveal">Rooted in <em>Purpose</em>,<br>Driven by
+                    Possibility</h2>
+                <p class="about-text reveal">
+                    She Can Foundation is a non-profit organization committed to
+                    dismantling barriers that hold women and girls back from
+                    realising their full potential. We believe that when a woman
+                    rises, she lifts entire communities with her. Through
+                    tailored educational programmes, career mentorship,
+                    financial literacy workshops, and a powerful network of
+                    changemakers, we equip women with every tool they need to
+                    lead extraordinary lives — on their own terms.
+                </p>
+
+                <div class="pillars">
+                    <div class="pillar reveal">
+                        <span class="pillar-icon">📚</span>
+                        <h3>Education</h3>
+                        <p>Scholarships, tutoring, and skill-building workshops
+                            that open doors to lifelong learning.</p>
+                    </div>
+                    <div class="pillar reveal" style="transition-delay:.15s">
+                        <span class="pillar-icon">🤝</span>
+                        <h3>Mentorship</h3>
+                        <p>One-on-one guidance from industry leaders who have
+                            walked the path and are ready to light the way.</p>
+                    </div>
+                    <div class="pillar reveal" style="transition-delay:.3s">
+                        <span class="pillar-icon">🌍</span>
+                        <h3>Community</h3>
+                        <p>A global sisterhood that celebrates every milestone
+                            and rallies through every challenge.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">She<span>Can</span>
+                        Foundation</a>
+                    <p class="footer-tagline">Empowering women. Transforming
+                        communities.</p>
+                </div>
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="#about">About</a>
+                    <a href="#">Programs</a>
+                    <a href="#">Stories</a>
+                    <a href="#">Donate</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+            <hr class="footer-divider" />
+            <div class="footer-bottom">
+                <span>© 2026 She Can Foundation. All rights reserved.</span>
+                <span>Made with <span class="heart">♥</span> for a better
+                    world</span>
+            </div>
+        </footer>
+
+        <script>
+    /* ── Dark Mode ── */
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      const btn = document.querySelector('.theme-toggle');
+      document.getElementById('theme-icon').textContent = isDark ? '🌙' : '☀️';
+      btn.childNodes[1].textContent = isDark ? ' Dark Mode' : ' Light Mode';
+    }
+
+    /* ── Navbar scroll effect ── */
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    /* ── Scroll reveal ── */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    /* ── Animated counters ── */
+    const counters = document.querySelectorAll('.stat-num[data-target]');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        const target = +el.dataset.target;
+        const suffix = target === 95 ? '%' : target >= 1000 ? '+' : '+';
+        let current = 0;
+        const step = Math.ceil(target / 60);
+        const timer = setInterval(() => {
+          current = Math.min(current + step, target);
+          el.textContent = current.toLocaleString() + suffix;
+          if (current >= target) clearInterval(timer);
+        }, 25);
+        counterObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObserver.observe(c));
+  </script>
+    </body>
+</html>
