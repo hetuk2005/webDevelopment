@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JQuery Form</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <form>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </body>
+    <script>
+
+    $(function(){
+        console.log("Document Ready");
+
+     $("form").submit(function(e){
+        e.preventDefault();
+        let email=$("#email").val();
+        let password=$("#password").val();
+
+        console.log("Email: ",email, "Password: ",password);
+     });
+});
+</script>
+</html>
