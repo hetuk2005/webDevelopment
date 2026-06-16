@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery CRUD App - FIXED</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .form-container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .error {
+            border-color: #f44336 !important;
+        }
+
+        .error-message {
+            color: #f44336;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #45a049;
+        }
+
+        .btn-danger {
+            background: #f44336;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #da190b;
+        }
+
+        .btn-warning {
+            background: #ff9800;
+            color: white;
+        }
+
+        .btn-warning:hover {
+            background: #e68900;
+        }
+
+        .btn-secondary {
+            background: #757575;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .data-container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background: #4CAF50;
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-small {
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+
+        .spinner {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .spinner.active {
+            display: block;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            border-radius: 6px;
+            color: white;
+            font-weight: 600;
+            display: none;
+            z-index: 1000;
+        }
+
+        .notification.success {
+            background: #4CAF50;
+        }
+
+        .notification.error {
+            background: #f44336;
+        }
+
+        .notification.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Debug info box */
+        .debug-info {
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📋 Contact Manager (CRUD App)</h1>
+
+            <div id="notification" class="notification"></div>
+
+            <div class="form-container">
+                <div class="debug-info">
+                </div>
+
+                <h2 id="form-title">Add New Contact</h2>
+
+                <form id="contactForm">
+                    <input type="hidden" id="contactId">
+
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" placeholder="Enter name">
+                        <span class="error-message" id="nameError">Name is
+                            required</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email"
+                            placeholder="Enter email">
+                        <span class="error-message" id="emailError">Valid email
+                            is required</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone"
+                            placeholder="Enter phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address"
+                            placeholder="Enter address"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary"
+                            id="submitBtn">
+                            Save Contact
+                        </button>
+                        <button type="button" class="btn btn-secondary hidden"
+                            id="cancelBtn">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="spinner" class="spinner">Loading...</div>
+
+            <div class="data-container">
+                <h2>Contacts List (<span id="contactCount">0</span>)</h2>
+                <div id="tableContainer">
+                    <table id="contactsTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contactsBody">
+                        </tbody>
+                    </table>
+                </div>
+                <div id="emptyState" class="empty-state">
+                    <p>No contacts found. Add your first contact above!</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        $(document).ready(function() {
+            console.log('✅ App started');
+
+            const STORAGE_KEY = 'contacts_data';
+
+            // Load data immediately
+            loadContacts();
+
+            // ========== FORM SUBMIT ==========
+            $('#contactForm').on('submit', function(e) {
+                e.preventDefault();
+                console.log('Form submitted');
+                
+                clearErrors();
+                
+                if (!validateForm()) {
+                    console.log('Validation failed');
+                    return;
+                }
+
+                const contactData = {
+                    id: $('#contactId').val() || Date.now().toString(),
+                    name: $('#name').val().trim(),
+                    email: $('#email').val().trim(),
+                    phone: $('#phone').val().trim(),
+                    address: $('#address').val().trim(),
+                    createdAt: new Date().toISOString()
+                };
+
+                console.log('Saving contact:', contactData);
+
+                showSpinner();
+
+                setTimeout(function() {
+                    const isEdit = $('#contactId').val() !== '';
+                    
+                    if (isEdit) {
+                        updateContact(contactData);
+                        showNotification('Contact updated!', 'success');
+                    } else {
+                        createContact(contactData);
+                        showNotification('Contact created!', 'success');
+                    }
+                    
+                    resetForm();
+                    loadContacts();
+                    hideSpinner();
+                }, 300);
+            });
+
+            // ========== CANCEL BUTTON ==========
+            $('#cancelBtn').on('click', function() {
+                console.log('Cancel clicked');
+                resetForm();
+            });
+
+            // ========== DELETE BUTTON ==========
+            // Using document delegation for dynamically created elements
+            $(document).on('click', '.delete-btn', function() {
+                const id = $(this).data('id');
+                const name = $(this).data('name');
+                
+                console.log('Delete clicked for ID:', id, 'Name:', name);
+                
+                if (confirm(`Delete "${name}"?`)) {
+                    showSpinner();
+                    
+                    setTimeout(function() {
+                        deleteContact(id);
+                        loadContacts();
+                        hideSpinner();
+                        showNotification('Contact deleted!', 'success');
+                    }, 300);
+                }
+            });
+
+            // ========== EDIT BUTTON ==========
+            $(document).on('click', '.edit-btn', function() {
+                const id = $(this).data('id');
+                console.log('Edit clicked for ID:', id);
+                
+                const contact = getContactById(id);
+                
+                if (contact) {
+                    $('#contactId').val(contact.id);
+                    $('#name').val(contact.name);
+                    $('#email').val(contact.email);
+                    $('#phone').val(contact.phone);
+                    $('#address').val(contact.address);
+                    
+                    $('#form-title').text('Edit Contact');
+                    $('#submitBtn').text('Update Contact');
+                    $('#cancelBtn').removeClass('hidden');
+                    
+                    // Scroll to form
+                    $('html, body').animate({
+                        scrollTop: $('.form-container').offset().top - 20
+                    }, 300);
+                } else {
+                    console.error('Contact not found with ID:', id);
+                }
+            });
+
+            // ========== CRUD FUNCTIONS ==========
+
+            function createContact(contact) {
+                const contacts = getAllContacts();
+                contacts.push(contact);
+                saveToStorage(contacts);
+                console.log('Created. Total contacts:', contacts.length);
+            }
+
+            function getAllContacts() {
+                const data = localStorage.getItem(STORAGE_KEY);
+                const contacts = data ? JSON.parse(data) : [];
+                console.log('Retrieved contacts:', contacts.length);
+                return contacts;
+            }
+
+            function getContactById(id) {
+                const contacts = getAllContacts();
+                const contact = contacts.find(c => c.id === String(id));
+                console.log('Looking for ID:', id, 'Found:', contact);
+                return contact;
+            }
+
+            function updateContact(updatedContact) {
+                const contacts = getAllContacts();
+                const index = contacts.findIndex(c => c.id === updatedContact.id);
+                
+                if (index !== -1) {
+                    updatedContact.createdAt = contacts[index].createdAt;
+                    contacts[index] = updatedContact;
+                    saveToStorage(contacts);
+                    console.log('Updated contact at index:', index);
+                }
+            }
+
+            function deleteContact(id) {
+                const contacts = getAllContacts();
+                const filtered = contacts.filter(c => c.id !== String(id));
+                saveToStorage(filtered);
+                console.log('Deleted ID:', id, 'Remaining:', filtered.length);
+            }
+
+            function saveToStorage(contacts) {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(contacts));
+            }
+
+            // ========== UI FUNCTIONS ==========
+
+            function loadContacts() {
+                const contacts = getAllContacts();
+                renderTable(contacts);
+                $('#contactCount').text(contacts.length);
+            }
+
+            function renderTable(contacts) {
+                const $tbody = $('#contactsBody');
+                $tbody.empty();
+
+                if (contacts.length === 0) {
+                    $('#contactsTable').addClass('hidden');
+                    $('#emptyState').removeClass('hidden');
+                    return;
+                }
+
+                $('#contactsTable').removeClass('hidden');
+                $('#emptyState').addClass('hidden');
+
+                contacts.forEach(function(contact) {
+                    const row = `
+                        <tr>
+                            <td>${escapeHtml(contact.name)}</td>
+                            <td>${escapeHtml(contact.email)}</td>
+                            <td>${escapeHtml(contact.phone) || '-'}</td>
+                            <td>
+                                <div class="actions">
+                                    <button class="btn btn-warning btn-small edit-btn" 
+                                            data-id="${contact.id}">
+                                        Edit
+                                    </button>
+                                    <button class="btn btn-danger btn-small delete-btn" 
+                                            data-id="${contact.id}"
+                                            data-name="${escapeHtml(contact.name)}">
+                                        Delete
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    `;
+                    $tbody.append(row);
+                });
+            }
+
+            function validateForm() {
+                let isValid = true;
+                
+                const name = $('#name').val().trim();
+                const email = $('#email').val().trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!name) {
+                    $('#name').addClass('error');
+                    $('#nameError').show();
+                    isValid = false;
+                }
+
+                if (!email || !emailRegex.test(email)) {
+                    $('#email').addClass('error');
+                    $('#emailError').show();
+                    isValid = false;
+                }
+
+                return isValid;
+            }
+
+            function clearErrors() {
+                $('input, textarea').removeClass('error');
+                $('.error-message').hide();
+            }
+
+            function resetForm() {
+                $('#contactForm')[0].reset();
+                $('#contactId').val('');
+                $('#form-title').text('Add New Contact');
+                $('#submitBtn').text('Save Contact');
+                $('#cancelBtn').addClass('hidden');
+                clearErrors();
+            }
+
+            function escapeHtml(text) {
+                if (!text) return '';
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+
+            function showSpinner() {
+                $('#spinner').addClass('active');
+            }
+
+            function hideSpinner() {
+                $('#spinner').removeClass('active');
+            }
+
+            function showNotification(message, type) {
+                const $notif = $('#notification');
+                $notif.removeClass('success error').addClass(type);
+                $notif.text(message);
+                $notif.addClass('show');
+                
+                setTimeout(function() {
+                    $notif.removeClass('show');
+                }, 3000);
+            }
+        });
+    </script>
+    </body>
+</html>

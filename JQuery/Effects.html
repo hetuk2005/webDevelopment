@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Effects</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            p{
+                border: 2px solid red;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="box"
+            style="height: 200px; border: 2px solid yellow;cursor: pointer;">
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Minima perspiciatis obcaecati odio voluptatibus ratione
+                architecto
+                rem optio, beatae totam dignissimos? Distinctio non recusandae
+                est.
+                Aut reiciendis, at illum velit sunt officiis!</p>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Neque ad ducimus fugit recusandae voluptas at nobis! Nam libero
+                totam rem magni?</p>
+        </div>
+    </body>
+    <script>
+    // FadeIn And FadeOut
+    
+ /*   $(function(){
+            $("#box").mouseenter(function(){
+                $("p").fadeIn(1000);
+            });
+            $("#box").mouseleave(function(){
+                $("p").fadeOut(1000);
+            });
+    }); */
+
+    // FadeTo
+
+ /*   $(function(){
+            $("#box").mouseenter(function(){
+                $("p").fadeTo(1000,0);
+            });
+            $("#box").mouseleave(function(){
+                $("p").fadeTo(1000,1);
+            });
+    }); */
+
+    // FadeToggle
+
+/*    $(function(){
+            $("#box").mouseenter(function(){
+                $("p").fadeToggle(1000);
+            });
+            $("#box").mouseleave(function(){
+                $("p").fadeToggle(1000);
+            });
+    }); */
+
+// SlideUp, SlideDown And SlideToggle
+
+/* $(function (){
+    $("#box").mouseenter(function(){
+        $("p").slideUp(1000);
+    });
+    $("#box").mouseenter(function(){
+        $("p").slideDown(1000);
+    });
+}) */
+
+
+    $(function(){
+            $("#box").mouseenter(function(){
+                $("#p1").slideToggle(1000);
+            });
+            $("#box").mouseleave(function(){
+                $("#p2").slideToggle(1000);
+            });
+    });
+</script>
+</html>
