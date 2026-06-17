@@ -29,7 +29,7 @@
     "type-fest": "^5.7.0"
   },
   "scripts": {
-    "start": "nodemon Server.json"
+    "start": "node Server.json"
   },
   "keywords": [],
   "author": "",
